@@ -13,12 +13,12 @@ public class DefinitionSteps {
     @Steps
     EndUserSteps anna;
 
-    /////////////////////////////          1ST TEST CASE         ////////////////////////////////////////
-
     @Given("the user is on the Welcome page")
     public void givenTheUserIsOnTheWelcomePage() {
         anna.is_the_home_page();
     }
+
+/////////////////////////////          1ST TEST CASE         ////////////////////////////////////////
 
     @When("^click Welcome link$")
     public void clickWelcomeLink() throws Throwable {
