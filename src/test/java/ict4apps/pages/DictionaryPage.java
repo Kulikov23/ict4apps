@@ -10,6 +10,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
 
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
@@ -22,7 +24,7 @@ public class DictionaryPage extends PageObject {
 /////////////////////////// CLICK ////////////////////////////////////////////////
 
     public WebElement linkWithStr(String arg0) {
-        return $(Locators.WELCOME_HEADER_NAVIGATION_LINKS.replace("$1",arg0));
+        return $(Locators.WELCOME_HEADER_NAVIGATION_LINKS.replace("$1", arg0));
     }
 
 /////////////////////////// CLICK ////////////////////////////////////////////////
@@ -31,16 +33,25 @@ public class DictionaryPage extends PageObject {
         return $(Locators.SITE_LOGO);
     }
 
-    public WebElement titleDisplayed(){
+    public WebElement titleDisplayed() {
         return $(Locators.TITLE_1ST_BLOCK);
     }
 
     public WebElement labelDisplayed() { return $(Locators.SHOWING_RESULTS_LABEL); }
 
-    public WebElement rssDisplayed() {
-        return $(Locators.BLOGS_HEADER);
-    }
+    public WebElement blogsHeaderDisplayed() { return $(Locators.BLOGS_HEADER); }
 
     public WebElement contactsHeader_displayed() { return $(Locators.CONTACTS_HEADER); }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void moveAction() {
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement($(Locators.FIRST_PICTURE)).build().perform();
+        waitABit(1500);
+    }
+
+    public WebElement titleWithStr(String food) {
+        return $(Locators.PICTURE_CAROUSEL_PRODUCTS.replace("$1",food));
+    }
 }

@@ -18,9 +18,14 @@ Feature: WELCOME PAGE
   Scenario: Clicking on the "BLOGS" link
     Given the user is on the Welcome page
     When click "Blogs" link
-    Then check that RSS link is appears
+    Then check that BLOGS header is appears
 
   Scenario: Clicking on the "CONTACT US" link
     Given the user is on the Welcome page
     When click "Contact Us" link
     Then check that CONTACTS header is appears
+
+  Scenario: Checking that first block of the "OUR SPECIAL OFFERS" is changing picture
+    Given the user is on the Welcome page
+    When move mouse to the first block picture
+    Then check that block contains "Bacon and Tomato Sandwich" title

@@ -9,4 +9,11 @@ public interface Locators {
     String CONTACTS_HEADER ="//span[contains(text(),'Contacts')]";
 
     String WELCOME_HEADER_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
+
+    //String PICTURE_CAROUSEL_PRODUCTS = "(//h3//a[contains(text(),'$1')])[1]";
+    String PICTURE_CAROUSEL_PRODUCTS = "(//h3//a[contains(text(),'$1')])[1]";
+
+    String  FIRST_PICTURE  = "(//div[@class='product-item__img product-img-intro'])[4]";
+
+
 }

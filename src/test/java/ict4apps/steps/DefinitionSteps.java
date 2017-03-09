@@ -50,9 +50,9 @@ public class DefinitionSteps {
 
 /////////////////////////////          4th TEST CASE         ////////////////////////////////////////
 
-    @Then("^check that RSS link is appears$")
-    public void checkThatRSSLinkIsAppears() throws Throwable {
-        anna.rssLinkIsDisplayed();
+    @Then("check that BLOGS header is appears")
+    public void checkThatBlogsHeaderDisplayed() throws Throwable {
+        anna.blogsHeaderIsDisplayed();
     }
 /////////////////////////////          5th TEST CASE         ////////////////////////////////////////
 
@@ -60,5 +60,20 @@ public class DefinitionSteps {
     public void checkThatCONTACTSHeaderIsAppears() throws Throwable {
         anna.contactsHeaderDisplayed();
     }
+
+    /////////////////////////////          6th TEST CASE         ////////////////////////////////////////
+
+    @When("^move mouse to the first block picture$")
+    public void moveMouseToTheFirstBlockPicture() throws Throwable {
+      anna.moveMouseToPicture();
+    }
+
+    @Then("^check that block contains \"([^\"]*)\" title$")
+    public void checkThatBlockContainsTitleDescriptionAndMoreLink(String food) throws Throwable {
+        anna.titleDescMoreIsDisplayed(food);
+    }
+
+
+
 
 }
