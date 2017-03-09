@@ -19,17 +19,13 @@ public class EndUserSteps {
     }
 
     @Step
-    public void click_welcome() throws InterruptedException {
-        dictionaryPage.clickWelcome().click();
+    public void clickLink(String arg0) {
+        dictionaryPage.linkWithStr(arg0).click();
     }
 
     @Step
     public void logoAppear() {
         Assert.assertTrue(dictionaryPage.siteLogoIsAppeares().isDisplayed());
-    }
-
-    public void click_products() {
-       dictionaryPage.clickProducts().click();
     }
 
     @Step
@@ -39,19 +35,9 @@ public class EndUserSteps {
     }
 
     @Step
-    public void click_special() {
-        dictionaryPage.clickSpecial().click();
-    }
-
-    @Step
     public void labelIsDisplayed() {
         Assert.assertTrue(dictionaryPage.labelDisplayed().isDisplayed());
         dictionaryPage.getDriver().navigate().back();
-    }
-
-    @Step
-    public void click_blogs() {
-        dictionaryPage.clickBlogs().click();
     }
 
     @Step
@@ -61,12 +47,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void click_contacts() {
-        dictionaryPage.clickContacts().click();
-    }
-
-    @Step
     public void contactsHeaderDisplayed() {
         Assert.assertTrue(dictionaryPage.contactsHeader_displayed().isDisplayed());
     }
+
 }
