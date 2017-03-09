@@ -11,13 +11,16 @@ import ict4apps.steps.serenity.EndUserSteps;
 public class DefinitionSteps {
 
     @Steps
-    private
-    EndUserSteps anna;
+    private EndUserSteps anna;
+
+/////////////////////////////           WELCOME PAGE IS OPENED          //////////////////////////////
 
     @Given("the user is on the Welcome page")
     public void givenTheUserIsOnTheWelcomePage() {
         anna.is_the_home_page();
     }
+
+/////////////////////////////           CLICK               /////////////////////////////////////////
 
     @When("^click \"([^\"]*)\" link$")
     public void clickLink(String arg0) throws Throwable {
