@@ -35,9 +35,7 @@ public class DictionaryPage extends PageObject {
         return $(Locators.TITLE_1ST_BLOCK);
     }
 
-    public WebElement labelDisplayed() {
-        return $(Locators.SHOWING_RESULTS_LABEL);
-    }
+    public WebElement labelDisplayed() { return $(Locators.SHOWING_RESULTS_LABEL); }
 
     public WebElement rssDisplayed() {
         return $(Locators.BLOGS_HEADER);
