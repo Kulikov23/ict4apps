@@ -29,9 +29,7 @@ public class DictionaryPage extends PageObject {
 
 /////////////////////////// CLICK ////////////////////////////////////////////////
 
-    public WebElement siteLogoIsAppeares() {
-        return $(Locators.SITE_LOGO);
-    }
+    public WebElement siteLogoIsAppeares() { return $(Locators.SITE_LOGO); }
 
     public WebElement titleDisplayed() {
         return $(Locators.TITLE_1ST_BLOCK);

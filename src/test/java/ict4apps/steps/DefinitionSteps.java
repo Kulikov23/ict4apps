@@ -73,7 +73,4 @@ public class DefinitionSteps {
         anna.titleDescMoreIsDisplayed(food);
     }
 
-
-
-
 }
