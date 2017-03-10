@@ -82,5 +82,10 @@ public class DefinitionSteps {
     public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
         anna.descriptionIsDisplayed(arg0);
     }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
+    public void clickOnTheScrollButton(String direction,String arg0) throws Throwable {
+        anna.clickScrollButton(direction,arg0);
+    }
 }

@@ -11,8 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 public class DictionaryPage extends PageObject {
 
     String first = "4"; ////// FIRST
-    String second = "5"; ////// SECOND
     String third = "6"; ////// THIRD
+    String fifth = "8"; ////// THIRD
 
 
 /////////////////////////// CLICK ////////////////////////////////////////////////
@@ -50,8 +50,8 @@ public class DictionaryPage extends PageObject {
         if (arg0.equals("first")) {
             actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", first))).build().perform();
             waitABit(1500);
-        } else if (arg0.equals("second")) {
-            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", second))).build().perform();
+        } else if (arg0.equals("fifth")) {
+            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", fifth))).build().perform();
             waitABit(1500);
         } else if (arg0.equals("third")) {
             actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", third))).build().perform();
@@ -61,18 +61,18 @@ public class DictionaryPage extends PageObject {
 
 //////////////////////////////////      FIRST/SECOND/THIRD        ////////////////////////////////////////////////////
 
-    public boolean titleWithStr(String arg0,String food) {
+    public boolean titleWithStr(String arg0, String food) {
 
         String init = "";  ///// initialization
         String f = "1";
         String g = "2";
 
         if (arg0.equals("first")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2",f);
-        } else if (arg0.equals("second")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2",f);
+            init = Locators.TITLE.replace("$1", food).replace("$2", f);
+        } else if (arg0.equals("fifth")) {
+            init = Locators.TITLE.replace("$1", food).replace("$2", f);
         } else if (arg0.equals("third")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2",g);
+            init = Locators.TITLE.replace("$1", food).replace("$2", g);
         }
         return $(init).isPresent();
     }
@@ -83,8 +83,8 @@ public class DictionaryPage extends PageObject {
 
         if (arg0.equals("first")) {
             init = Locators.MORE_LINK.replace("$1", more).replace("$2", first);
-        } else if (arg0.equals("second")) {
-            init = Locators.MORE_LINK.replace("$1", more).replace("$2", second);
+        } else if (arg0.equals("fifth")) {
+            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
         } else if (arg0.equals("third")) {
             init = Locators.MORE_LINK.replace("$1", more).replace("$2", third);
         }
@@ -97,11 +97,40 @@ public class DictionaryPage extends PageObject {
 
         if (arg0.equals("first")) {
             init = Locators.DESCRIPTION.replace("$1", first);
-        } else if (arg0.equals("second")) {
-            init = Locators.DESCRIPTION.replace("$1", second);
+        } else if (arg0.equals("fifth")) {
+            init = Locators.DESCRIPTION.replace("$1", fifth);
         } else if (arg0.equals("third")) {
             init = Locators.DESCRIPTION.replace("$1", third);
         }
         return $(init).isPresent();
     }
+
+    public void clickScrollButton(String direction, String arg0) {
+
+        String ourSpecOff = "1";
+        String foodDeliveryBox = "2";
+        String review = "3";
+        String next = "Next";
+        String previous = "Previous";
+
+        String init = "";
+
+        if (arg0.equals("OUR SPECIAL OFFERS")) {
+            init = Locators.SCROLL_BUTTON.replace("$1", ourSpecOff);
+        } else if (arg0.equals("FOOD DELIVERY BOXES TO THE OFFICE OR HOME")) {
+            init = Locators.SCROLL_BUTTON.replace("$1", foodDeliveryBox);
+        } else if (arg0.equals("Review")) {
+            init = Locators.SCROLL_BUTTON.replace("$1", review);
+        }
+
+        if (direction.equals("right")) {
+            init = init.replace("$2", next);
+        } else if (direction.equals("left"))   {
+            init = init.replace("$2", previous);
+        }
+
+        $(init).click();
+        waitABit(1500);
+    }
 }
+

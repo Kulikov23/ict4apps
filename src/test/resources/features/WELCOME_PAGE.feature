@@ -32,16 +32,26 @@ Feature: WELCOME PAGE
     Then check that "first" block contains small description
     Then check then "first" block contains "More" link
 
-  Scenario: Checking that second block of the "OUR SPECIAL OFFERS" is changing picture
-    Given the user is on the Welcome page
-    When move mouse to the "second" block picture
-    Then check that "second" block contains "Deviled Eggs with Bacon" title
-    Then check that "second" block contains small description
-    Then check then "second" block contains "More" link
-
   Scenario: Checking that third block of the "OUR SPECIAL OFFERS" is changing picture
     Given the user is on the Welcome page
     When move mouse to the "third" block picture
     Then check that "third" block contains "Classic Canapes" title
     Then check that "third" block contains small description
     Then check then "third" block contains "More" link
+
+  Scenario: Checking that "OUR SPECIAL OFFERS" scroll button right is scrolling picture carousel
+    Given the user is on the Welcome page
+    When click on the scroll button "right" of the "OUR SPECIAL OFFERS" picture carousel
+#    Then check that pictures are changed
+
+  Scenario: Checking that second block of the "OUR SPECIAL OFFERS" is changing picture
+    Given the user is on the Welcome page
+    When move mouse to the "fifth" block picture
+    Then check that "fifth" block contains "Deviled Eggs with Bacon" title
+    Then check that "fifth" block contains small description
+    Then check then "fifth" block contains "More" link
+
+  Scenario: Checking that "OUR SPECIAL OFFERS" scroll button left is scrolling picture carousel
+    Given the user is on the Welcome page
+    When click on the scroll button "left" of the "OUR SPECIAL OFFERS" picture carousel
+#    Then check that pictures are changed

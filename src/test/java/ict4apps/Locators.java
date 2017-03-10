@@ -23,4 +23,6 @@ public interface Locators {
 
     String  DESCRIPTION  = "(//div[@class='gallery-product__introtext'])[$1]";
 
+    String SCROLL_BUTTON = "(//div//button[contains(text(),'$2')])[$1]";
+
 }

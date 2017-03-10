@@ -21,9 +21,7 @@ public class EndUserSteps {
     private DictionaryPage dictionaryPage;
 
     @Step
-    public void is_the_home_page() {
-        dictionaryPage.open();
-    }
+    public void is_the_home_page() { dictionaryPage.open(); }
 
     @Step
     public void clickLink(String arg0) {
@@ -77,5 +75,9 @@ public class EndUserSteps {
     @Step
     public void descriptionIsDisplayed(String arg0) {
         Assert.assertTrue(dictionaryPage.descriptionIsDisplayed(arg0));
+    }
+
+    public void clickScrollButton(String direction,String arg0) {
+        dictionaryPage.clickScrollButton(direction,arg0);
     }
 }
