@@ -47,7 +47,7 @@ Feature: WELCOME PAGE
   Scenario: Checking that second block of the "OUR SPECIAL OFFERS" is changing picture
     Given the user is on the Welcome page
     When move mouse to the "fifth" block picture
-    Then check that "fifth" block contains "Deviled Eggs with Bacon" title
+    Then check that "fifth" block contains "Classic Mushroom Soup" title
     Then check that "fifth" block contains small description
     Then check that "fifth" block contains "More" link
 

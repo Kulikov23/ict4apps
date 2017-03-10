@@ -13,21 +13,21 @@ public class DefinitionSteps {
     @Steps
     private EndUserSteps anna;
 
-/////////////////////////////           WELCOME PAGE IS OPENED          //////////////////////////////
+/////////////////////////////           WELCOME PAGE IS OPENED          ////////////////////////////////////////////////
 
     @Given("the user is on the Welcome page")
     public void givenTheUserIsOnTheWelcomePage() {
         anna.is_the_home_page();
     }
 
-/////////////////////////////           CLICK               /////////////////////////////////////////
+/////////////////////////////           CLICK               ////////////////////////////////////////////////////////////
 
     @When("^click \"([^\"]*)\" link$")
     public void clickLink(String arg0) throws Throwable {
         anna.clickLink(arg0);
     }
 
-/////////////////////////////          1ST TEST CASE         ////////////////////////////////////////
+/////////////////////////////          1ST TEST CASE         ///////////////////////////////////////////////////////////
 
     @Then("^check that site logo is presented$")
     public void checkThatSiteLogoIsPresented() throws Throwable {
@@ -82,7 +82,7 @@ public class DefinitionSteps {
     public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
         anna.descriptionIsDisplayed(arg0);
     }
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
     public void clickOnTheScrollButton(String direction,String arg0) throws Throwable {

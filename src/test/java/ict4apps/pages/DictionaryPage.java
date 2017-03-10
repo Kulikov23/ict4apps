@@ -15,13 +15,13 @@ public class DictionaryPage extends PageObject {
     String fifth = "8"; ////// THIRD
 
 
-/////////////////////////// CLICK ////////////////////////////////////////////////
+/////////////////////////// CLICK //////////////////////////////////////////////////////////////////////////////////////
 
     public WebElement linkWithStr(String arg0) {
         return $(Locators.WELCOME_HEADER_NAVIGATION_LINKS.replace("$1", arg0));
     }
 
-/////////////////////////// CLICK ////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public WebElement siteLogoIsAppeares() {
         return $(Locators.SITE_LOGO);
@@ -43,23 +43,23 @@ public class DictionaryPage extends PageObject {
         return $(Locators.CONTACTS_HEADER);
     }
 
-//////////////////////////////////      MOVE        ////////////////////////////////////////////////////
+//////////////////////////////////      MOVE        ////////////////////////////////////////////////////////////////////
 
     public void moveAction(String arg0) {
         Actions actions = new Actions(getDriver());
         if (arg0.equals("first")) {
             actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", first))).build().perform();
             waitABit(1500);
-        } else if (arg0.equals("fifth")) {
-            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", fifth))).build().perform();
-            waitABit(1500);
         } else if (arg0.equals("third")) {
             actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", third))).build().perform();
+            waitABit(1500);
+        } else if (arg0.equals("fifth")) {
+            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", fifth))).build().perform();
             waitABit(1500);
         }
     }
 
-//////////////////////////////////      FIRST/SECOND/THIRD        ////////////////////////////////////////////////////
+//////////////////////////////////      FIRST/SECOND/THIRD        //////////////////////////////////////////////////////
 
     public boolean titleWithStr(String arg0, String food) {
 
@@ -69,9 +69,9 @@ public class DictionaryPage extends PageObject {
 
         if (arg0.equals("first")) {
             init = Locators.TITLE.replace("$1", food).replace("$2", f);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2", f);
         } else if (arg0.equals("third")) {
+            init = Locators.TITLE.replace("$1", food).replace("$2", g);
+        } else if (arg0.equals("fifth")) {
             init = Locators.TITLE.replace("$1", food).replace("$2", g);
         }
         return $(init).isPresent();
@@ -83,10 +83,10 @@ public class DictionaryPage extends PageObject {
 
         if (arg0.equals("first")) {
             init = Locators.MORE_LINK.replace("$1", more).replace("$2", first);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
         } else if (arg0.equals("third")) {
             init = Locators.MORE_LINK.replace("$1", more).replace("$2", third);
+        } else if (arg0.equals("fifth")) {
+            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
         }
         return $(init).isPresent();
     }
@@ -97,13 +97,15 @@ public class DictionaryPage extends PageObject {
 
         if (arg0.equals("first")) {
             init = Locators.DESCRIPTION.replace("$1", first);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.DESCRIPTION.replace("$1", fifth);
         } else if (arg0.equals("third")) {
             init = Locators.DESCRIPTION.replace("$1", third);
+        } else if (arg0.equals("fifth")) {
+            init = Locators.DESCRIPTION.replace("$1", fifth);
         }
         return $(init).isPresent();
     }
+
+///////////////////////////////////     CLICK SCROLL BUTTON     ///////////////////////////////////////////////////////
 
     public void clickScrollButton(String direction, String arg0) {
 
