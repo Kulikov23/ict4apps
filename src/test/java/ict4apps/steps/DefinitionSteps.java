@@ -63,14 +63,24 @@ public class DefinitionSteps {
 
     /////////////////////////////          6th TEST CASE         ////////////////////////////////////////
 
-    @When("^move mouse to the first block picture$")
-    public void moveMouseToTheFirstBlockPicture() throws Throwable {
-      anna.moveMouseToPicture();
+    @When("^move mouse to the \"([^\"]*)\" block picture$")
+    public void moveMouseToTheFirstBlockPicture(String arg0) throws Throwable {
+        anna.moveMouseToPicture(arg0);
     }
 
-    @Then("^check that block contains \"([^\"]*)\" title$")
-    public void checkThatBlockContainsTitleDescriptionAndMoreLink(String food) throws Throwable {
-        anna.titleDescMoreIsDisplayed(food);
+    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
+    public void checkThatBlockContainsTitleDescriptionAndMoreLink(String arg0, String food) throws Throwable {
+        anna.titleIsDisplayed(arg0,food);
+    }
+
+    @Then("^check then \"([^\"]*)\" block contains \"([^\"]*)\" link$")
+    public void checkThenBlockContainsLink(String arg0,String more) throws Throwable {
+        anna.moreIsDisplayed(arg0,more);
+    }
+
+    @Then("^check that \"([^\"]*)\" block contains small description$")
+    public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
+        anna.descriptionIsDisplayed(arg0);
     }
 
 }

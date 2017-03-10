@@ -8,10 +8,19 @@ public interface Locators {
     String BLOGS_HEADER ="(//span[contains(text(),'Blogs')])[3]";
     String CONTACTS_HEADER ="//span[contains(text(),'Contacts')]";
 
+//////////////////////////////////      NAVIGATION LINKS        //////////////////////////////////
+
     String WELCOME_HEADER_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
 
-    String PICTURE_CAROUSEL_PRODUCTS = "(//h3//a[contains(text(),'$1')])[1]";
 
-    String  FIRST_PICTURE  = "(//div[@class='product-item__img product-img-intro'])[4]";
+/////////////////////////////////   PICTURE CAROUSEL   /////////////////////////////////////////
+
+    String  BLOCK_PICTURE  = "(//div[@class='product-item__img product-img-intro'])[$1]";
+
+    String TITLE = "(//h3//a[contains(text(),'$1')])[$2]";
+
+    String  MORE_LINK  = "(//div//a[contains(text(),'$1')])[$2]";
+
+    String  DESCRIPTION  = "(//div[@class='gallery-product__introtext'])[$1]";
 
 }

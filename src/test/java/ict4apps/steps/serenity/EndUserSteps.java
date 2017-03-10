@@ -60,12 +60,22 @@ public class EndUserSteps {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Step
-    public void moveMouseToPicture() {
-        dictionaryPage.moveAction();
+    public void moveMouseToPicture(String arg0) {
+        dictionaryPage.moveAction(arg0);
     }
 
     @Step
-    public void titleDescMoreIsDisplayed(String food) {
-        Assert.assertTrue(dictionaryPage.titleWithStr(food).isDisplayed());
+    public void titleIsDisplayed(String arg0,String food) {
+        Assert.assertTrue(dictionaryPage.titleWithStr(arg0,food));
+    }
+
+    @Step
+    public void moreIsDisplayed(String arg0,String more) {
+        Assert.assertTrue(dictionaryPage.moreIsDisplayed(arg0,more));
+    }
+
+    @Step
+    public void descriptionIsDisplayed(String arg0) {
+        Assert.assertTrue(dictionaryPage.descriptionIsDisplayed(arg0));
     }
 }
