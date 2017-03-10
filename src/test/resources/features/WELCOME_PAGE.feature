@@ -30,14 +30,14 @@ Feature: WELCOME PAGE
     When move mouse to the "first" block picture
     Then check that "first" block contains "Bacon and Tomato Sandwich" title
     Then check that "first" block contains small description
-    Then check then "first" block contains "More" link
+    Then check that "first" block contains "More" link
 
   Scenario: Checking that third block of the "OUR SPECIAL OFFERS" is changing picture
     Given the user is on the Welcome page
     When move mouse to the "third" block picture
     Then check that "third" block contains "Classic Canapes" title
     Then check that "third" block contains small description
-    Then check then "third" block contains "More" link
+    Then check that "third" block contains "More" link
 
   Scenario: Checking that "OUR SPECIAL OFFERS" scroll button right is scrolling picture carousel
     Given the user is on the Welcome page
@@ -49,7 +49,7 @@ Feature: WELCOME PAGE
     When move mouse to the "fifth" block picture
     Then check that "fifth" block contains "Deviled Eggs with Bacon" title
     Then check that "fifth" block contains small description
-    Then check then "fifth" block contains "More" link
+    Then check that "fifth" block contains "More" link
 
   Scenario: Checking that "OUR SPECIAL OFFERS" scroll button left is scrolling picture carousel
     Given the user is on the Welcome page

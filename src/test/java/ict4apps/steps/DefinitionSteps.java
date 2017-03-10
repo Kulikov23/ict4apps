@@ -69,12 +69,12 @@ public class DefinitionSteps {
     }
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
-    public void checkThatBlockContainsTitleDescriptionAndMoreLink(String arg0, String food) throws Throwable {
+    public void checkThatBlockContainsTitle(String arg0, String food) throws Throwable {
         anna.titleIsDisplayed(arg0,food);
     }
 
-    @Then("^check then \"([^\"]*)\" block contains \"([^\"]*)\" link$")
-    public void checkThenBlockContainsLink(String arg0,String more) throws Throwable {
+    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
+    public void checkThatBlockContainsLink(String arg0,String more) throws Throwable {
         anna.moreIsDisplayed(arg0,more);
     }
 
