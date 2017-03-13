@@ -11,6 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 
 import javax.swing.*;
 
+import java.util.Map;
+
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -94,5 +96,24 @@ public class EndUserSteps {
     public void linksArePresented(String arg0, String arg1) {
         Assert.assertTrue(dictionaryPage.viewOriginalPostLinkIsPresented(arg0,arg1));
         Assert.assertTrue(dictionaryPage.readMoreLinkIsPresented(arg0,arg1));
+    }
+
+    @Step
+    public void getListOfLanguages() {
+        dictionaryPage.getListOfLanguages();
+    }
+
+    @Step
+    public void checkCorrectOrderTheLanguages(Map<Integer, String> arg0) {
+        Assert.assertTrue(dictionaryPage.checkCorrectOrderTheLanguages(arg0));
+    }
+
+    @Step
+    public void moveToPicture(String arg0) {
+        dictionaryPage.moveToPicture(arg0);
+    }
+
+    public void checkTactTitleIsDisplayed(String arg0,String arg1) {
+        Assert.assertTrue(dictionaryPage.checkThatTitleIsDisplayed(arg0,arg1));
     }
 }

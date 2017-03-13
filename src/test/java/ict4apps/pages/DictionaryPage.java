@@ -1,14 +1,22 @@
 package ict4apps.pages;
 
 import  ict4apps.Locators;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
 
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 @DefaultUrl("http://88.198.7.89:8100/")
 public class DictionaryPage extends PageObject {
+
+    List<String> languagesList = new ArrayList<>();
+
 
     String first = "4"; ////// FIRST
     String third = "6"; ////// THIRD
@@ -127,7 +135,7 @@ public class DictionaryPage extends PageObject {
 
         if (direction.equals("right")) {
             init = init.replace("$2", next);
-        } else if (direction.equals("left"))   {
+        } else if (direction.equals("left")) {
             init = init.replace("$2", previous);
         }
 
@@ -162,6 +170,41 @@ public class DictionaryPage extends PageObject {
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void getListOfLanguages() {
+        List<WebElementFacade> list = findAll(Locators.LANGUAGES);
+        for (WebElement element : list) {
+            languagesList.add(element.getText());
+        }
+    }
+
+    public boolean checkCorrectOrderTheLanguages(Map<Integer, String> arg0) {
+        for (String aLanguagesList : languagesList) {
+            if (aLanguagesList.equalsIgnoreCase(String.valueOf(arg0))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void moveToPicture(String arg0) {
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement($(Locators.FOOD_DELIVERY_PICTURES.replace("$1", arg0))).build().perform();
+        waitABit(1500);
+    }
+
+    public boolean checkThatTitleIsDisplayed(String arg0,String arg1) {
+        return $(Locators.PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 
 }
 

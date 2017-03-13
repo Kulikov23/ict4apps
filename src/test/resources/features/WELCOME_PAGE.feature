@@ -65,3 +65,25 @@ Feature: WELCOME PAGE
       | First      |
       | Third      |
       | Fifth      |
+
+  Scenario: test1
+    Given the user is on the Welcome page
+    Then the languages should be in the correct order:
+      |1| English    |
+      |2| italiano   |
+      |3| українська |
+      |4| русский    |
+
+  Scenario Outline: Checking that elements of the "Food delivery boxes to the office or home" picture carousel is changing their pictures
+    Given the user is on the Welcome page
+    When moving on the block "<pictures>"
+    Then checking that elements changing "<pictures>" and contains "<titles>":
+    Examples:
+      |   pictures   |    titles     |
+      |      0       |  Appetizers   |
+      |      1       |  Soup menu    |
+      |      2       |  Salads       |
+      |      3       |  Seafood      |
+      |      4       |  Main Courses |
+      |      5       |  Desserts     |
+

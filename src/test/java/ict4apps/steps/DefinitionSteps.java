@@ -72,12 +72,12 @@ public class DefinitionSteps {
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
     public void checkThatBlockContainsTitle(String arg0, String food) throws Throwable {
-        steps.titleIsDisplayed(arg0,food);
+        steps.titleIsDisplayed(arg0, food);
     }
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
-    public void checkThatBlockContainsLink(String arg0,String more) throws Throwable {
-        steps.moreIsDisplayed(arg0,more);
+    public void checkThatBlockContainsLink(String arg0, String more) throws Throwable {
+        steps.moreIsDisplayed(arg0, more);
     }
 
     @Then("^check that \"([^\"]*)\" block contains small description$")
@@ -87,8 +87,8 @@ public class DefinitionSteps {
 ///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
-    public void clickOnTheScrollButton(String direction,String arg0) throws Throwable {
-        steps.clickScrollButton(direction,arg0);
+    public void clickOnTheScrollButton(String direction, String arg0) throws Throwable {
+        steps.clickScrollButton(direction, arg0);
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,10 +100,29 @@ public class DefinitionSteps {
 
     @Then("^blog pages contains following links \"([^\"]*)\", \"([^\"]*)\"$")
     public void blogPagesContainsFollowingLinks(String arg0, String arg1) throws Throwable {
-        steps.linksArePresented(arg0,arg1);
+        steps.linksArePresented(arg0, arg1);
     }
+
+    @Then("^the languages should be in the correct order:$")
+    public void theLanguagesShouldBeInTheCorrectOrder(Map<Integer, String> arg0) throws Throwable {
+        steps.getListOfLanguages();
+        steps.checkCorrectOrderTheLanguages(arg0);
+    }
+
+    @When("^moving on the block \"([^\"]*)\"$")
+    public void checkingThatElementsChangingPictures(String arg0) throws Throwable {
+        steps.moveToPicture(arg0);
+    }
+
+    @Then("^checking that elements changing \"([^\"]*)\" and contains \"([^\"]*)\":$")
+    public void checkingThatElementsChangingPicturesAndContains(String arg0, String arg1) throws Throwable {
+        steps.checkTactTitleIsDisplayed(arg0, arg1);
+    }
+
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-}
+
