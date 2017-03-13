@@ -8,84 +8,102 @@ import cucumber.api.java.en.When;
 
 import ict4apps.steps.serenity.EndUserSteps;
 
+import java.util.Map;
+
 public class DefinitionSteps {
 
     @Steps
-    private EndUserSteps anna;
+    private EndUserSteps steps;
 
 /////////////////////////////           WELCOME PAGE IS OPENED          ////////////////////////////////////////////////
 
     @Given("the user is on the Welcome page")
     public void givenTheUserIsOnTheWelcomePage() {
-        anna.is_the_home_page();
+        steps.is_the_home_page();
     }
 
 /////////////////////////////           CLICK               ////////////////////////////////////////////////////////////
 
     @When("^click \"([^\"]*)\" link$")
     public void clickLink(String arg0) throws Throwable {
-        anna.clickLink(arg0);
+        steps.clickLink(arg0);
     }
 
 /////////////////////////////          1ST TEST CASE         ///////////////////////////////////////////////////////////
 
     @Then("^check that site logo is presented$")
     public void checkThatSiteLogoIsPresented() throws Throwable {
-        anna.logoAppear();
+        steps.logoAppear();
     }
 
 /////////////////////////////          2ND TEST CASE         ////////////////////////////////////////
 
     @Then("^check that title of the first product block is presented$")
     public void checkThatTitleOfTheFirstProductBlockIsPresented() throws Throwable {
-        anna.titleDisplayed();
+        steps.titleDisplayed();
     }
 
 /////////////////////////////          3RD TEST CASE         ////////////////////////////////////////
 
     @Then("^check that Showing results labes is appears$")
     public void checkThatShowingResultsLabesIsAppears() throws Throwable {
-        anna.labelIsDisplayed();
+        steps.labelIsDisplayed();
     }
 
 /////////////////////////////          4th TEST CASE         ////////////////////////////////////////
 
     @Then("check that BLOGS header is appears")
     public void checkThatBlogsHeaderDisplayed() throws Throwable {
-        anna.blogsHeaderIsDisplayed();
+        steps.blogsHeaderIsDisplayed();
     }
-/////////////////////////////          5th TEST CASE         ////////////////////////////////////////
+/////////////////////////////          5th TEST CASE         ///////////////////////////////////////////////////////////
 
     @Then("^check that CONTACTS header is appears$")
     public void checkThatCONTACTSHeaderIsAppears() throws Throwable {
-        anna.contactsHeaderDisplayed();
+        steps.contactsHeaderDisplayed();
     }
 
-    /////////////////////////////          6th TEST CASE         ////////////////////////////////////////
+    /////////////////////////////          6th TEST CASE         ////////////////////////////////////////////////////////
 
     @When("^move mouse to the \"([^\"]*)\" block picture$")
     public void moveMouseToTheFirstBlockPicture(String arg0) throws Throwable {
-        anna.moveMouseToPicture(arg0);
+        steps.moveMouseToPicture(arg0);
     }
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
     public void checkThatBlockContainsTitle(String arg0, String food) throws Throwable {
-        anna.titleIsDisplayed(arg0,food);
+        steps.titleIsDisplayed(arg0,food);
     }
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
     public void checkThatBlockContainsLink(String arg0,String more) throws Throwable {
-        anna.moreIsDisplayed(arg0,more);
+        steps.moreIsDisplayed(arg0,more);
     }
 
     @Then("^check that \"([^\"]*)\" block contains small description$")
     public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
-        anna.descriptionIsDisplayed(arg0);
+        steps.descriptionIsDisplayed(arg0);
     }
 ///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
     public void clickOnTheScrollButton(String direction,String arg0) throws Throwable {
-        anna.clickScrollButton(direction,arg0);
+        steps.clickScrollButton(direction,arg0);
     }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @When("^clicking on the blog links \"([^\"]*)\"$")
+    public void clickingOnTheBlogLinks(String arg0) throws Throwable {
+        steps.clickOnBlog(arg0);
+    }
+
+    @Then("^blog pages contains following links \"([^\"]*)\", \"([^\"]*)\"$")
+    public void blogPagesContainsFollowingLinks(String arg0, String arg1) throws Throwable {
+        steps.linksArePresented(arg0,arg1);
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 }

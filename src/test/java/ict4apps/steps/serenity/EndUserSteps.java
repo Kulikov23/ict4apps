@@ -78,7 +78,21 @@ public class EndUserSteps {
         Assert.assertTrue(dictionaryPage.descriptionIsDisplayed(arg0));
     }
 
+    @Step
     public void clickScrollButton(String direction,String arg0) {
         dictionaryPage.clickScrollButton(direction,arg0);
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @Step
+    public void clickOnBlog(String arg0) {
+        dictionaryPage.clickBlog(arg0);
+    }
+
+    @Step
+    public void linksArePresented(String arg0, String arg1) {
+        Assert.assertTrue(dictionaryPage.viewOriginalPostLinkIsPresented(arg0,arg1));
+        Assert.assertTrue(dictionaryPage.readMoreLinkIsPresented(arg0,arg1));
     }
 }

@@ -25,4 +25,10 @@ public interface Locators {
 
     String SCROLL_BUTTON = "(//div//button[contains(text(),'$2')])[$1]";
 
+//////////////////////////////      BLOGS   LIST        ////////////////////////////////////////////////////////////////
+
+    String BLOG_LIST = "(//h3[@class='asset-title']//a)[$1]";
+
+    String LINKS = "//a[contains(text(),'$1')]";
+
 }

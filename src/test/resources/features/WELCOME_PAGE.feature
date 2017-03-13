@@ -55,3 +55,13 @@ Feature: WELCOME PAGE
     Given the user is on the Welcome page
     When click on the scroll button "left" of the "OUR SPECIAL OFFERS" picture carousel
 #    Then check that pictures are changed
+
+  Scenario Outline: Checking that each blog have "View Original Post" and "Read More" links
+    Given the user is on the Welcome page
+    When clicking on the blog links "<blogNumber>"
+    Then blog pages contains following links "View Original Post", "Read More"
+    Examples:
+      | blogNumber |
+      | First      |
+      | Third      |
+      | Fifth      |

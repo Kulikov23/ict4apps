@@ -134,5 +134,34 @@ public class DictionaryPage extends PageObject {
         $(init).click();
         waitABit(1500);
     }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void clickBlog(String arg0) {
+
+        String element = "";
+
+        if (arg0.equals("First")) {
+            element = Locators.BLOG_LIST.replace("$1", "1");
+        } else if (arg0.equals("Third")) {
+            element = Locators.BLOG_LIST.replace("$1", "3");
+        } else if (arg0.equals("Fifth")) {
+            element = Locators.BLOG_LIST.replace("$1", "5");
+        }
+
+        $(element).click();
+
+    }
+
+    public boolean viewOriginalPostLinkIsPresented(String arg0, String arg1) {
+        return $(Locators.LINKS.replace("$1", arg0)).isPresent();
+    }
+
+    public boolean readMoreLinkIsPresented(String arg0, String arg1) {
+        return $(Locators.LINKS.replace("$1", arg1)).isPresent();
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 
