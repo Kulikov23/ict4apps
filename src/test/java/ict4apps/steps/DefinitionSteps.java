@@ -119,6 +119,34 @@ public class DefinitionSteps {
         steps.checkTactTitleIsDisplayed(arg0, arg1);
     }
 
+//////////////////////////////////////      PRODUCTS PAGE       ////////////////////////////////////////////////////////
+
+    @Given("^the user is on the Products page$")
+    public void theUserIsOnTheProductsPage() throws Throwable {
+       steps.theUserIsOnTheProductsPage();
+    }
+
+    @Then("product blocks contain title")
+    public void productBlocksContain() throws Throwable {
+        steps.getListOfproductBlocks();
+        steps.checkForTitlePicReadMore();
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @When("^^clicking on the first \"([^\"]*)\"$")
+    public void clickingOnTheOfTheFirst(String arg1) throws Throwable {
+        steps.clickOnTheFirstElement(arg1);
+    }
+    @When("^^clicking on the second \"([^\"]*)\"$")
+    public void clickingOnTheOfTheSecond(String arg1) throws Throwable {
+        steps.clickOnTheSecondElement(arg1);
+    }
+    @When("^^clicking on the third \"([^\"]*)\"$")
+    public void clickingOnTheOfTheThird(String arg1) throws Throwable {
+        steps.clickOnTheThirdElement(arg1);
+    }
+
 }
 
 

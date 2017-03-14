@@ -39,6 +39,18 @@ public interface Locators {
 
     String FOOD_DELIVERY_PICTURES = "//li[@class='slick-slide slick-active']/div[@class='item_content num_$1']//a";
 
-   String PICTURE_TITLE = "//div[@id='column-2']//li[@class!='slick-slide slick-cloned']//div[@class='item_content num_$1']//a";
+    String PICTURE_TITLE = "//div[@id='column-2']//li[@class!='slick-slide slick-cloned']//div[@class='item_content num_$1']//a";
+
+/////////////////////////////////       PRODUCTS PAGE       ////////////////////////////////////////////////////////////
+
+    String PRODUCT_BLOCKS = "//ul[@class='b-product-gallery b-gallery b-gallery-list']//li";
+
+    String PRODUCT_TITLE = "//h3[@class='galery-product__title']//a";
+
+    String PRODUCT_PICTURE = "//div[@class='product-item__img product-img-intro product-img-intro__left']";
+
+    String READ_MORE = "//a[contains(text(),'Read More')]";
+
+    String TITLE_PRODUCTS = "(//h3[@class='galery-product__title']//a)[$1]";
 
 }

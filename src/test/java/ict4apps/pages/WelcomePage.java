@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @DefaultUrl("http://88.198.7.89:8100/")
-public class DictionaryPage extends PageObject {
+public class WelcomePage extends PageObject {
 
     List<String> languagesList = new ArrayList<>();
 
