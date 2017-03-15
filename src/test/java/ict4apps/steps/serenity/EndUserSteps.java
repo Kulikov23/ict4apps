@@ -111,14 +111,14 @@ public class EndUserSteps {
         Assert.assertTrue(welcomePage.checkThatTitleIsDisplayed(arg0,arg1));
     }
 
-////////////////////////////////////        PRODUCTS PAGE       ////////////////////////////////////////////////////////
+//TODO:////////////////////////////////         PRODUCTS PAGE         //////////////////////////////////////////////////
 
     @Step
     public void theUserIsOnTheProductsPage() {productsPage.open();  }
 
     @Step
-    public void getListOfproductBlocks() {
-        productsPage.getListOfproductBlocks();
+    public void getListOfProductBlocks() {
+        productsPage.getListOfProductBlocks();
     }
 
     @Step
@@ -127,23 +127,58 @@ public class EndUserSteps {
     }
 
     @Step
-    public void clickOnTheFirstElement(String arg1) {
-        productsPage.clickOnTitle_products(arg1);
-        productsPage.clickOnPicture_products(arg1);
-        productsPage.clickOnReadMore_products(arg1);
-    }
-    @Step
-    public void clickOnTheSecondElement(String arg1) {
-        productsPage.clickOnTitle_products(arg1);
-        productsPage.clickOnPicture_products(arg1);
-        productsPage.clickOnReadMore_products(arg1);
-    }
-    @Step
-    public void clickOnTheThirdElement(String arg1) {
-        productsPage.clickOnTitle_products(arg1);
-        productsPage.clickOnPicture_products(arg1);
-        productsPage.clickOnReadMore_products(arg1);
+    public void clickingOnTheElements(String arg1) {
+          productsPage.clickOnTitle_products(arg1);
+          checkThatElementsArePresented();
+          productsPage.back();
+          productsPage.clickOnPicture_products(arg1);
+          productsPage.back();
+          productsPage.clickOnReadMore_products(arg1);
+          productsPage.back();
     }
 
+    @Step
+    public void checkThatElementsArePresented() {
+        Assert.assertTrue(productsPage.checkThatTitleIsPresented());
+        Assert.assertTrue(productsPage.checkThatPictureIsPresented());
+        Assert.assertTrue(productsPage.checkThatDescriptionIsPresented());
+    }
+
+//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
+
+    @Step
+    public void clickingOnTheSocialLinks(String arg0) {
+        productsPage.clickingOnTheSocialLinks(arg0);
+    }
+
+    @Step
+    public void vkLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("http://oauth.vk.com"));
+    }
+
+    @Step
+    public void fbLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.facebook.com"));
+    }
+
+    @Step
+    public void twitLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://twitter.com"));
+    }
+
+    @Step
+    public void linLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.linkedin.com"));
+    }
+
+    @Step
+    public void pinLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.pinterest.com"));
+    }
+
+    @Step
+    public void googleLoginIsOpened() {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://accounts.google.com"));
+    }
 
 }

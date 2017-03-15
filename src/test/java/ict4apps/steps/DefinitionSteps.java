@@ -52,7 +52,7 @@ public class DefinitionSteps {
 
 /////////////////////////////          4th TEST CASE         ////////////////////////////////////////
 
-    @Then("check that BLOGS header is appears")
+    @Then("check that BLOG header is appears")
     public void checkThatBlogsHeaderDisplayed() throws Throwable {
         steps.blogsHeaderIsDisplayed();
     }
@@ -128,29 +128,56 @@ public class DefinitionSteps {
 
     @Then("product blocks contain title")
     public void productBlocksContain() throws Throwable {
-        steps.getListOfproductBlocks();
+        steps.getListOfProductBlocks();
         steps.checkForTitlePicReadMore();
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    @When("^^clicking on the first \"([^\"]*)\"$")
-    public void clickingOnTheOfTheFirst(String arg1) throws Throwable {
-        steps.clickOnTheFirstElement(arg1);
-    }
-    @When("^^clicking on the second \"([^\"]*)\"$")
-    public void clickingOnTheOfTheSecond(String arg1) throws Throwable {
-        steps.clickOnTheSecondElement(arg1);
-    }
-    @When("^^clicking on the third \"([^\"]*)\"$")
-    public void clickingOnTheOfTheThird(String arg1) throws Throwable {
-        steps.clickOnTheThirdElement(arg1);
+    @When("^clicking on the title,picture and read more link of the \"([^\"]*)\"$")
+    public void clickingOnTheElements(String arg1) throws Throwable {
+        steps.clickingOnTheElements(arg1);
     }
 
+//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
+
+    @When("^clicking on the \"([^\"]*)\" social network icon$")
+    public void clickingOnTheSocialLinks(String arg0) throws Throwable {
+       steps.clickingOnTheSocialLinks(arg0);
+    }
+
+    @Then("^checking that VK login page is opened$")
+    public void checkingThatVKLoginPageIsOpened() throws Throwable {
+        steps.vkLoginIsOpened();
+    }
+
+    @Then("^checking that FB login page is opened$")
+    public void checkingThatFBLoginPageIsOpened() throws Throwable {
+        steps.fbLoginIsOpened();
+    }
+
+    @Then("^checking that TWIT login page is opened$")
+    public void checkingThatTWITLoginPageIsOpened() throws Throwable {
+        steps.twitLoginIsOpened();
+    }
+
+    @Then("^checking that LINK login page is opened$")
+    public void checkingThatLINKLoginPageIsOpened() throws Throwable {
+        steps.linLoginIsOpened();
+    }
+
+    @Then("^checking that PIN login page is opened$")
+    public void checkingThatPINLoginPageIsOpened() throws Throwable {
+        steps.pinLoginIsOpened();
+    }
+
+    @Then("^checking that GOOGLE login page is opened$")
+    public void checkingThatGOOGLELoginPageIsOpened() throws Throwable {
+        steps.googleLoginIsOpened();
+    }
 }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
