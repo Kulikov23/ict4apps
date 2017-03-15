@@ -119,7 +119,7 @@ public class DefinitionSteps {
         steps.checkTactTitleIsDisplayed(arg0, arg1);
     }
 
-//////////////////////////////////////      PRODUCTS PAGE       ////////////////////////////////////////////////////////
+//TODO://///////////////////////////////      PRODUCTS PAGE       //////////////////////////////////////////////////////
 
     @Given("^the user is on the Products page$")
     public void theUserIsOnTheProductsPage() throws Throwable {
@@ -174,6 +174,28 @@ public class DefinitionSteps {
     @Then("^checking that GOOGLE login page is opened$")
     public void checkingThatGOOGLELoginPageIsOpened() throws Throwable {
         steps.googleLoginIsOpened();
+    }
+
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @When("^clicking on the \"([^\"]*)\" product block title$")
+    public void clickingOnTheProductBlockTitle(String arg0) throws Throwable {
+        steps.clickOnTheProductTitle(arg0);
+    }
+
+    @Then("^checking that product page contains title,picture and description$")
+    public void checkingThatProductPageContainsTitlePictureAndDescription() throws Throwable {
+        steps.checkThatProductPageContainsRequiredItems();
+    }
+
+    @When("^clicking on the \"([^\"]*)\" product block picture$")
+    public void clickingOnTheProductBlockPicture(String arg0) throws Throwable {
+        steps.clickOnTheProductPicture(arg0);
+    }
+
+    @When("^clicking on the \"([^\"]*)\" product block READ MORE link$")
+    public void clickingOnTheProductBlockREADMORELink(String arg0) throws Throwable {
+        steps.clickOnTheProductReadMoreLink(arg0);
     }
 }
 

@@ -6,14 +6,23 @@ Feature: PRODUCTS PAGE
   Scenario: EXAMPLE
     Then product blocks contain title
 
-  Scenario Outline: 02
-    When clicking on the title,picture and read more link of the "<ProductBlock>"
-#    Then checking that product page contains title,picture and description
-  Examples:
-  | ProductBlock |
-  |       1      |
-  |       6      |
-  |       12     |
+#  Scenario Outline: 02
+#    When clicking on the title,picture and read more link of the "<ProductBlock>"
+##    Then checking that product page contains title,picture and description
+#  Examples:
+#  | ProductBlock |
+#  |       1      |
+#  |       6      |
+#  |       12     |
+
+    Scenario: 02
+      When clicking on the "1" product block title
+      Then checking that product page contains title,picture and description
+      When clicking on the "1" product block picture
+      When clicking on the "1" product block READ MORE link
+
+
+
 
     Scenario: 03
       When clicking on the "1" social network icon

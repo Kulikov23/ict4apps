@@ -116,6 +116,8 @@ public class EndUserSteps {
     @Step
     public void theUserIsOnTheProductsPage() {productsPage.open();  }
 
+//TODO://///////////////////////////////          EXAMPLE            ///////////////////////////////////////////////////
+
     @Step
     public void getListOfProductBlocks() {
         productsPage.getListOfProductBlocks();
@@ -125,6 +127,8 @@ public class EndUserSteps {
     public void checkForTitlePicReadMore() {
         Assert.assertTrue(productsPage.checkForTitlePicReadMore());
     }
+
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @Step
     public void clickingOnTheElements(String arg1) {
@@ -181,4 +185,25 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://accounts.google.com"));
     }
 
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @Step
+    public void clickOnTheProductTitle(String arg0) {
+        productsPage.clickOnTitle_products(arg0);
+    }
+
+    @Step
+    public void checkThatProductPageContainsRequiredItems() {
+        productsPage.checkThatTitleIsPresented();
+        productsPage.checkThatPictureIsPresented();
+        productsPage.checkThatDescriptionIsPresented();
+    }
+
+    public void clickOnTheProductPicture(String arg0) {
+        productsPage.clickOnPicture_products(arg0);
+    }
+
+    public void clickOnTheProductReadMoreLink(String arg0) {
+        productsPage.clickOnReadMore_products(arg0);
+    }
 }
