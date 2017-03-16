@@ -126,57 +126,7 @@ public class DefinitionSteps {
        steps.theUserIsOnTheProductsPage();
     }
 
-    @Then("product blocks contain title")
-    public void productBlocksContain() throws Throwable {
-        steps.getListOfProductBlocks();
-        steps.checkForTitlePicReadMore();
-    }
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    @When("^clicking on the title,picture and read more link of the \"([^\"]*)\"$")
-    public void clickingOnTheElements(String arg1) throws Throwable {
-        steps.clickingOnTheElements(arg1);
-    }
-
-//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
-
-    @When("^clicking on the \"([^\"]*)\" social network icon$")
-    public void clickingOnTheSocialLinks(String arg0) throws Throwable {
-       steps.clickingOnTheSocialLinks(arg0);
-    }
-
-    @Then("^checking that VK login page is opened$")
-    public void checkingThatVKLoginPageIsOpened() throws Throwable {
-        steps.vkLoginIsOpened();
-    }
-
-    @Then("^checking that FB login page is opened$")
-    public void checkingThatFBLoginPageIsOpened() throws Throwable {
-        steps.fbLoginIsOpened();
-    }
-
-    @Then("^checking that TWIT login page is opened$")
-    public void checkingThatTWITLoginPageIsOpened() throws Throwable {
-        steps.twitLoginIsOpened();
-    }
-
-    @Then("^checking that LINK login page is opened$")
-    public void checkingThatLINKLoginPageIsOpened() throws Throwable {
-        steps.linLoginIsOpened();
-    }
-
-    @Then("^checking that PIN login page is opened$")
-    public void checkingThatPINLoginPageIsOpened() throws Throwable {
-        steps.pinLoginIsOpened();
-    }
-
-    @Then("^checking that GOOGLE login page is opened$")
-    public void checkingThatGOOGLELoginPageIsOpened() throws Throwable {
-        steps.googleLoginIsOpened();
-    }
-
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //TODO:////////////////////////////          CHECKING PRODUCT BLOCKS          //////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" product block title$")
     public void clickingOnTheProductBlockTitle(String arg0) throws Throwable {
@@ -196,6 +146,49 @@ public class DefinitionSteps {
     @When("^clicking on the \"([^\"]*)\" product block READ MORE link$")
     public void clickingOnTheProductBlockREADMORELink(String arg0) throws Throwable {
         steps.clickOnTheProductReadMoreLink(arg0);
+    }
+
+//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
+
+    @When("^clicking on the \"([^\"]*)\" social network icon of the \"([^\"]*)\" block$")
+    public void clickingOnTheSocialLinks(String arg0, String arg1) throws Throwable {
+       steps.clickingOnTheSocialLinks(arg0,arg1);
+    }
+
+    @Then("^checking that login page is opened and contains \"([^\"]*)\"$")
+    public void checkingThatVKLoginPageIsOpenedAndContains(String arg0) throws Throwable {
+        steps.LoginPageIsOpened(arg0);
+    }
+
+
+    @When("^clicking on the \"([^\"]*)\" category$")
+    public void clickingOnTheCategory(String arg0) throws Throwable {
+        steps.clickOnTheCategory(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" category is active$")
+    public void categoryIsActive(String arg0) throws Throwable {
+        steps.categoryIsActive(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" button$")
+    public void clickOnTheButton(String arg0) throws Throwable {
+        steps.clickOnThePageOf(arg0);
+    }
+
+    @Then("^dropdown menu is opened and contains \"([^\"]*)\" elements$")
+    public void dropdownMenuIsOpened(String arg0) throws Throwable {
+        steps.PageOfDropDownMenuIsOpened(arg0);
+    }
+
+    @Then("^dropdown menu is opened and contains elements$")
+    public void dropdownMenuIsOpenedAndContainsElements() throws Throwable {
+        steps.dropdownMenuIsOpenedAndContainsElements();
+    }
+
+    @When("^scroll$")
+    public void scroll() throws Throwable {
+        steps.scroll();
     }
 }
 

@@ -41,12 +41,10 @@ public interface Locators {
 
     //TODO: GENERAL PRODUCTS PAGE
 
-    String PRODUCT_BLOCKS = "//ul[@class='b-product-gallery b-gallery b-gallery-list']//li";
-    String PRODUCT_TITLE = "//h3[@class='galery-product__title']//a";
     String PRODUCT_PICTURE = "(//div[@class='product-item__img product-img-intro product-img-intro__left'])[$1]";
     String READ_MORE = "(//a[contains(text(),'Read More')])[$1]";
     String TITLE_PRODUCTS = "(//h3[@class='galery-product__title']//a)[$1]";
-    String SOCIAL_NETWORK_LINKS = "(//span[@class='b-share']//a)[$1]";
+    String SOCIAL_NETWORK_LINKS = "(//a[@title='$1'])[$2]";
 
     //TODO: PRODUCT PAGE
 
@@ -54,4 +52,11 @@ public interface Locators {
     String PRODUCT_DESCRIPTION_TITLE = "//h1/span[contains(text(),*)]";
     String PRODUCT_DESCRIPTION = "//div[@class='info-product table-word-wrap']";
 
+
+    String CATEGORIES = "//a[contains(text(),'$1')]";
+
+    String ACTIVE_CATEGORY = "//li[@class='jqtree_common active']//span[contains(text(),'$1')]";
+
+    String PAGE_OF_BUTTON = "(//a[@title='$1'])[1]";
+    String PAGE_OF_DROPDOWN_MENU = "(//ul[@class='dropdown-menu lfr-menu-list direction-down'])[1]";
 }

@@ -114,78 +114,9 @@ public class EndUserSteps {
 //TODO:////////////////////////////////         PRODUCTS PAGE         //////////////////////////////////////////////////
 
     @Step
-    public void theUserIsOnTheProductsPage() {productsPage.open();  }
+    public void theUserIsOnTheProductsPage() {productsPage.open(); }
 
-//TODO://///////////////////////////////          EXAMPLE            ///////////////////////////////////////////////////
-
-    @Step
-    public void getListOfProductBlocks() {
-        productsPage.getListOfProductBlocks();
-    }
-
-    @Step
-    public void checkForTitlePicReadMore() {
-        Assert.assertTrue(productsPage.checkForTitlePicReadMore());
-    }
-
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    @Step
-    public void clickingOnTheElements(String arg1) {
-          productsPage.clickOnTitle_products(arg1);
-          checkThatElementsArePresented();
-          productsPage.back();
-          productsPage.clickOnPicture_products(arg1);
-          productsPage.back();
-          productsPage.clickOnReadMore_products(arg1);
-          productsPage.back();
-    }
-
-    @Step
-    public void checkThatElementsArePresented() {
-        Assert.assertTrue(productsPage.checkThatTitleIsPresented());
-        Assert.assertTrue(productsPage.checkThatPictureIsPresented());
-        Assert.assertTrue(productsPage.checkThatDescriptionIsPresented());
-    }
-
-//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
-
-    @Step
-    public void clickingOnTheSocialLinks(String arg0) {
-        productsPage.clickingOnTheSocialLinks(arg0);
-    }
-
-    @Step
-    public void vkLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("http://oauth.vk.com"));
-    }
-
-    @Step
-    public void fbLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.facebook.com"));
-    }
-
-    @Step
-    public void twitLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://twitter.com"));
-    }
-
-    @Step
-    public void linLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.linkedin.com"));
-    }
-
-    @Step
-    public void pinLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://www.pinterest.com"));
-    }
-
-    @Step
-    public void googleLoginIsOpened() {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains("https://accounts.google.com"));
-    }
-
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO:////////////////////////////         CHECKING PRODUCT BLOCKS         ////////////////////////////////////////////
 
     @Step
     public void clickOnTheProductTitle(String arg0) {
@@ -194,16 +125,62 @@ public class EndUserSteps {
 
     @Step
     public void checkThatProductPageContainsRequiredItems() {
-        productsPage.checkThatTitleIsPresented();
-        productsPage.checkThatPictureIsPresented();
-        productsPage.checkThatDescriptionIsPresented();
+        Assert.assertTrue(productsPage.checkThatTitleIsPresented());
+        Assert.assertTrue(productsPage.checkThatPictureIsPresented());
+        Assert.assertTrue(productsPage.checkThatDescriptionIsPresented());
+        productsPage.getDriver().navigate().back();
     }
 
+    @Step
     public void clickOnTheProductPicture(String arg0) {
         productsPage.clickOnPicture_products(arg0);
+        productsPage.getDriver().navigate().back();
     }
 
+    @Step
     public void clickOnTheProductReadMoreLink(String arg0) {
         productsPage.clickOnReadMore_products(arg0);
+        productsPage.getDriver().navigate().back();
+    }
+
+//TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
+
+    @Step
+    public void clickingOnTheSocialLinks(String arg0,String arg1) {
+        productsPage.clickingOnTheSocialLinks(arg0,arg1);
+    }
+
+    @Step
+    public void LoginPageIsOpened(String arg0) {
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains(arg0));
+    }
+
+    @Step
+    public void clickOnTheCategory(String arg0) {
+        productsPage.clickOnTheCategory(arg0);
+    }
+
+    @Step
+    public void categoryIsActive(String arg0) {
+        Assert.assertTrue(productsPage.categoryIsActive(arg0));
+    }
+
+    @Step
+    public void clickOnThePageOf(String arg0) {
+        productsPage.clickOnThePageOf(arg0);
+    }
+
+    @Step
+    public void PageOfDropDownMenuIsOpened(String arg0) {
+        Assert.assertTrue(productsPage.PageOfDropDownMenuIsOpened(arg0));
+    }
+
+    @Step
+    public void dropdownMenuIsOpenedAndContainsElements() {
+        Assert.assertTrue(productsPage.dropdownMenuIsOpened());
+    }
+
+    public void scroll() {
+        productsPage.scroll();
     }
 }
