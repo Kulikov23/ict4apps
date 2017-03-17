@@ -2,24 +2,13 @@ package ict4apps;
 
 public interface Locators {
 
-    //TODO: SITE LOGO
-
-    String SITE_LOGO = "//img[@alt='ict4apps']";
-
-    //TODO: REVISE
-
-    String TITLE_1ST_BLOCK ="(//h3[@class='galery-product__title']//a)[1]";
-    String SHOWING_RESULTS_LABEL ="(//small)[1]";
-    String BLOGS_HEADER ="(//span[contains(text(),'Blogs')])[3]";
-    String CONTACTS_HEADER ="//span[contains(text(),'Contacts')]";
-
     //TODO: NAVIGATION LINKS
 
-    String WELCOME_HEADER_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
+    String WELCOME_PAGE_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
 
     //TODO: OUR SPECIAL OFFERS PICTURE CAROUSEL
 
-    String BLOCK_PICTURE  = "(//div[@class='product-item__img product-img-intro'])[$1]";
+    String WELCOME_PAGE_PRODUCT_BLOCK_PICTURE = "(//div[@class='product-item__img product-img-intro'])[$1]";
     String TITLE = "(//h3//a[contains(text(),'$1')])[$2]";
     String MORE_LINK  = "(//div//a[contains(text(),'$1')])[$2]";
     String DESCRIPTION  = "(//div[@class='gallery-product__introtext'])[$1]";
@@ -52,11 +41,27 @@ public interface Locators {
     String PRODUCT_DESCRIPTION_TITLE = "//h1/span[contains(text(),*)]";
     String PRODUCT_DESCRIPTION = "//div[@class='info-product table-word-wrap']";
 
+    //TODO: CATEGORIES
 
     String CATEGORIES = "//a[contains(text(),'$1')]";
-
     String ACTIVE_CATEGORY = "//li[@class='jqtree_common active']//span[contains(text(),'$1')]";
 
-    String PAGE_OF_BUTTON = "(//a[@title='$1'])[1]";
-    String PAGE_OF_DROPDOWN_MENU = "(//ul[@class='dropdown-menu lfr-menu-list direction-down'])[1]";
+    //TODO: DROPDOWN BUTTONS
+
+    String DROPDOWN_BUTTON = "(//a[@title='$1'])[1]";
+    String DROPDOWN_MENU_ELEMENTS = "(//ul[@class='dropdown-menu lfr-menu-list direction-down'])[1]//li//span[contains(text(),*)]";
+
+    String PRODUCT_BLOCK = "//ul[@class='b-product-gallery b-gallery b-gallery-list']//li";
+
+    //TODO: LIST VIEW AND GRID VIEW BUTTONS
+
+    String CHANGE_VIEW_BUTTON = "//i[@class='icon-$1']";
+
+    String SPECIAL_OFFERS_PRODUCT_BLOCK_PICTURE = "(//div[@class='product-item__img product-img-intro'])[$1]";
+    String SPECIAL_OFFERS_PRODUCT_BLOCK_TITLE = "//a[contains(text(),'$1')]";
+    String SPECIAL_OFFERS_PRODUCT_BLOCK_SMALL_DESC = "(//div[@class='gallery-product__introtext'])[$1]";
+    String SPECIAL_OFFERS_PRODUCT_BLOCK_READ_MORE = "(//div[@class='gallery-product__introtext'])[$1]";
+
+
+
 }

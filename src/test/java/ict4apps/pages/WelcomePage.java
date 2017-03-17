@@ -17,101 +17,59 @@ public class WelcomePage extends PageObject {
 
     List<String> languagesList = new ArrayList<>();
 
-
-    String first = "4"; ////// FIRST
-    String third = "6"; ////// THIRD
-    String fifth = "8"; ////// THIRD
-
-
-/////////////////////////// CLICK //////////////////////////////////////////////////////////////////////////////////////
+//TODO:////////////////////////////         NAVIGATION LINKS            ////////////////////////////////////////////////
 
     public WebElement linkWithStr(String arg0) {
-        return $(Locators.WELCOME_HEADER_NAVIGATION_LINKS.replace("$1", arg0));
+        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0));
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    public WebElement siteLogoIsAppeares() {
-        return $(Locators.SITE_LOGO);
+    public boolean checkThatPageIsOpened(String arg0) {
+        boolean x = getDriver().getCurrentUrl().contains(arg0);
+        getDriver().navigate().back();
+        return x;
     }
 
-    public WebElement titleDisplayed() {
-        return $(Locators.TITLE_1ST_BLOCK);
-    }
-
-    public WebElement labelDisplayed() {
-        return $(Locators.SHOWING_RESULTS_LABEL);
-    }
-
-    public WebElement blogsHeaderDisplayed() {
-        return $(Locators.BLOGS_HEADER);
-    }
-
-    public WebElement contactsHeader_displayed() {
-        return $(Locators.CONTACTS_HEADER);
-    }
-
-//////////////////////////////////      MOVE        ////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////         MOVE            //////////////////////////////////////////////////////
 
     public void moveAction(String arg0) {
         Actions actions = new Actions(getDriver());
-        if (arg0.equals("first")) {
-            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", first))).build().perform();
-            waitABit(1500);
-        } else if (arg0.equals("third")) {
-            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", third))).build().perform();
-            waitABit(1500);
-        } else if (arg0.equals("fifth")) {
-            actions.moveToElement($(Locators.BLOCK_PICTURE.replace("$1", fifth))).build().perform();
-            waitABit(1500);
-        }
+        actions.moveToElement($(Locators.WELCOME_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1",arg0))).build().perform();
+        waitABit(1500);
     }
 
-//////////////////////////////////      FIRST/SECOND/THIRD        //////////////////////////////////////////////////////
+//TODO://////////////////////////////////         CHECKING FOR VISIBILITY            ////////////////////////////////////
 
     public boolean titleWithStr(String arg0, String food) {
-
-        String init = "";  ///// initialization
-        String f = "1";
-        String g = "2";
-
-        if (arg0.equals("first")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2", f);
-        } else if (arg0.equals("third")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2", g);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.TITLE.replace("$1", food).replace("$2", g);
-        }
-        return $(init).isPresent();
+        return  $(Locators.TITLE.replace("$1", arg0).replace("$2", food)).isVisible();
     }
 
-    public boolean moreIsDisplayed(String arg0, String more) {
+//    public boolean moreIsDisplayed(String arg0, String more) {
+//
+//        String init = "";
 
-        String init = "";
+//        if (arg0.equals("first")) {
+//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", first);
+//        } else if (arg0.equals("third")) {
+//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", third);
+//        } else if (arg0.equals("fifth")) {
+//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
+//        }
+//        return $(init).isPresent();
+//    }
+//
+//    public boolean descriptionIsDisplayed(String arg0) {
+//
+//        String init = "";
 
-        if (arg0.equals("first")) {
-            init = Locators.MORE_LINK.replace("$1", more).replace("$2", first);
-        } else if (arg0.equals("third")) {
-            init = Locators.MORE_LINK.replace("$1", more).replace("$2", third);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
-        }
-        return $(init).isPresent();
-    }
-
-    public boolean descriptionIsDisplayed(String arg0) {
-
-        String init = "";
-
-        if (arg0.equals("first")) {
-            init = Locators.DESCRIPTION.replace("$1", first);
-        } else if (arg0.equals("third")) {
-            init = Locators.DESCRIPTION.replace("$1", third);
-        } else if (arg0.equals("fifth")) {
-            init = Locators.DESCRIPTION.replace("$1", fifth);
-        }
-        return $(init).isPresent();
-    }
+//        if (arg0.equals("first")) {
+//            init = Locators.DESCRIPTION.replace("$1", first);
+//        } else if (arg0.equals("third")) {
+//            init = Locators.DESCRIPTION.replace("$1", third);
+//        } else if (arg0.equals("fifth")) {
+//            init = Locators.DESCRIPTION.replace("$1", fifth);
+//        }
+//        return $(init).isPresent();
+//    }
 
 ///////////////////////////////////     CLICK SCROLL BUTTON     ///////////////////////////////////////////////////////
 
@@ -199,12 +157,11 @@ public class WelcomePage extends PageObject {
         return $(Locators.PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
 
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 
 }
 

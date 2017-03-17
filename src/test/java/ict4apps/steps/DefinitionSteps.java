@@ -13,77 +13,49 @@ import java.util.Map;
 public class DefinitionSteps {
 
     @Steps
-    private EndUserSteps steps;
+    EndUserSteps steps;
 
-/////////////////////////////           WELCOME PAGE IS OPENED          ////////////////////////////////////////////////
+//TODO://////////////////////////////////      WELCOME PAGE       //////////////////////////////////////////////////////
 
     @Given("the user is on the Welcome page")
-    public void givenTheUserIsOnTheWelcomePage() {
+    public void theUserIsOnTheWelcomePage() {
         steps.is_the_home_page();
     }
 
-/////////////////////////////           CLICK               ////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
     @When("^click \"([^\"]*)\" link$")
     public void clickLink(String arg0) throws Throwable {
         steps.clickLink(arg0);
     }
 
-/////////////////////////////          1ST TEST CASE         ///////////////////////////////////////////////////////////
-
-    @Then("^check that site logo is presented$")
-    public void checkThatSiteLogoIsPresented() throws Throwable {
-        steps.logoAppear();
+    @Then("^check that \"([^\"]*)\" page is opened$")
+    public void checkThatPageIsOpened(String arg0) throws Throwable {
+        steps.checkThatPageIsOpened(arg0);
     }
 
-/////////////////////////////          2ND TEST CASE         ////////////////////////////////////////
-
-    @Then("^check that title of the first product block is presented$")
-    public void checkThatTitleOfTheFirstProductBlockIsPresented() throws Throwable {
-        steps.titleDisplayed();
-    }
-
-/////////////////////////////          3RD TEST CASE         ////////////////////////////////////////
-
-    @Then("^check that Showing results labes is appears$")
-    public void checkThatShowingResultsLabesIsAppears() throws Throwable {
-        steps.labelIsDisplayed();
-    }
-
-/////////////////////////////          4th TEST CASE         ////////////////////////////////////////
-
-    @Then("check that BLOG header is appears")
-    public void checkThatBlogsHeaderDisplayed() throws Throwable {
-        steps.blogsHeaderIsDisplayed();
-    }
-/////////////////////////////          5th TEST CASE         ///////////////////////////////////////////////////////////
-
-    @Then("^check that CONTACTS header is appears$")
-    public void checkThatCONTACTSHeaderIsAppears() throws Throwable {
-        steps.contactsHeaderDisplayed();
-    }
-
-    /////////////////////////////          6th TEST CASE         ////////////////////////////////////////////////////////
+//TODO:////////////////////////////////         OUR SPECIAL OFFERS          ////////////////////////////////////////////
 
     @When("^move mouse to the \"([^\"]*)\" block picture$")
-    public void moveMouseToTheFirstBlockPicture(String arg0) throws Throwable {
-        steps.moveMouseToPicture(arg0);
+    public void moveMouse(String arg0) throws Throwable {
+        steps.moveMouse(arg0);
     }
+
 
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
     public void checkThatBlockContainsTitle(String arg0, String food) throws Throwable {
         steps.titleIsDisplayed(arg0, food);
     }
 
-    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
-    public void checkThatBlockContainsLink(String arg0, String more) throws Throwable {
-        steps.moreIsDisplayed(arg0, more);
-    }
-
-    @Then("^check that \"([^\"]*)\" block contains small description$")
-    public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
-        steps.descriptionIsDisplayed(arg0);
-    }
+//    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
+//    public void checkThatBlockContainsLink(String arg0, String more) throws Throwable {
+//        steps.moreIsDisplayed(arg0, more);
+//    }
+//
+//    @Then("^check that \"([^\"]*)\" block contains small description$")
+//    public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
+//        steps.descriptionIsDisplayed(arg0);
+//    }
 ///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
@@ -126,7 +98,7 @@ public class DefinitionSteps {
        steps.theUserIsOnTheProductsPage();
     }
 
-    //TODO:////////////////////////////          CHECKING PRODUCT BLOCKS          //////////////////////////////////////////
+//TODO:////////////////////////////          CHECKING PRODUCT BLOCKS          //////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" product block title$")
     public void clickingOnTheProductBlockTitle(String arg0) throws Throwable {
@@ -160,6 +132,7 @@ public class DefinitionSteps {
         steps.LoginPageIsOpened(arg0);
     }
 
+//TODO:////////////////////////////////     CATEGORIES      ////////////////////////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" category$")
     public void clickingOnTheCategory(String arg0) throws Throwable {
@@ -171,25 +144,81 @@ public class DefinitionSteps {
         steps.categoryIsActive(arg0);
     }
 
+//TODO://////////////////////////////           DROPDOWN BUTTONS         ///////////////////////////////////////////////
+
     @When("^click on the \"([^\"]*)\" button$")
     public void clickOnTheButton(String arg0) throws Throwable {
-        steps.clickOnThePageOf(arg0);
+        steps.clickOnTheButton(arg0);
     }
 
-    @Then("^dropdown menu is opened and contains \"([^\"]*)\" elements$")
-    public void dropdownMenuIsOpened(String arg0) throws Throwable {
-        steps.PageOfDropDownMenuIsOpened(arg0);
+    @Then("^dropdown menu is opened$")
+    public void dropdownMenuIsOpened() throws Throwable {
+        steps.dropdownMenuIsOpened();
     }
 
-    @Then("^dropdown menu is opened and contains elements$")
-    public void dropdownMenuIsOpenedAndContainsElements() throws Throwable {
-        steps.dropdownMenuIsOpenedAndContainsElements();
+    @Then("^dropdown menu contains \"([^\"]*)\" elements$")
+    public void dropdownMenuContainsElements(String arg0) throws Throwable {
+        steps.dropDownMenuContains(arg0);
     }
 
-    @When("^scroll$")
-    public void scroll() throws Throwable {
-        steps.scroll();
+    @Then("^click on the \"([^\"]*)\" item$")
+    public void clickOnTheItem(String arg0) throws Throwable {
+      steps.clickOnTheDropDownMenuItem(arg0);
     }
+
+    @Then("^page should contains \"([^\"]*)\" product blocks$")
+    public void pageShouldContainsProductBlocks(String arg0) throws Throwable {
+       steps.pageContainsRequiredQuanityOfTheBlocks(arg0);
+    }
+
+//TODO://///////////////////////////////      GRID-LIST VIEW BUTTONS       /////////////////////////////////////////////
+
+    @When("^click on the \"([^\"]*)\" list view$")
+    public void clickOnTheListView(String arg0) throws Throwable {
+        steps.clickChangeViewButton(arg0);
+    }
+
+    @Then("^product blocks are changed to grid view$")
+    public void productBlocksAreChangedToGridView() throws Throwable {
+        steps.productBlocksAreChangedToGridView();
+    }
+
+    @Then("^product blocks are changed to list view$")
+    public void productBlocksAreChangedToListView() throws Throwable {
+        steps.productBlocksAreChangedToListView();
+    }
+
+//TODO://///////////////////////////////      SPECIAL OFFERS PAGE       ////////////////////////////////////////////////
+
+    @Given("^the user is on the Special offers page$")
+    public void theUserIsOnTheSpecialOffersPage() throws Throwable {
+       steps.theUserIsOnTheSpecialOffersPage();
+    }
+
+    @When("^move mouse to the \"([^\"]*)\" product picture$")
+    public void moveMouseToTheProductPicture(String arg0) throws Throwable {
+        steps.move(arg0);
+    }
+
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains \"([^\"]*)\" title$")
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0,String arg1) throws Throwable {
+        steps.checkThatPictureIsChangedAndContainsTitle(arg0,arg1);
+    }
+
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains small description$")
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsSmallDescription(String arg0) throws Throwable {
+        steps.checkThatPictureIsChangedAndContainsSmallDesc(arg0);
+    }
+
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains \"([^\"]*)\" link$")
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsLink(String arg0, String arg1) throws Throwable {
+        steps.checkThatPictureIsChangedAndContainsReadMore(arg0,arg1);
+    }
+
+
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 }
 
 

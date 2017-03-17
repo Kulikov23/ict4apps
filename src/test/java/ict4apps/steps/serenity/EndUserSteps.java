@@ -1,6 +1,7 @@
 package ict4apps.steps.serenity;
 
 import ict4apps.pages.ProductsPage;
+import ict4apps.pages.SpecialOffersPage;
 import ict4apps.pages.WelcomePage;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
@@ -12,11 +13,16 @@ import static org.hamcrest.Matchers.hasItem;
 
 public class EndUserSteps {
 
-    private WelcomePage welcomePage;
+    WelcomePage welcomePage;
     ProductsPage productsPage;
+    SpecialOffersPage specialOffersPage;
+
+//TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
     @Step
-    public void is_the_home_page() { welcomePage.open(); }
+    public void is_the_home_page() {
+        welcomePage.open();
+    }
 
     @Step
     public void clickLink(String arg0) {
@@ -24,37 +30,13 @@ public class EndUserSteps {
     }
 
     @Step
-    public void logoAppear() {
-        Assert.assertTrue(welcomePage.siteLogoIsAppeares().isDisplayed());
+    public void checkThatPageIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageIsOpened(arg0));
     }
 
-    @Step
-    public void titleDisplayed() {
-        Assert.assertTrue(welcomePage.titleDisplayed().isDisplayed());
-        welcomePage.getDriver().navigate().back();
-    }
+//TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
-    @Step
-    public void labelIsDisplayed() {
-        Assert.assertTrue(welcomePage.labelDisplayed().isDisplayed());
-        welcomePage.getDriver().navigate().back();
-    }
-
-    @Step
-    public void blogsHeaderIsDisplayed() {
-        Assert.assertTrue(welcomePage.blogsHeaderDisplayed().isDisplayed());
-        welcomePage.getDriver().navigate().back();
-    }
-
-    @Step
-    public void contactsHeaderDisplayed() {
-        Assert.assertTrue(welcomePage.contactsHeader_displayed().isDisplayed());
-    }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    @Step
-    public void moveMouseToPicture(String arg0) {
+    public void moveMouse(String arg0) {
         welcomePage.moveAction(arg0);
     }
 
@@ -63,15 +45,15 @@ public class EndUserSteps {
         Assert.assertTrue(welcomePage.titleWithStr(arg0,food));
     }
 
-    @Step
-    public void moreIsDisplayed(String arg0,String more) {
-        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0,more));
-    }
-
-    @Step
-    public void descriptionIsDisplayed(String arg0) {
-        Assert.assertTrue(welcomePage.descriptionIsDisplayed(arg0));
-    }
+//    @Step
+//    public void moreIsDisplayed(String arg0,String more) {
+//        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0,more));
+//    }
+//
+//    @Step
+//    public void descriptionIsDisplayed(String arg0) {
+//        Assert.assertTrue(welcomePage.descriptionIsDisplayed(arg0));
+//    }
 
     @Step
     public void clickScrollButton(String direction,String arg0) {
@@ -114,7 +96,9 @@ public class EndUserSteps {
 //TODO:////////////////////////////////         PRODUCTS PAGE         //////////////////////////////////////////////////
 
     @Step
-    public void theUserIsOnTheProductsPage() {productsPage.open(); }
+    public void theUserIsOnTheProductsPage() {
+        productsPage.open();
+    }
 
 //TODO:////////////////////////////         CHECKING PRODUCT BLOCKS         ////////////////////////////////////////////
 
@@ -155,6 +139,8 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains(arg0));
     }
 
+//TODO:////////////////////////////////     CATEGORIES      ////////////////////////////////////////////////////////////
+
     @Step
     public void clickOnTheCategory(String arg0) {
         productsPage.clickOnTheCategory(arg0);
@@ -165,22 +151,80 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.categoryIsActive(arg0));
     }
 
+//TODO://////////////////////////////           DROPDOWN BUTTONS         ///////////////////////////////////////////////
+
     @Step
-    public void clickOnThePageOf(String arg0) {
-        productsPage.clickOnThePageOf(arg0);
+    public void clickOnTheButton(String arg0) {
+        productsPage.clickOnTheButton(arg0);
     }
 
     @Step
-    public void PageOfDropDownMenuIsOpened(String arg0) {
-        Assert.assertTrue(productsPage.PageOfDropDownMenuIsOpened(arg0));
-    }
-
-    @Step
-    public void dropdownMenuIsOpenedAndContainsElements() {
+    public void dropdownMenuIsOpened() {
         Assert.assertTrue(productsPage.dropdownMenuIsOpened());
     }
 
-    public void scroll() {
-        productsPage.scroll();
+    @Step
+    public void dropDownMenuContains(String arg0) {
+       Assert.assertTrue(productsPage.dropDownMenuContains(arg0));
     }
+
+    @Step
+    public void clickOnTheDropDownMenuItem(String arg0) {
+      productsPage.clickOnTheDropDownMenuItem(arg0);
+    }
+
+    @Step
+    public void pageContainsRequiredQuanityOfTheBlocks(String arg0) {
+        Assert.assertTrue(productsPage.pageContainsRequiredQuanityOfBlocks(arg0));
+    }
+
+    @Step
+    public void clickChangeViewButton(String arg0) {
+        productsPage.clickChangeViewButton(arg0);
+    }
+
+//TODO://///////////////////////////////      GRID-LIST VIEW BUTTONS       /////////////////////////////////////////////
+
+    @Step
+    public void productBlocksAreChangedToGridView() {
+       Assert.assertFalse(productsPage.productBlocksAreChangedView());
+    }
+
+    @Step
+    public void productBlocksAreChangedToListView() {
+        Assert.assertTrue(productsPage.productBlocksAreChangedView());
+    }
+
+//TODO://///////////////////////////////      SPECIAL OFFERS PAGE       ////////////////////////////////////////////////
+
+    @Step
+    public void theUserIsOnTheSpecialOffersPage() {
+        specialOffersPage.open();
+    }
+
+    @Step
+    public void move(String arg0) {
+        specialOffersPage.move(arg0);
+    }
+
+    @Step
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0,String arg1) {
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsTitle(arg0,arg1));
+    }
+
+    @Step
+    public void checkThatPictureIsChangedAndContainsSmallDesc(String arg0) {
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsSmallDesc(arg0));
+    }
+
+    @Step
+    public void checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) throws InterruptedException {
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsReadMore(arg0,arg1));
+    }
+
+//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 }

@@ -1,15 +1,16 @@
 package ict4apps.pages;
 
 import ict4apps.Locators;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-import org.openqa.selenium.By;
+import org.codehaus.groovy.runtime.powerassert.SourceText;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/products")
 public class ProductsPage extends PageObject {
@@ -58,23 +59,40 @@ public class ProductsPage extends PageObject {
         getDriver().switchTo().window(windows.get(x));
     }
 
-//TODO://///////////////////////////////        SCROLL      ////////////////////////////////////////////////////////////
+//TODO://///////////////////////////////        JavascriptExecutor      ////////////////////////////////////////////////
 
-//    public void scroll() {
-//        JavascriptExecutor js = (JavascriptExecutor)getDriver();
-//        for (int i=0;i<1000;i++) {
-//            js.executeScript("window.scrollBy(0,1500)");
-//            js.executeScript("window.scrollBy(0,-1500)");
-//        }
-//    }
-
-    public void scroll() {
+    public JavascriptExecutor jsExecutor(){
         JavascriptExecutor js = (JavascriptExecutor)getDriver();
+        return js;
+    }
+
+    public void scroll(){
         for (int i=0;i<1000;i++) {
             waitABit(10);
-            js.executeScript("window.scrollBy(0,1)");
-         //   js.executeScript("window.scrollBy(0,-1500)");
+            jsExecutor().executeScript("window.scrollBy(0,1)");
         }
+    }
+
+    public void alert (){
+        jsExecutor().executeScript("alert('SAMPLE TEXT');");
+        waitABit(3000);
+    }
+
+    public void dom() {
+        JavascriptExecutor js = (JavascriptExecutor)getDriver();
+        String sDomain = js.executeScript("return document.domain;").toString();
+        System.out.println("Domain = " + sDomain);
+    }
+
+    public void getCoockie() {
+        Cookie cookie = new Cookie("key", "value");
+        getDriver().manage().addCookie(cookie);
+        Set<Cookie> allCookies = getDriver().manage().getCookies();
+        for (Cookie loadedCookie : allCookies) {
+
+            System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
+        }
+
     }
 
 //TODO:////////////////////////////////     CATEGORIES      ////////////////////////////////////////////////////////////
@@ -85,21 +103,54 @@ public class ProductsPage extends PageObject {
 
     public boolean categoryIsActive(String arg0) {
         return $(Locators.ACTIVE_CATEGORY.replace("$1",arg0)).isVisible();
-
     }
 
-    public void clickOnThePageOf(String arg0) {
-        $(Locators.PAGE_OF_BUTTON.replace("$1",arg0)).click();
+//TODO://////////////////////////////           DROPDOWN BUTTONS         ///////////////////////////////////////////////
+
+    public void clickOnTheButton(String arg0) {
+        $(Locators.DROPDOWN_BUTTON.replace("$1",arg0)).click();
         waitABit(1500);
     }
 
-    public boolean PageOfDropDownMenuIsOpened(String arg0) {
-        return $(Locators.PAGE_OF_DROPDOWN_MENU.replace("$1", arg0)).isVisible();
+    public boolean dropdownMenuIsOpened() {
+        return $(Locators.DROPDOWN_MENU_ELEMENTS).isVisible();
     }
 
-    public boolean dropdownMenuIsOpened() {
-        return $(Locators.PAGE_OF_DROPDOWN_MENU).isVisible();
+    public boolean dropDownMenuContains(String arg0) {
+       int i = findAll(Locators.DROPDOWN_MENU_ELEMENTS).size();
+        Integer b = Integer.parseInt(arg0);
+       return i==b;
     }
+
+    public void clickOnTheDropDownMenuItem(String arg0) {
+       $(Locators.DROPDOWN_MENU_ELEMENTS.replace("*",arg0)).click();
+       waitABit(3000);
+    }
+
+    public boolean pageContainsRequiredQuanityOfBlocks(String arg0) {
+        int i = findAll(Locators.PRODUCT_BLOCK).size();
+        Integer b = Integer.parseInt(arg0);
+        return i==b;
+    }
+
+//TODO://///////////////////////////////      GRID-LIST VIEW BUTTONS       /////////////////////////////////////////////
+
+    public void clickChangeViewButton(String arg0) {
+        $(Locators.CHANGE_VIEW_BUTTON.replace("$1",arg0)).click();
+        waitABit(2000);
+    }
+
+    public boolean productBlocksAreChangedView() {
+        return  $(Locators.TITLE_PRODUCTS.replace("$1","1")).isVisible();
+    }
+
+
+
+
+
+
+
+
 
 }
 

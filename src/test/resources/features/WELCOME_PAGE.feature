@@ -5,45 +5,29 @@ Feature: WELCOME PAGE
 
   Scenario: 01
     When click "Welcome" link
-    Then check that site logo is presented
+    Then check that "welcome" page is opened
+    When click "Products" link
+    Then check that "products" page is opened
+    When click "Special Offers" link
+    Then check that "special-offers" page is opened
+    When click "Blogs" link
+    Then check that "blogs" page is opened
+    When click "Contact Us" link
+    Then check that "contact-us" page is opened
 
   Scenario: 02
-    When click "Products" link
-    Then check that title of the first product block is presented
+    When move mouse to the "4" block picture
+    Then check that "4" block contains "Bacon and Tomato Sandwich" title
+#    Then check that "1" block contains small description
+#    Then check that "1" block contains "More" link
 
-  Scenario: 03
-    When click "Special Offers" link
-    Then check that Showing results labes is appears
 
-  Scenario: 04
-    When click "Blog" link
-    Then check that BLOG header is appears
-
-  Scenario: 05
-    When click "Contact Us" link
-    Then check that CONTACTS header is appears
-
-  Scenario: 06
-    When move mouse to the "first" block picture
-    Then check that "first" block contains "Bacon and Tomato Sandwich" title
-    Then check that "first" block contains small description
-    Then check that "first" block contains "More" link
-
-  Scenario: 07
-    When move mouse to the "third" block picture
-    Then check that "third" block contains "Classic Canapes" title
-    Then check that "third" block contains small description
-    Then check that "third" block contains "More" link
 
   Scenario: 08
     When click on the scroll button "right" of the "OUR SPECIAL OFFERS" picture carousel
 #    Then check that pictures are changed
 
-  Scenario: 09
-    When move mouse to the "fifth" block picture
-    Then check that "fifth" block contains "Classic Mushroom Soup" title
-    Then check that "fifth" block contains small description
-    Then check that "fifth" block contains "More" link
+
 
   Scenario: 10
     When click on the scroll button "left" of the "OUR SPECIAL OFFERS" picture carousel
