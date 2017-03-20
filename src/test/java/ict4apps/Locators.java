@@ -75,7 +75,10 @@ public interface Locators {
     String BLOGS_PAGE_BREADCRUMB = "//ul//li[@class='active last breadcrumb-truncate']";
     String BLOGS_PAGE_NEWS_SITE_HEADER = "//*[contains(text(),'$1')]";
 
-    //*[contains(text(),'Online giants must bolster free speech against abuse, or watch innovation die')]
+
+    //TODO: CONTACT US PAGE
+
+    String CONTACT_US_PAGE_SEND_BUTTON = "//button[contains(text(),'$1')]";
 
 
 }

@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 import static org.codehaus.groovy.runtime.DefaultGroovyMethods.findAll;
 
-
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
 
@@ -66,7 +65,7 @@ public class BlogsPage extends PageObject {
         return x;
     }
 
-//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
+//TODO:///////////////////        CLICK ON THE VIEW ORIGINAL POST IS OPENING OUR CHOSEN BLOG        ////////////////////
 
     public void clickingOnTheViewOriginalPost(String arg0) {
         title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
@@ -82,7 +81,6 @@ public class BlogsPage extends PageObject {
         waitABit(1500);
         return x;
     }
-
 
 
 }

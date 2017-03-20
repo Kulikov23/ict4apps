@@ -1,4 +1,4 @@
-Feature: SPECIAL OFFERS
+Feature: SPECIAL OFFERS PAGE
 
   Background:
     Given the user is on the Special offers page

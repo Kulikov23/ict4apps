@@ -1,9 +1,6 @@
 package ict4apps.steps.serenity;
 
-import ict4apps.pages.BlogsPage;
-import ict4apps.pages.ProductsPage;
-import ict4apps.pages.SpecialOffersPage;
-import ict4apps.pages.WelcomePage;
+import ict4apps.pages.*;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
@@ -19,6 +16,7 @@ public class EndUserSteps {
     ProductsPage productsPage;
     SpecialOffersPage specialOffersPage;
     BlogsPage blogsPage;
+    ContactUs contactUs;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -280,6 +278,18 @@ public class EndUserSteps {
     @Step
     public void checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         Assert.assertTrue(blogsPage.checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage());
+    }
+
+//TODO://////////////////////////////////         CONTACT US PAGE        ///////////////////////////////////////////////
+
+    @Step
+    public void theUserIsOnTheContactUsPage() {
+        contactUs.open();
+    }
+
+    @Step
+    public void clickOnTheSendButton(String arg0) {
+        contactUs.clickOnTheSendButton(arg0);
     }
 }
 

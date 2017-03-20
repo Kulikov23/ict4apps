@@ -1,4 +1,4 @@
-Feature: WELCOME PAGE
+Feature: BLOGS PAGE
 
   Background:
     Given the user is on the Blogs page

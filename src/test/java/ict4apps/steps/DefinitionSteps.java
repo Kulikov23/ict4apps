@@ -272,7 +272,19 @@ public class DefinitionSteps {
 
     @Then("^checking that click on the View Original Post is opening news website with our chosen blog$")
     public void checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPageOfTheNewsSite() throws Throwable {
-       steps.checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage();
+        steps.checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage();
+    }
+
+//TODO://////////////////////////////////         CONTACT US PAGE        ///////////////////////////////////////////////
+
+    @Given("^the user is on the Contact Us page$")
+    public void theUserIsOnTheContactUsPage() throws Throwable {
+        steps.theUserIsOnTheContactUsPage();
+    }
+
+    @When("^clicking on the \"([^\"]*)\" button$")
+    public void clickingOnTheButton(String arg0) throws Throwable {
+        steps.clickOnTheSendButton(arg0);
     }
 }
 
