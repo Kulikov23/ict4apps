@@ -14,9 +14,9 @@ Feature: SPECIAL OFFERS
     Then check that picture of the "<ProductBlock>" product block is changed and contains "Read More" link
     Examples:
       | ProductBlock |
-      |      1       |
-      |      6       |
-      |     12       |
+      | 1            |
+      | 6            |
+      | 12           |
 
   Scenario: 03
     When click on the "list" list view
@@ -40,7 +40,7 @@ Feature: SPECIAL OFFERS
     When clicking on the "<ProductBlock>" product block READ MORE link
     Examples:
       | ProductBlock |
-      |      1       |
-      |      6       |
-      |     12       |
+      | 1            |
+      | 6            |
+      | 12           |
 

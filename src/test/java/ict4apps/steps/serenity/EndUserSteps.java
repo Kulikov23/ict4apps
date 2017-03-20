@@ -1,5 +1,7 @@
 package ict4apps.steps.serenity;
 
+import ict4apps.Locators;
+import ict4apps.pages.BlogsPage;
 import ict4apps.pages.ProductsPage;
 import ict4apps.pages.SpecialOffersPage;
 import ict4apps.pages.WelcomePage;
@@ -8,6 +10,7 @@ import org.junit.Assert;
 
 import java.util.Map;
 
+import static org.codehaus.groovy.runtime.DefaultGroovyMethods.findAll;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
 
@@ -16,6 +19,7 @@ public class EndUserSteps {
     WelcomePage welcomePage;
     ProductsPage productsPage;
     SpecialOffersPage specialOffersPage;
+    BlogsPage blogsPage;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -23,6 +27,8 @@ public class EndUserSteps {
     public void is_the_home_page() {
         welcomePage.open();
     }
+
+//TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
     @Step
     public void clickLink(String arg0) {
@@ -41,8 +47,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void titleIsDisplayed(String arg0,String food) {
-        Assert.assertTrue(welcomePage.titleWithStr(arg0,food));
+    public void titleIsDisplayed(String arg0, String food) {
+        Assert.assertTrue(welcomePage.titleWithStr(arg0, food));
     }
 
 //    @Step
@@ -56,11 +62,11 @@ public class EndUserSteps {
 //    }
 
     @Step
-    public void clickScrollButton(String direction,String arg0) {
-        welcomePage.clickScrollButton(direction,arg0);
+    public void clickScrollButton(String direction, String arg0) {
+        welcomePage.clickScrollButton(direction, arg0);
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////
 
     @Step
     public void clickOnBlog(String arg0) {
@@ -69,9 +75,11 @@ public class EndUserSteps {
 
     @Step
     public void linksArePresented(String arg0, String arg1) {
-        Assert.assertTrue(welcomePage.viewOriginalPostLinkIsPresented(arg0,arg1));
-        Assert.assertTrue(welcomePage.readMoreLinkIsPresented(arg0,arg1));
+        Assert.assertTrue(welcomePage.viewOriginalPostLinkIsPresented(arg0, arg1));
+        Assert.assertTrue(welcomePage.readMoreLinkIsPresented(arg0, arg1));
     }
+
+//TODO://////////////////////////////////           LANGUAGE LIST             //////////////////////////////////////////
 
     @Step
     public void getListOfLanguages() {
@@ -83,14 +91,16 @@ public class EndUserSteps {
         Assert.assertTrue(welcomePage.checkCorrectOrderTheLanguages(arg0));
     }
 
+//TODO://////////////////////////////////           FOOD DELIVERY BOXES             ////////////////////////////////////
+
     @Step
     public void moveToPicture(String arg0) {
         welcomePage.moveToPicture(arg0);
     }
 
     @Step
-    public void checkTactTitleIsDisplayed(String arg0,String arg1) {
-        Assert.assertTrue(welcomePage.checkThatTitleIsDisplayed(arg0,arg1));
+    public void checkTactTitleIsDisplayed(String arg0, String arg1) {
+        Assert.assertTrue(welcomePage.checkThatTitleIsDisplayed(arg0, arg1));
     }
 
 //TODO:////////////////////////////////         PRODUCTS PAGE         //////////////////////////////////////////////////
@@ -112,26 +122,26 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatTitleIsPresented());
         Assert.assertTrue(productsPage.checkThatPictureIsPresented());
         Assert.assertTrue(productsPage.checkThatDescriptionIsPresented());
-        productsPage.getDriver().navigate().back();
+        productsPage.back();
     }
 
     @Step
     public void clickOnTheProductPicture(String arg0) {
         productsPage.clickOnPicture_products(arg0);
-        productsPage.getDriver().navigate().back();
+        productsPage.back();
     }
 
     @Step
     public void clickOnTheProductReadMoreLink(String arg0) {
         productsPage.clickOnReadMore_products(arg0);
-        productsPage.getDriver().navigate().back();
+        productsPage.back();
     }
 
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
 
     @Step
-    public void clickingOnTheSocialLinks(String arg0,String arg1) {
-        productsPage.clickingOnTheSocialLinks(arg0,arg1);
+    public void clickingOnTheSocialLinks(String arg0, String arg1) {
+        productsPage.clickingOnTheSocialLinks(arg0, arg1);
     }
 
     @Step
@@ -165,12 +175,12 @@ public class EndUserSteps {
 
     @Step
     public void dropDownMenuContains(String arg0) {
-       Assert.assertTrue(productsPage.dropDownMenuContains(arg0));
+        Assert.assertTrue(productsPage.dropDownMenuContains(arg0));
     }
 
     @Step
     public void clickOnTheDropDownMenuItem(String arg0) {
-      productsPage.clickOnTheDropDownMenuItem(arg0);
+        productsPage.clickOnTheDropDownMenuItem(arg0);
     }
 
     @Step
@@ -187,7 +197,7 @@ public class EndUserSteps {
 
     @Step
     public void productBlocksAreChangedToGridView() {
-       Assert.assertFalse(productsPage.productBlocksAreChangedView());
+        Assert.assertFalse(productsPage.productBlocksAreChangedView());
     }
 
     @Step
@@ -208,8 +218,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void checkThatPictureIsChangedAndContainsTitle(String arg0,String arg1) {
-        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsTitle(arg0,arg1));
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0, String arg1) {
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsTitle(arg0, arg1));
     }
 
     @Step
@@ -219,12 +229,48 @@ public class EndUserSteps {
 
     @Step
     public void checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) throws InterruptedException {
-        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsReadMore(arg0,arg1));
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsReadMore(arg0, arg1));
     }
 
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO:////////////////////////////////         BLOGS PAGE           ///////////////////////////////////////////////////
 
+    @Step
+    public void theUserIsOnTheBlogsPage() {
+        blogsPage.open();
+    }
 
+    @Step
+    public void pageContainsRequiredQuanityOfTheBlogBlocks(String arg0) {
+        Assert.assertTrue(blogsPage.pageContainsRequiredQuanityOfBlogBlocks(arg0));
+    }
 
+    @Step
+    public void clickOnTheBlockTitle(String arg0) {
+        blogsPage.clickOnTheBlockTitle(arg0);
+    }
 
+    @Step
+    public void clickOnTheBlogPicture(String arg0) {
+        blogsPage.back();
+        blogsPage.clickOnTheBlockPicture(arg0);
+    }
+
+    @Step
+    public void clickOnTheBlockMoreLink(String arg0) {
+        blogsPage.back();
+        blogsPage.clickOnTheBlockMoreLink(arg0);
+    }
+
+//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
+
+    @Step
+    public void clickOnTheRssLink(String arg0) {
+        blogsPage.clickOnTheRssLink(arg0);
+    }
+
+    @Step
+    public void checkThatRssSubscribePageIsOpened() {
+        Assert.assertFalse(blogsPage.checkThatRssSubscribePageIsOpened());
+    }
 }
+

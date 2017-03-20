@@ -63,7 +63,7 @@ public class DefinitionSteps {
         steps.clickScrollButton(direction, arg0);
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////
 
     @When("^clicking on the blog links \"([^\"]*)\"$")
     public void clickingOnTheBlogLinks(String arg0) throws Throwable {
@@ -75,11 +75,15 @@ public class DefinitionSteps {
         steps.linksArePresented(arg0, arg1);
     }
 
+//TODO://////////////////////////////////           LANGUAGE LIST             //////////////////////////////////////////
+
     @Then("^the languages should be in the correct order:$")
     public void theLanguagesShouldBeInTheCorrectOrder(Map<Integer, String> arg0) throws Throwable {
         steps.getListOfLanguages();
         steps.checkCorrectOrderTheLanguages(arg0);
     }
+
+//TODO://////////////////////////////////           FOOD DELIVERY BOXES             ////////////////////////////////////
 
     @When("^moving on the block \"([^\"]*)\"$")
     public void checkingThatElementsChangingPictures(String arg0) throws Throwable {
@@ -95,7 +99,7 @@ public class DefinitionSteps {
 
     @Given("^the user is on the Products page$")
     public void theUserIsOnTheProductsPage() throws Throwable {
-       steps.theUserIsOnTheProductsPage();
+        steps.theUserIsOnTheProductsPage();
     }
 
 //TODO:////////////////////////////          CHECKING PRODUCT BLOCKS          //////////////////////////////////////////
@@ -124,7 +128,7 @@ public class DefinitionSteps {
 
     @When("^clicking on the \"([^\"]*)\" social network icon of the \"([^\"]*)\" block$")
     public void clickingOnTheSocialLinks(String arg0, String arg1) throws Throwable {
-       steps.clickingOnTheSocialLinks(arg0,arg1);
+        steps.clickingOnTheSocialLinks(arg0, arg1);
     }
 
     @Then("^checking that login page is opened and contains \"([^\"]*)\"$")
@@ -163,12 +167,12 @@ public class DefinitionSteps {
 
     @Then("^click on the \"([^\"]*)\" item$")
     public void clickOnTheItem(String arg0) throws Throwable {
-      steps.clickOnTheDropDownMenuItem(arg0);
+        steps.clickOnTheDropDownMenuItem(arg0);
     }
 
     @Then("^page should contains \"([^\"]*)\" product blocks$")
     public void pageShouldContainsProductBlocks(String arg0) throws Throwable {
-       steps.pageContainsRequiredQuanityOfTheBlocks(arg0);
+        steps.pageContainsRequiredQuanityOfTheBlocks(arg0);
     }
 
 //TODO://///////////////////////////////      GRID-LIST VIEW BUTTONS       /////////////////////////////////////////////
@@ -192,7 +196,7 @@ public class DefinitionSteps {
 
     @Given("^the user is on the Special offers page$")
     public void theUserIsOnTheSpecialOffersPage() throws Throwable {
-       steps.theUserIsOnTheSpecialOffersPage();
+        steps.theUserIsOnTheSpecialOffersPage();
     }
 
     @When("^move mouse to the \"([^\"]*)\" product picture$")
@@ -201,8 +205,8 @@ public class DefinitionSteps {
     }
 
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains \"([^\"]*)\" title$")
-    public void checkThatPictureIsChangedAndContainsTitle(String arg0,String arg1) throws Throwable {
-        steps.checkThatPictureIsChangedAndContainsTitle(arg0,arg1);
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0, String arg1) throws Throwable {
+        steps.checkThatPictureIsChangedAndContainsTitle(arg0, arg1);
     }
 
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains small description$")
@@ -212,13 +216,50 @@ public class DefinitionSteps {
 
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains \"([^\"]*)\" link$")
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsLink(String arg0, String arg1) throws Throwable {
-        steps.checkThatPictureIsChangedAndContainsReadMore(arg0,arg1);
+        steps.checkThatPictureIsChangedAndContainsReadMore(arg0, arg1);
+    }
+
+//TODO:////////////////////////////////         BLOGS PAGE           ///////////////////////////////////////////////////
+
+    @Given("^the user is on the Blogs page$")
+    public void theUserIsOnTheBlogsPage() throws Throwable {
+        steps.theUserIsOnTheBlogsPage();
+    }
+
+//TODO://////////////////////////////////         BLOG BLOCKS        ///////////////////////////////////////////////////
+
+    @Then("^page should contain \"([^\"]*)\" blog blocks$")
+    public void pageShouldContainsBlogBlocks(String arg0) throws Throwable {
+        steps.pageContainsRequiredQuanityOfTheBlogBlocks(arg0);
+    }
+
+    @When("^clicking on the \"([^\"]*)\" blog block title$")
+    public void clickingOnTheBlogBlockTitle(String arg0) throws Throwable {
+        steps.clickOnTheBlockTitle(arg0);
+    }
+
+    @When("^clicking on the \"([^\"]*)\" blog block picture$")
+    public void clickingOnTheBlogBlockPicture(String arg0) throws Throwable {
+        steps.clickOnTheBlogPicture(arg0);
     }
 
 
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @When("^clicking on the \"([^\"]*)\" blog block MORE link$")
+    public void clickingOnTheBlogBlockREADMORELink(String arg0) throws Throwable {
+        steps.clickOnTheBlockMoreLink(arg0);
+    }
 
+//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
 
+    @When("^clicking on the \"([^\"]*)\" link$")
+    public void clickingOnTheLink(String arg0) throws Throwable {
+        steps.clickOnTheRssLink(arg0);
+    }
+
+    @Then("^check that rss subscribe page is opened$")
+    public void checkThatRssSubscribePageIsOpened() throws Throwable {
+        steps.checkThatRssSubscribePageIsOpened();
+    }
 }
 
 

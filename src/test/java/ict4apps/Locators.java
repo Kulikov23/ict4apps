@@ -10,13 +10,13 @@ public interface Locators {
 
     String WELCOME_PAGE_PRODUCT_BLOCK_PICTURE = "(//div[@class='product-item__img product-img-intro'])[$1]";
     String TITLE = "(//h3//a[contains(text(),'$1')])[$2]";
-    String MORE_LINK  = "(//div//a[contains(text(),'$1')])[$2]";
-    String DESCRIPTION  = "(//div[@class='gallery-product__introtext'])[$1]";
+    String MORE_LINK = "(//div//a[contains(text(),'$1')])[$2]";
+    String DESCRIPTION = "(//div[@class='gallery-product__introtext'])[$1]";
     String SCROLL_BUTTON = "(//div//button[contains(text(),'$2')])[$1]";
 
     //TODO: BLOG LIST
 
-    String BLOG_LIST = "(//h3[@class='asset-title']//a)[$1]";
+    String WELCOME_PAGE_BLOG_LIST = "(//h3[@class='asset-title']//a)[$1]";
     String LINKS = "//a[contains(text(),'$1')]";
 
     //TODO: LANGUAGES
@@ -62,6 +62,15 @@ public interface Locators {
     String SPECIAL_OFFERS_PRODUCT_BLOCK_SMALL_DESC = "(//div[@class='gallery-product__introtext'])[$1]";
     String SPECIAL_OFFERS_PRODUCT_BLOCK_READ_MORE = "(//div[@class='gallery-product__introtext'])[$1]";
 
+    //TODO: BLOGS PAGE
 
+    String BLOGS_PAGE_BLOG_BLOCKS = "//div[@class='entry']";
+    String BLOGS_PAGE_BLOG_TITLE = "(//h2/a)[$1]";
+    String BLOGS_PAGE_BLOG_PICTURE = "(//img[@class='images img-responsive'])[$1]";
+
+    //TODO: RSS
+
+    String BLOGS_PAGE_RSS = "//span[contains(text(),'$1')]";
+    String BLOGS_PAGE_RSS_SUBSCRIBE_BUTTON = ".//*[@id='subscribeButton']";
 
 }

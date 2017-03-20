@@ -1,6 +1,6 @@
 package ict4apps.pages;
 
-import  ict4apps.Locators;
+import ict4apps.Locators;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
@@ -29,18 +29,16 @@ public class WelcomePage extends PageObject {
         return x;
     }
 
-//TODO://////////////////////////////////         MOVE            //////////////////////////////////////////////////////
+//TODO:////////////////////////////////         OUR SPECIAL OFFERS          ////////////////////////////////////////////
 
     public void moveAction(String arg0) {
         Actions actions = new Actions(getDriver());
-        actions.moveToElement($(Locators.WELCOME_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1",arg0))).build().perform();
+        actions.moveToElement($(Locators.WELCOME_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1", arg0))).build().perform();
         waitABit(1500);
     }
 
-//TODO://////////////////////////////////         CHECKING FOR VISIBILITY            ////////////////////////////////////
-
     public boolean titleWithStr(String arg0, String food) {
-        return  $(Locators.TITLE.replace("$1", arg0).replace("$2", food)).isVisible();
+        return $(Locators.TITLE.replace("$1", arg0).replace("$2", food)).isVisible();
     }
 
 //    public boolean moreIsDisplayed(String arg0, String more) {
@@ -101,22 +99,10 @@ public class WelcomePage extends PageObject {
         waitABit(1500);
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////
 
     public void clickBlog(String arg0) {
-
-        String element = "";
-
-        if (arg0.equals("First")) {
-            element = Locators.BLOG_LIST.replace("$1", "1");
-        } else if (arg0.equals("Third")) {
-            element = Locators.BLOG_LIST.replace("$1", "3");
-        } else if (arg0.equals("Fifth")) {
-            element = Locators.BLOG_LIST.replace("$1", "5");
-        }
-
-        $(element).click();
-
+        $(Locators.WELCOME_PAGE_BLOG_LIST.replace("$1", arg0)).click();
     }
 
     public boolean viewOriginalPostLinkIsPresented(String arg0, String arg1) {
@@ -127,7 +113,7 @@ public class WelcomePage extends PageObject {
         return $(Locators.LINKS.replace("$1", arg1)).isPresent();
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////          LANGUAGE LIST            ////////////////////////////////////////////
 
     public void getListOfLanguages() {
         List<WebElementFacade> list = findAll(Locators.LANGUAGES);
@@ -145,7 +131,7 @@ public class WelcomePage extends PageObject {
         return true;
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO://////////////////////////////////           FOOD DELIVERY BOXES             ////////////////////////////////////
 
     public void moveToPicture(String arg0) {
         Actions actions = new Actions(getDriver());
@@ -153,15 +139,12 @@ public class WelcomePage extends PageObject {
         waitABit(1500);
     }
 
-    public boolean checkThatTitleIsDisplayed(String arg0,String arg1) {
+    public boolean checkThatTitleIsDisplayed(String arg0, String arg1) {
         return $(Locators.PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
 
 //TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }
 

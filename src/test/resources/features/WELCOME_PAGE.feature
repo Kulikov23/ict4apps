@@ -38,26 +38,26 @@ Feature: WELCOME PAGE
     Then blog pages contains following links "View Original Post", "Read More"
     Examples:
       | blogNumber |
-      | First      |
-      | Third      |
-      | Fifth      |
+      | 1          |
+      | 3          |
+      | 5          |
 
   Scenario: 12
     Then the languages should be in the correct order:
-      |1| English    |
-      |2| italiano   |
-      |3| українська |
-      |4| русский    |
+      | 1 | English    |
+      | 2 | italiano   |
+      | 3 | українська |
+      | 4 | русский    |
 
   Scenario Outline: 13
     When moving on the block "<pictures>"
     Then checking that elements changing "<pictures>" and contains "<titles>":
     Examples:
-      |   pictures   |    titles     |
-      |      0       |  Appetizers   |
-      |      1       |  Soup menu    |
-      |      2       |  Salads       |
-      |      3       |  Seafood      |
-      |      4       |  Main Courses |
-      |      5       |  Desserts     |
+      | pictures | titles       |
+      | 0        | Appetizers   |
+      | 1        | Soup menu    |
+      | 2        | Salads       |
+      | 3        | Seafood      |
+      | 4        | Main Courses |
+      | 5        | Desserts     |
 
