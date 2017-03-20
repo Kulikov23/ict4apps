@@ -116,7 +116,7 @@ public class WelcomePage extends PageObject {
 //TODO://////////////////////////////////          LANGUAGE LIST            ////////////////////////////////////////////
 
     public void getListOfLanguages() {
-        List<WebElementFacade> list = findAll(Locators.LANGUAGES);
+        List<WebElementFacade> list = findAll(Locators.WELCOME_PAGE_LANGUAGES);
         for (WebElement element : list) {
             languagesList.add(element.getText());
         }
@@ -135,12 +135,12 @@ public class WelcomePage extends PageObject {
 
     public void moveToPicture(String arg0) {
         Actions actions = new Actions(getDriver());
-        actions.moveToElement($(Locators.FOOD_DELIVERY_PICTURES.replace("$1", arg0))).build().perform();
+        actions.moveToElement($(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURES.replace("$1", arg0))).build().perform();
         waitABit(1500);
     }
 
     public boolean checkThatTitleIsDisplayed(String arg0, String arg1) {
-        return $(Locators.PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
+        return $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
 
 //TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////

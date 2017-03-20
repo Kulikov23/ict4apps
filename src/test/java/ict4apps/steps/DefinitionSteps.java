@@ -286,6 +286,18 @@ public class DefinitionSteps {
     public void clickingOnTheButton(String arg0) throws Throwable {
         steps.clickOnTheSendButton(arg0);
     }
+
+    @Then("^check that \"([^\"]*)\" error message is appears")
+    public void checkThatErrorMessageIsAppears(String arg0) throws Throwable {
+        steps.checkThatErrorMessageIsAppears(arg0);
+    }
+
+    @When("^write \"([^\"]*)\" in the \"([^\"]*)\" text box$")
+    public void writeInTheTextBox(String arg0, String arg1) throws Throwable {
+       steps.writeInTheTextBox(arg0,arg1);
+    }
+
+
 }
 
 

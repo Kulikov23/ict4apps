@@ -291,5 +291,15 @@ public class EndUserSteps {
     public void clickOnTheSendButton(String arg0) {
         contactUs.clickOnTheSendButton(arg0);
     }
+
+    @Step
+    public void checkThatErrorMessageIsAppears(String arg0) {
+        Assert.assertTrue(contactUs.checkThatErrorMessageIsAppears(arg0));
+    }
+
+    @Step
+    public void writeInTheTextBox(String arg0, String arg1) {
+        contactUs.writeInTheTextBox(arg0,arg1);
+    }
 }
 

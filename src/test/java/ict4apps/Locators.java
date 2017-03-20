@@ -21,12 +21,12 @@ public interface Locators {
 
     //TODO: LANGUAGES
 
-    String LANGUAGES = "//option[@class='taglib-language-option']";
+    String  WELCOME_PAGE_LANGUAGES = "//option[@class='taglib-language-option']";
 
     //TODO: FOOD DELIVERY BOXES PICTURE CAROUSEL
 
-    String FOOD_DELIVERY_PICTURES = "//li[@class='slick-slide slick-active']/div[@class='item_content num_$1']//a";
-    String PICTURE_TITLE = "//div[@id='column-2']//li[@class!='slick-slide slick-cloned']//div[@class='item_content num_$1']//a";
+    String WELCOME_PAGE_FOOD_DELIVERY_PICTURES = "//li[@class='slick-slide slick-active']/div[@class='item_content num_$1']//a";
+    String WELCOME_PAGE_FOOD_DELIVERY_PICTURE_TITLE = "//div[@id='column-2']//li[@class!='slick-slide slick-cloned']//div[@class='item_content num_$1']//a";
 
     //TODO: GENERAL PRODUCTS PAGE
 
@@ -79,6 +79,9 @@ public interface Locators {
     //TODO: CONTACT US PAGE
 
     String CONTACT_US_PAGE_SEND_BUTTON = "//button[contains(text(),'$1')]";
+    String CONTACT_US_PAGE_ERROR_MSG = "//div[not(@class='hide')]/span[@class='alert alert-error']";
+    String CONTACT_US_PAGE_TEXTBOX = "//label[contains(text(),'$1 *')]/ancestor::div[@class='control-group']/input";
 
+    //label[contains(text(),'Subject *')]/../..//span
 
 }
