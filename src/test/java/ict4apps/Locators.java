@@ -72,5 +72,10 @@ public interface Locators {
 
     String BLOGS_PAGE_RSS = "//span[contains(text(),'$1')]";
     String BLOGS_PAGE_RSS_SUBSCRIBE_BUTTON = ".//*[@id='subscribeButton']";
+    String BLOGS_PAGE_BREADCRUMB = "//ul//li[@class='active last breadcrumb-truncate']";
+    String BLOGS_PAGE_NEWS_SITE_HEADER = "//*[contains(text(),'$1')]";
+
+    //*[contains(text(),'Online giants must bolster free speech against abuse, or watch innovation die')]
+
 
 }

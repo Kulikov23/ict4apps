@@ -154,8 +154,6 @@ public class ProductsPage extends PageObject {
     public boolean productBlocksAreChangedView() {
         return $(Locators.TITLE_PRODUCTS.replace("$1", "1")).isVisible();
     }
-
-
 }
 
 

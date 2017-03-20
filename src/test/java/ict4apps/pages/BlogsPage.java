@@ -3,14 +3,19 @@ package ict4apps.pages;
 import ict4apps.Locators;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import static org.codehaus.groovy.runtime.DefaultGroovyMethods.findAll;
 
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
+
+    String title;
 
     public void back() {
         getDriver().navigate().back();
@@ -60,6 +65,26 @@ public class BlogsPage extends PageObject {
         waitABit(1500);
         return x;
     }
+
+//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
+
+    public void clickingOnTheViewOriginalPost(String arg0) {
+        title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
+        $(Locators.LINKS.replace("$1", arg0)).click();
+        waitABit(1500);
+    }
+
+    public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
+        switchWindow(1);
+        boolean x = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
+        getDriver().close();
+        switchWindow(0);
+        waitABit(1500);
+        return x;
+    }
+
+
+
 }
 
 

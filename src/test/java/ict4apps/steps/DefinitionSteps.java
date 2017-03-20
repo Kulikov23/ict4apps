@@ -260,6 +260,20 @@ public class DefinitionSteps {
     public void checkThatRssSubscribePageIsOpened() throws Throwable {
         steps.checkThatRssSubscribePageIsOpened();
     }
+
+//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
+
+    @When("^clicking on the \"([^\"]*)\"$")
+    public void clickingOnTheIsOpeningNewsWebsiteWithOurChosenBlog(String arg0) throws Throwable {
+        steps.clickingOnTheViewOriginalPost(arg0);
+    }
+
+//TODO:///////////////////        CLICK ON THE VIEW ORIGINAL POST IS OPENING OUR CHOSEN BLOG        ////////////////////
+
+    @Then("^checking that click on the View Original Post is opening news website with our chosen blog$")
+    public void checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPageOfTheNewsSite() throws Throwable {
+       steps.checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage();
+    }
 }
 
 

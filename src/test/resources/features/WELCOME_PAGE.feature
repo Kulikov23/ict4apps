@@ -17,17 +17,15 @@ Feature: WELCOME PAGE
 
   Scenario: 02
     When move mouse to the "4" block picture
-    Then check that "4" block contains "Bacon and Tomato Sandwich" title
+    When move mouse to the "5" block picture
+    When move mouse to the "6" block picture
+#    Then check that "1" block contains "Bacon and Tomato Sandwich" title
 #    Then check that "1" block contains small description
 #    Then check that "1" block contains "More" link
-
-
 
   Scenario: 08
     When click on the scroll button "right" of the "OUR SPECIAL OFFERS" picture carousel
 #    Then check that pictures are changed
-
-
 
   Scenario: 10
     When click on the scroll button "left" of the "OUR SPECIAL OFFERS" picture carousel

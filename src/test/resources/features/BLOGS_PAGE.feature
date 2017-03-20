@@ -18,3 +18,13 @@ Feature: WELCOME PAGE
   Scenario: 02
     When clicking on the "RSS" link
     Then check that rss subscribe page is opened
+
+  Scenario Outline: 03
+    When clicking on the "<BlogBlock>" blog block title
+    When clicking on the "View Original Post"
+    Then checking that click on the View Original Post is opening news website with our chosen blog
+    Examples:
+      | BlogBlock |
+      | 1         |
+      | 11        |
+      | 20        |

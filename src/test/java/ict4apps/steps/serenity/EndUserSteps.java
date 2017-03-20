@@ -1,6 +1,5 @@
 package ict4apps.steps.serenity;
 
-import ict4apps.Locators;
 import ict4apps.pages.BlogsPage;
 import ict4apps.pages.ProductsPage;
 import ict4apps.pages.SpecialOffersPage;
@@ -40,7 +39,7 @@ public class EndUserSteps {
         Assert.assertTrue(welcomePage.checkThatPageIsOpened(arg0));
     }
 
-//TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
+//TODO:////////////////////////////////         OUR SPECIAL OFFERS          ////////////////////////////////////////////
 
     public void moveMouse(String arg0) {
         welcomePage.moveAction(arg0);
@@ -271,6 +270,16 @@ public class EndUserSteps {
     @Step
     public void checkThatRssSubscribePageIsOpened() {
         Assert.assertFalse(blogsPage.checkThatRssSubscribePageIsOpened());
+    }
+
+    @Step
+    public void clickingOnTheViewOriginalPost(String arg0) {
+        blogsPage.clickingOnTheViewOriginalPost(arg0);
+    }
+
+    @Step
+    public void checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
+        Assert.assertTrue(blogsPage.checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage());
     }
 }
 
