@@ -1,12 +1,8 @@
 package ict4apps.pages;
 
 import ict4apps.Locators;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/contact-us")
 public class ContactUs extends PageObject {

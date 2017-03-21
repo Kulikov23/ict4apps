@@ -1,13 +1,10 @@
 package ict4apps.steps;
 
-import cucumber.api.PendingException;
 import net.thucydides.core.annotations.Steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 import ict4apps.steps.serenity.EndUserSteps;
-
 import java.util.Map;
 
 public class DefinitionSteps {
@@ -41,21 +38,21 @@ public class DefinitionSteps {
         steps.moveMouse(arg0);
     }
 
-
-    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" title$")
-    public void checkThatBlockContainsTitle(String arg0, String food) throws Throwable {
-        steps.titleIsDisplayed(arg0, food);
+    @Then("^check that first block contains \"([^\"]*)\" title$")
+    public void checkThatBlockContainsTitle(String arg0) throws Throwable {
+        steps.titleIsDisplayed(arg0);
     }
 
-//    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
-//    public void checkThatBlockContainsLink(String arg0, String more) throws Throwable {
-//        steps.moreIsDisplayed(arg0, more);
-//    }
-//
-//    @Then("^check that \"([^\"]*)\" block contains small description$")
-//    public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
-//        steps.descriptionIsDisplayed(arg0);
-//    }
+    @Then("^check that \"([^\"]*)\" block contains small description$")
+    public void checkThatBlockContainsSmallDescription(String arg0) throws Throwable {
+        steps.descriptionIsDisplayed(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
+    public void checkThatBlockContainsLink(String arg0, String arg1) throws Throwable {
+        steps.moreIsDisplayed(arg0, arg1);
+    }
+
 ///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
@@ -311,6 +308,7 @@ public class DefinitionSteps {
     public void checkThatErrorMessageIsNotAppearsAboveTheTextarea(String arg0, String arg1) throws Throwable {
         steps.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1);
     }
+
 }
 
 

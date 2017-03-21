@@ -4,10 +4,8 @@ import ict4apps.Locators;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
-
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.interactions.Actions;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -37,37 +35,17 @@ public class WelcomePage extends PageObject {
         waitABit(1500);
     }
 
-    public boolean titleWithStr(String arg0, String food) {
-        return $(Locators.TITLE.replace("$1", arg0).replace("$2", food)).isVisible();
+    public boolean titleWithStr(String arg0) {
+        return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).isVisible();
     }
 
-//    public boolean moreIsDisplayed(String arg0, String more) {
-//
-//        String init = "";
+    public boolean descriptionIsDisplayed(String arg0) {
+        return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_DESCRIPTION.replace("$1", arg0)).isVisible();
+    }
 
-//        if (arg0.equals("first")) {
-//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", first);
-//        } else if (arg0.equals("third")) {
-//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", third);
-//        } else if (arg0.equals("fifth")) {
-//            init = Locators.MORE_LINK.replace("$1", more).replace("$2", fifth);
-//        }
-//        return $(init).isPresent();
-//    }
-//
-//    public boolean descriptionIsDisplayed(String arg0) {
-//
-//        String init = "";
-
-//        if (arg0.equals("first")) {
-//            init = Locators.DESCRIPTION.replace("$1", first);
-//        } else if (arg0.equals("third")) {
-//            init = Locators.DESCRIPTION.replace("$1", third);
-//        } else if (arg0.equals("fifth")) {
-//            init = Locators.DESCRIPTION.replace("$1", fifth);
-//        }
-//        return $(init).isPresent();
-//    }
+    public boolean moreIsDisplayed(String arg0, String arg1) {
+        return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2",arg0)).isVisible();
+    }
 
 ///////////////////////////////////     CLICK SCROLL BUTTON     ///////////////////////////////////////////////////////
 
@@ -142,9 +120,6 @@ public class WelcomePage extends PageObject {
     public boolean checkThatTitleIsDisplayed(String arg0, String arg1) {
         return $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
-
-//TODO://///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 }
 

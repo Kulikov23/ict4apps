@@ -16,12 +16,18 @@ Feature: WELCOME PAGE
     Then check that "contact-us" page is opened
 
   Scenario: 02
-    When move mouse to the "4" block picture
-    When move mouse to the "5" block picture
-    When move mouse to the "6" block picture
-#    Then check that "1" block contains "Bacon and Tomato Sandwich" title
-#    Then check that "1" block contains small description
-#    Then check that "1" block contains "More" link
+    When move mouse to the "1" block picture
+    Then check that first block contains "Bacon and Tomato Sandwich" title
+    Then check that "1" block contains small description
+    Then check that "1" block contains "More" link
+    When move mouse to the "2" block picture
+    Then check that first block contains "Deviled Eggs with Bacon" title
+    Then check that "2" block contains small description
+    Then check that "2" block contains "More" link
+    When move mouse to the "3" block picture
+    Then check that first block contains "Classic Canapes" title
+    Then check that "3" block contains small description
+    Then check that "3" block contains "More" link
 
   Scenario: 08
     When click on the scroll button "right" of the "OUR SPECIAL OFFERS" picture carousel

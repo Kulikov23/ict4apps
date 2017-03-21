@@ -3,13 +3,7 @@ package ict4apps.steps.serenity;
 import ict4apps.pages.*;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
-
 import java.util.Map;
-
-import static org.codehaus.groovy.runtime.DefaultGroovyMethods.contains;
-import static org.codehaus.groovy.runtime.DefaultGroovyMethods.findAll;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasItem;
 
 public class EndUserSteps {
 
@@ -45,19 +39,19 @@ public class EndUserSteps {
     }
 
     @Step
-    public void titleIsDisplayed(String arg0, String food) {
-        Assert.assertTrue(welcomePage.titleWithStr(arg0, food));
+    public void titleIsDisplayed(String arg0) {
+        Assert.assertTrue(welcomePage.titleWithStr(arg0));
     }
 
-//    @Step
-//    public void moreIsDisplayed(String arg0,String more) {
-//        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0,more));
-//    }
-//
-//    @Step
-//    public void descriptionIsDisplayed(String arg0) {
-//        Assert.assertTrue(welcomePage.descriptionIsDisplayed(arg0));
-//    }
+    @Step
+    public void descriptionIsDisplayed(String arg0) {
+        Assert.assertTrue(welcomePage.descriptionIsDisplayed(arg0));
+    }
+
+    @Step
+    public void moreIsDisplayed(String arg0,String arg1) {
+        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0,arg1));
+    }
 
     @Step
     public void clickScrollButton(String direction, String arg0) {
