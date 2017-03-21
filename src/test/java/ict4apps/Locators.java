@@ -13,7 +13,7 @@ public interface Locators {
     String WELCOME_PAGE_PRODUCT_BLOCK_DESCRIPTION = "(//div[@aria-hidden='false']//div//div[@class='gallery-product__introtext'])[$1]";
     String WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK = "(//div[@aria-hidden='false']//div//a[contains(text(),'$1')])[$2]";
 
-    String SCROLL_BUTTON = "(//div//button[contains(text(),'$2')])[$1]";
+    String WELCOME_PAGE_SCROLL_BUTTON = "(//button[contains(text(),'$2')])[$1]";
 
     //TODO: BLOG LIST
 
@@ -84,7 +84,5 @@ public interface Locators {
     String CONTACT_US_PAGE_ERROR_MSG = "//label[contains(text(),'$2 *')]/../../div[not(@class='hide')]/span[contains(text(),'$1')]";
     String CONTACT_US_PAGE_TEXTBOXES = "//label[contains(text(),'$1 *')]/ancestor::div[@class='control-group']/input";
     String CONTACT_US_PAGE_COMMENTS_TEXT_AREA = "//label[contains(text(),'Comments')]/../textarea";
-    String qwe = "//label[contains(text(),'$2')]/../../div[not(@class='hide')]/span[contains(text(),'$1')]";
-
 
 }

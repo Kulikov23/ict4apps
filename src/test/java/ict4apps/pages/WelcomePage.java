@@ -47,34 +47,11 @@ public class WelcomePage extends PageObject {
         return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2",arg0)).isVisible();
     }
 
-///////////////////////////////////     CLICK SCROLL BUTTON     ///////////////////////////////////////////////////////
+//TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
 
     public void clickScrollButton(String direction, String arg0) {
-
-        String ourSpecOff = "1";
-        String foodDeliveryBox = "2";
-        String review = "3";
-        String next = "Next";
-        String previous = "Previous";
-
-        String init = "";
-
-        if (arg0.equals("OUR SPECIAL OFFERS")) {
-            init = Locators.SCROLL_BUTTON.replace("$1", ourSpecOff);
-        } else if (arg0.equals("FOOD DELIVERY BOXES TO THE OFFICE OR HOME")) {
-            init = Locators.SCROLL_BUTTON.replace("$1", foodDeliveryBox);
-        } else if (arg0.equals("Review")) {
-            init = Locators.SCROLL_BUTTON.replace("$1", review);
-        }
-
-        if (direction.equals("right")) {
-            init = init.replace("$2", next);
-        } else if (direction.equals("left")) {
-            init = init.replace("$2", previous);
-        }
-
-        $(init).click();
-        waitABit(1500);
+             $(Locators.WELCOME_PAGE_SCROLL_BUTTON.replace("$2", direction).replace("$1",arg0)).click();
+             waitABit(1500);
     }
 
 //TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////

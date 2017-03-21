@@ -30,11 +30,11 @@ Feature: WELCOME PAGE
     Then check that "3" block contains "More" link
 
   Scenario: 08
-    When click on the scroll button "right" of the "OUR SPECIAL OFFERS" picture carousel
+    When click on the scroll button "Next" of the "1" picture carousel
 #    Then check that pictures are changed
 
   Scenario: 10
-    When click on the scroll button "left" of the "OUR SPECIAL OFFERS" picture carousel
+    When click on the scroll button "Previous" of the "1" picture carousel
 #    Then check that pictures are changed
 
   Scenario Outline: 11

@@ -53,7 +53,7 @@ public class DefinitionSteps {
         steps.moreIsDisplayed(arg0, arg1);
     }
 
-///////////////////////////////     CLICK SCROLL BUTTON      ///////////////////////////////////////////////////////////
+//TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
 
     @When("^click on the scroll button \"([^\"]*)\" of the \"([^\"]*)\" picture carousel$")
     public void clickOnTheScrollButton(String direction, String arg0) throws Throwable {
