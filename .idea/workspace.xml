@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="Twe  commit">
+    <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature" />
@@ -37,72 +36,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CONTACT_US_PAGE.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="73" lean-forward="false" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefinitionSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="291" column="37" lean-forward="false" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndUserSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="296" column="57" lean-forward="true" selection-start-line="296" selection-start-column="57" selection-end-line="296" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8482#8483#0" expanded="true" />
-                <element signature="e#8543#8544#0" expanded="true" />
-                <element signature="e#8916#8917#0" expanded="true" />
-                <element signature="e#8948#8949#0" expanded="true" />
-                <element signature="e#9011#9012#0" expanded="true" />
-                <element signature="e#9063#9064#0" expanded="true" />
-                <element signature="e#9290#9291#0" expanded="true" />
-                <element signature="e#9344#9345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactUs.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="84" column="36" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,10 +78,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/BlogsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" />
         <option value="$PROJECT_DIR$/serenity.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
       </list>
     </option>
@@ -219,8 +153,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,6 +313,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -927,8 +861,8 @@
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 02" />
         <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 01" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: WELCOME_PAGE" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: CONTACT_US_PAGE" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: CONTACT_US_PAGE" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: WELCOME_PAGE" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 03 (1)" />
       </list>
     </recent_temporary>
@@ -972,7 +906,8 @@
       <workItem from="1489649239880" duration="22254000" />
       <workItem from="1489735373754" duration="29604000" />
       <workItem from="1489994366136" duration="16295000" />
-      <workItem from="1490016766683" duration="11991000" />
+      <workItem from="1490016766683" duration="12021000" />
+      <workItem from="1490080552804" duration="12090000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1107,81 +1042,88 @@
       <option name="project" value="LOCAL" />
       <updated>1490018146984</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Twentieth  commit">
+      <created>1490029475766</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1490029475766</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__01 - 2017.03.20 at 18h 16m 40s.xml">
+    <history-entry file="Scenario__01 - 2017.03.21 at 13h 20m 15s.xml">
       <configuration name="Scenario: 01" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 16m 22s.xml">
+    <history-entry file="Scenario__01 - 2017.03.21 at 13h 22m 21s.xml">
+      <configuration name="Scenario: 01" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__01 - 2017.03.21 at 13h 23m 04s.xml">
+      <configuration name="Scenario: 01" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__02 - 2017.03.21 at 12h 17m 55s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 17m 49s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 14m 12s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 18m 19s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 15m 07s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 19m 14s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 19m 58s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 20m 20s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 21m 09s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 22m 30s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 23m 39s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 32m 01s.xml">
-      <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 33m 01s.xml">
-      <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__02 - 2017.03.20 at 18h 34m 19s.xml">
+    <history-entry file="Scenario__02 - 2017.03.21 at 13h 24m 52s.xml">
       <configuration name="Scenario: 02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233395000" />
+    <option name="totallyTimeSpent" value="245515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28961176" sideWeight="0.5040431" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12884097" sideWeight="0.49577168" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35466945" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28961176" sideWeight="0.5040431" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12884097" sideWeight="0.49577168" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35466945" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1800539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="194" y="224" width="1655" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1296875" sideWeight="0.50422835" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1209,15 +1151,16 @@
     <MESSAGE value="Seventeenth  commit" />
     <MESSAGE value="Eighteenth  commit" />
     <MESSAGE value="Nineteenth  commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nineteenth  commit" />
+    <MESSAGE value="Twentieth  commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Twentieth  commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="184" />
+      <option name="time" value="194" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="element.getText();" language="JAVA" />
+        <watch expression="$(Locators.CONTACT_US_PAGE_ERROR_MSG.replace(&quot;$1&quot;, arg0).replace(&quot;$2&quot;, arg1))" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1468,7 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,7 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="677" column="0" lean-forward="false" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1528,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1544,7 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="824" column="0" lean-forward="false" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1560,7 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1568,30 +1503,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="84" column="36" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="73" lean-forward="false" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        <state relative-caret-position="378">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="291" column="37" lean-forward="false" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="291" column="18" lean-forward="true" selection-start-line="291" selection-start-column="18" selection-end-line="291" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1600,29 +1526,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="296" column="57" lean-forward="true" selection-start-line="296" selection-start-column="57" selection-end-line="296" selection-end-column="57" />
+        <state relative-caret-position="204">
+          <caret line="297" column="39" lean-forward="false" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8482#8483#0" expanded="true" />
-            <element signature="e#8543#8544#0" expanded="true" />
-            <element signature="e#8916#8917#0" expanded="true" />
-            <element signature="e#8948#8949#0" expanded="true" />
-            <element signature="e#9011#9012#0" expanded="true" />
-            <element signature="e#9063#9064#0" expanded="true" />
-            <element signature="e#9290#9291#0" expanded="true" />
-            <element signature="e#9344#9345#0" expanded="true" />
+            <element signature="e#9084#9085#0" expanded="true" />
+            <element signature="e#9136#9137#0" expanded="true" />
+            <element signature="e#9402#9403#0" expanded="true" />
+            <element signature="e#9457#9458#0" expanded="true" />
+            <element signature="e#9707#9708#0" expanded="true" />
+            <element signature="e#9763#9764#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="684">
+          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="86" column="67" lean-forward="true" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

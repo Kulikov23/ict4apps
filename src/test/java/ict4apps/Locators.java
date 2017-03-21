@@ -21,7 +21,7 @@ public interface Locators {
 
     //TODO: LANGUAGES
 
-    String  WELCOME_PAGE_LANGUAGES = "//option[@class='taglib-language-option']";
+    String WELCOME_PAGE_LANGUAGES = "//option[@class='taglib-language-option']";
 
     //TODO: FOOD DELIVERY BOXES PICTURE CAROUSEL
 
@@ -57,6 +57,8 @@ public interface Locators {
 
     String CHANGE_VIEW_BUTTON = "//i[@class='icon-$1']";
 
+    //TODO: SPECIAL OFFERS PAGE
+
     String SPECIAL_OFFERS_PRODUCT_BLOCK_PICTURE = "(//div[@class='product-item__img product-img-intro'])[$1]";
     String SPECIAL_OFFERS_PRODUCT_BLOCK_TITLE = "//a[contains(text(),'$1')]";
     String SPECIAL_OFFERS_PRODUCT_BLOCK_SMALL_DESC = "(//div[@class='gallery-product__introtext'])[$1]";
@@ -79,9 +81,9 @@ public interface Locators {
     //TODO: CONTACT US PAGE
 
     String CONTACT_US_PAGE_SEND_BUTTON = "//button[contains(text(),'$1')]";
-    String CONTACT_US_PAGE_ERROR_MSG = "//div[not(@class='hide')]/span[@class='alert alert-error']";
-    String CONTACT_US_PAGE_TEXTBOX = "//label[contains(text(),'$1 *')]/ancestor::div[@class='control-group']/input";
-
-    //label[contains(text(),'Subject *')]/../..//span
+    String CONTACT_US_PAGE_ERROR_MSG = "//label[contains(text(),'$2 *')]/../../div[not(@class='hide')]/span[contains(text(),'$1')]";
+    String CONTACT_US_PAGE_TEXTBOXES = "//label[contains(text(),'$1 *')]/ancestor::div[@class='control-group']/input";
+    String CONTACT_US_PAGE_COMMENTS_TEXT_AREA = "//label[contains(text(),'Comments')]/../textarea";
+    String qwe = "//label[contains(text(),'$2')]/../../div[not(@class='hide')]/span[contains(text(),'$1')]";
 
 }

@@ -16,24 +16,28 @@ public class ContactUs extends PageObject {
         waitABit(1500);
     }
 
-    public boolean checkThatErrorMessageIsAppears(String arg0) {
-//        List<WebElementFacade> list = findAll(Locators.CONTACT_US_PAGE_ERROR_MSG);
-//        for (WebElement element : list) {
-//         String s = element.getText();
-//         waitABit(1000);
-//         s.equals(arg0);
-//        }
-//        return true;
-        List<WebElementFacade> list = findAll(Locators.CONTACT_US_PAGE_ERROR_MSG);
-        for (WebElement element : list) {
-            element.getText().equals(arg0);
-        }
-        return true;
+    public void writeInTheTextBox(String arg0, String arg1) {
+        $(Locators.CONTACT_US_PAGE_TEXTBOXES.replace("$1", arg1)).sendKeys(arg0);
+        waitABit(1500);
     }
 
-    public void writeInTheTextBox(String arg0, String arg1) {
-        $(Locators.CONTACT_US_PAGE_TEXTBOX.replace("$1", arg1)).sendKeys(arg0);
+    public boolean checkThatErrorMessageIsAppears(String arg0, String arg1) {
+        boolean x = !$(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
+        $(Locators.CONTACT_US_PAGE_TEXTBOXES.replace("$1", arg1)).clear();
         waitABit(1500);
+        return x;
+    }
+
+    public void writeInTheTextarea(String arg0, String arg1) {
+        $(Locators.CONTACT_US_PAGE_COMMENTS_TEXT_AREA.replace("$1", arg1)).sendKeys(arg0);
+        waitABit(1500);
+    }
+
+    public boolean checkThatErrorMessageIsNotAppearsAboveTextArea(String arg0, String arg1) {
+        boolean x = !$(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
+        $(Locators.CONTACT_US_PAGE_COMMENTS_TEXT_AREA.replace("$1", arg1)).clear();
+        waitABit(1500);
+        return x;
     }
 }
 

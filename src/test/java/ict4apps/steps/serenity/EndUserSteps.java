@@ -6,6 +6,7 @@ import org.junit.Assert;
 
 import java.util.Map;
 
+import static org.codehaus.groovy.runtime.DefaultGroovyMethods.contains;
 import static org.codehaus.groovy.runtime.DefaultGroovyMethods.findAll;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
@@ -293,13 +294,28 @@ public class EndUserSteps {
     }
 
     @Step
-    public void checkThatErrorMessageIsAppears(String arg0) {
-        Assert.assertTrue(contactUs.checkThatErrorMessageIsAppears(arg0));
+    public void checkThatErrorMessagesAreAppearsAboveAllTextBoxes(String arg0, String arg1) {
+        Assert.assertFalse(contactUs.checkThatErrorMessageIsAppears(arg0, arg1));
     }
 
     @Step
     public void writeInTheTextBox(String arg0, String arg1) {
-        contactUs.writeInTheTextBox(arg0,arg1);
+        contactUs.writeInTheTextBox(arg0, arg1);
+    }
+
+    @Step
+    public void checkThatErrorMessageIsNotAppears(String arg0, String arg1) {
+        Assert.assertTrue(contactUs.checkThatErrorMessageIsAppears(arg0, arg1));
+    }
+
+    @Step
+    public void writeInTheTextarea(String arg0, String arg1) {
+        contactUs.writeInTheTextarea(arg0, arg1);
+    }
+
+    @Step
+    public void checkThatErrorMessageIsNotAppearsAboveTextArea(String arg0, String arg1) {
+        Assert.assertTrue(contactUs.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1));
     }
 }
 

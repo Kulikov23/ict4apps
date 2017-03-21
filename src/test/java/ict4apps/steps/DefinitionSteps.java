@@ -287,18 +287,32 @@ public class DefinitionSteps {
         steps.clickOnTheSendButton(arg0);
     }
 
-    @Then("^check that \"([^\"]*)\" error message is appears")
-    public void checkThatErrorMessageIsAppears(String arg0) throws Throwable {
-        steps.checkThatErrorMessageIsAppears(arg0);
+    @Then("^check that \"([^\"]*)\" error messages are appears near all \"([^\"]*)\" text boxes$")
+    public void checkThatErrorMessagesAreAppears(String arg0, String arg1) throws Throwable {
+        steps.checkThatErrorMessagesAreAppearsAboveAllTextBoxes(arg0, arg1);
     }
 
     @When("^write \"([^\"]*)\" in the \"([^\"]*)\" text box$")
     public void writeInTheTextBox(String arg0, String arg1) throws Throwable {
-       steps.writeInTheTextBox(arg0,arg1);
+        steps.writeInTheTextBox(arg0, arg1);
     }
 
+    @Then("^check that \"([^\"]*)\" error message is not appears above the \"([^\"]*)\" text box$")
+    public void checkThatErrorMessageIsNotAppearsAboveTheTextBox(String arg0, String arg1) throws Throwable {
+        steps.checkThatErrorMessageIsNotAppears(arg0, arg1);
+    }
 
+    @When("^write \"([^\"]*)\" in the \"([^\"]*)\" textarea$")
+    public void writeInTheTextarea(String arg0, String arg1) throws Throwable {
+        steps.writeInTheTextarea(arg0, arg1);
+    }
+
+    @Then("^check that \"([^\"]*)\" error message is not appears above the \"([^\"]*)\" textarea$")
+    public void checkThatErrorMessageIsNotAppearsAboveTheTextarea(String arg0, String arg1) throws Throwable {
+        steps.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1);
+    }
 }
+
 
 
 
