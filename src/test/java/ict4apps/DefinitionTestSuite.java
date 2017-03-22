@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         "src/test/resources/features/2PRODUCTS_PAGE.feature",
         "src/test/resources/features/3SPECIAL_OFFERS_PAGE.feature",
         "src/test/resources/features/4BLOGS_PAGE.feature",
-        "src/test/resources/features/5CONTACT_US_PAGE.feature"
+        "src/test/resources/features/5CONTACT_US_PAGE.feature",
+        "src/test/resources/features/FOOTER.feature"
 })
 public class DefinitionTestSuite {
 }

@@ -80,28 +80,6 @@ public class ProductsPage extends PageObject {
         }
     }
 
-    public void alert() {
-        jsExecutor().executeScript("alert('SAMPLE TEXT');");
-        waitABit(3000);
-    }
-
-    public void dom() {
-        JavascriptExecutor js = (JavascriptExecutor) getDriver();
-        String sDomain = js.executeScript("return document.domain;").toString();
-        System.out.println("Domain = " + sDomain);
-    }
-
-    public void getCoockie() {
-        Cookie cookie = new Cookie("key", "value");
-        getDriver().manage().addCookie(cookie);
-        Set<Cookie> allCookies = getDriver().manage().getCookies();
-        for (Cookie loadedCookie : allCookies) {
-
-            System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
-        }
-
-    }
-
 //TODO:////////////////////////////////     CATEGORIES      ////////////////////////////////////////////////////////////
 
     public void clickOnTheCategory(String arg0) {

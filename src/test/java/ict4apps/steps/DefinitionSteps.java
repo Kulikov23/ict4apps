@@ -21,6 +21,25 @@ public class DefinitionSteps {
         steps.is_the_home_page();
     }
 
+//TODO://///////////////////////////////////      SITE LOGO       //////////////////////////////////////////////////////
+
+    @When("^click on the \"([^\"]*)\" site logo$")
+    public void clickOnTheSiteLogo(String arg0) throws Throwable {
+        steps.clickOnTheSiteLogo(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" page is refreshed$")
+    public void checkThatPageIsRefreshed(String arg0) throws Throwable {
+        steps.checkThatPageIsRefreshed(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" site logo is appears$")
+    public void checkThatSiteLogoIsAppears(String arg0) throws Throwable {
+       steps.checkThatSiteLogoIsAppears(arg0);
+    }
+
+//TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
+
     @When("^click on the \"([^\"]*)\" link$")
     public void clickOnTheLink(String arg0) throws Throwable {
         steps.clickOnTheSignInLink(arg0);
@@ -53,9 +72,9 @@ public class DefinitionSteps {
 
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
-    @When("^click \"([^\"]*)\" link$")
-    public void clickLink(String arg0) throws Throwable {
-        steps.clickLink(arg0);
+    @When("^click \"([^\"]*)\" link of the \"([^\"]*)\" navigation links list$")
+    public void clickLink(String arg0,String arg1) throws Throwable {
+        steps.clickLink(arg0,arg1);
     }
 
     @Then("^check that \"([^\"]*)\" page is opened$")
@@ -137,6 +156,23 @@ public class DefinitionSteps {
     @Then("^checking that elements changing \"([^\"]*)\" and contains \"([^\"]*)\":$")
     public void checkingThatElementsChangingPicturesAndContains(String arg0, String arg1) throws Throwable {
         steps.checkTactTitleIsDisplayed(arg0, arg1);
+    }
+
+    @When("^click on the \"([^\"]*)\"$")
+    public void clickOnTheProductPic(String arg0) throws Throwable {
+        steps.clickOnTheProductPic(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" page is opened with our chosen category$")
+    public void checkThatPageIsOpenedWithOurChosenCategory(String arg0) throws Throwable {
+        steps.checkThatPageIsOpenedWithOurChosenCategory(arg0);
+    }
+
+//TODO://///////////////////////////////      READ MORE ABOUT US       /////////////////////////////////////////////////
+
+    @Then("^check that page contains \"([^\"]*)\" header$")
+    public void checkThatPageContainsHeader(String arg0) throws Throwable {
+        steps.checkThatPageContainsHeader(arg0);
     }
 
 //TODO://///////////////////////////////      PRODUCTS PAGE       //////////////////////////////////////////////////////
@@ -355,7 +391,12 @@ public class DefinitionSteps {
         steps.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1);
     }
 
- }
+
+
+
+//TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
+
+}
 
 
 

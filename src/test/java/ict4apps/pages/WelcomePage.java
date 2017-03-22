@@ -20,10 +20,24 @@ public class WelcomePage extends PageObject {
 
     List<String> languagesList = new ArrayList<>();
 
+//TODO:///////////////////////////////////         SITE LOGO            ////////////////////////////////////////////////
+
+    public void clickOnTheSiteLogo(String arg0) {
+        $(Locators.WELCOME_PAGE_SITE_LOGO.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatPageIsRefreshed(String arg0) {
+        return getDriver().getCurrentUrl().contains("http://88.198.7.89:8100/web/guest/" + arg0);
+    }
+
+    public boolean checkThatSiteLogoIsAppears(String arg0) {
+        return $(Locators.WELCOME_PAGE_SITE_LOGO.replace("$1", arg0)).isVisible();
+    }
+
 //TODO:////////////////////////////         NAVIGATION LINKS            ////////////////////////////////////////////////
 
-    public WebElement linkWithStr(String arg0) {
-        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0));
+    public WebElement linkWithStr(String arg0,String arg1) {
+        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0).replace("$2",arg1));
     }
 
     public boolean checkThatPageIsOpened(String arg0) {
@@ -31,6 +45,8 @@ public class WelcomePage extends PageObject {
         getDriver().navigate().back();
         return x;
     }
+
+//TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
 
     public void clickOnTheSignInLink(String arg0) {
         $(Locators.WELCOME_PAGE_SIGN_IN_LINK.replace("$1", arg0)).click();
@@ -43,6 +59,7 @@ public class WelcomePage extends PageObject {
     public boolean pageContainsSignInButton(String arg0) {
         return $(Locators.WELCOME_PAGE_SIGN_IN_BUTTON.replace("$1", arg0)).isVisible();
     }
+
 
     public void clickOnTheLinkedImageOnTheBox(String arg0, String arg1) {
         $(Locators.WELCOME_PAGE_DOWNLOAD_MOBILE_VER_BOX_LINKS.replace("$1", arg1).replace("$2", arg0)).click();
@@ -141,6 +158,20 @@ public class WelcomePage extends PageObject {
         return $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
 
+    public void clickOnTheProductPic(String arg0) {
+        $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURES.replace("$1", arg0)).click();
+        back();
+    }
+
+    public boolean checkThatPageIsOpenedWithOurChosenCategory(String arg0) {
+        return getDriver().getCurrentUrl().contains("http://88.198.7.89:8100/web/guest/" + arg0);
+    }
+
+//TODO://///////////////////////////////      READ MORE ABOUT US       /////////////////////////////////////////////////
+
+    public boolean checkThatPageContainsHeader(String arg0) {
+        return $(Locators.WELCOME_PAGE_READ_MORE_ABOUT_US_TITLE.replace("$1", arg0)).isVisible();
+    }
 
 }
 

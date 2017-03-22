@@ -44,12 +44,28 @@ Feature: PRODUCTS PAGE
       Then dropdown menu contains "9" elements
 
     Scenario: 05
+      When click on the "Page 1 Of 9" button
+      When click on the "1" item
+#      Then
+      When click on the "Page 1 Of 9" button
+      When click on the "5" item
+#      Then  check that
+      When click on the "Page 1 Of 9" button
+      When click on the "9" item
+#      Then
+
+  Scenario: 06
+    When click on the "Next" link
+    When click on the "Next" link
+
+
+  Scenario: 1111
       When click on the "12 Items Per Page" button
       Then dropdown menu is opened
       When click on the "36" item
       Then page should contains "36" product blocks
 
-     Scenario: 06
+     Scenario: 1111111
        When click on the "th-large" list view
        Then product blocks are changed to grid view
        When click on the "list" list view

@@ -21,6 +21,25 @@ public class EndUserSteps {
         welcomePage.open();
     }
 
+//TODO:///////////////////////////////////         SITE LOGO            ////////////////////////////////////////////////
+
+    @Step
+    public void clickOnTheSiteLogo(String arg0) {
+        welcomePage.clickOnTheSiteLogo(arg0);
+    }
+
+    @Step
+    public void checkThatPageIsRefreshed(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageIsRefreshed(arg0));
+    }
+
+    @Step
+    public void checkThatSiteLogoIsAppears(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatSiteLogoIsAppears(arg0));
+    }
+
+//TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
+
     @Step
     public void clickOnTheSignInLink(String arg0) {
         welcomePage.clickOnTheSignInLink(arg0);
@@ -38,7 +57,7 @@ public class EndUserSteps {
 
     @Step
     public void clickOnTheLinkedImageOnTheBox(String arg0, String arg1) {
-        welcomePage.clickOnTheLinkedImageOnTheBox(arg0,arg1);
+        welcomePage.clickOnTheLinkedImageOnTheBox(arg0, arg1);
     }
 
     @Step
@@ -55,8 +74,8 @@ public class EndUserSteps {
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
     @Step
-    public void clickLink(String arg0) {
-        welcomePage.linkWithStr(arg0).click();
+    public void clickLink(String arg0,String arg1) {
+        welcomePage.linkWithStr(arg0,arg1).click();
     }
 
     @Step
@@ -94,7 +113,12 @@ public class EndUserSteps {
     public void clickOnTheLinkOfTheBlock(String arg0, String arg1) {
         welcomePage.back();
         welcomePage.moveAction(arg1);
-        welcomePage.clickOnTheLinkOfTheBlock(arg0,arg1);
+        welcomePage.clickOnTheLinkOfTheBlock(arg0, arg1);
+    }
+
+    @Step
+    public void checkThatPageOfOurProductIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageOfOurProductIsOpened(arg0));
     }
 
 //TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
@@ -139,6 +163,23 @@ public class EndUserSteps {
     @Step
     public void checkTactTitleIsDisplayed(String arg0, String arg1) {
         Assert.assertTrue(welcomePage.checkThatTitleIsDisplayed(arg0, arg1));
+    }
+
+    @Step
+    public void clickOnTheProductPic(String arg0) {
+        welcomePage.clickOnTheProductPic(arg0);
+    }
+
+    @Step
+    public void checkThatPageIsOpenedWithOurChosenCategory(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageIsOpenedWithOurChosenCategory(arg0));
+    }
+
+//TODO://///////////////////////////////      READ MORE ABOUT US       /////////////////////////////////////////////////
+
+    @Step
+    public void checkThatPageContainsHeader(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageContainsHeader(arg0));
     }
 
 //TODO:////////////////////////////////         PRODUCTS PAGE         //////////////////////////////////////////////////
@@ -358,10 +399,10 @@ public class EndUserSteps {
         Assert.assertTrue(contactUs.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1));
     }
 
-    @Step
-    public void checkThatPageOfOurProductIsOpened(String arg0) {
-        Assert.assertTrue(welcomePage.checkThatPageOfOurProductIsOpened(arg0));
-    }
+//TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
+
+
+
 
 
 }

@@ -10,10 +10,16 @@ public interface Locators {
     String WELCOME_PAGE_DOWNLOAD_MOBILE_VER_BOX_LINKS = "//div[contains(text(),'$1')]//img[@alt='$2']";
     String WELCOME_PAGE_GOOGLE_PLAY_OR_APPSTORE_TITLE = "//div[contains(text(),'$1')]";
 
+    String WELCOME_PAGE_SITE_LOGO = "//img[@alt='$1']";
+
+//    String WELCOME_PAGE_READ_MORE_ABOUT_US = "//a[contains(text(),'$1')]";
+    String WELCOME_PAGE_READ_MORE_ABOUT_US_TITLE = "//*[contains(text(),'Read more About us')]";
+
+    //a//span[contains(text(),'Share to Facebook')]
 
     //TODO: NAVIGATION LINKS
 
-    String WELCOME_PAGE_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
+    String WELCOME_PAGE_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[$2]";
 
     //TODO: OUR SPECIAL OFFERS PICTURE CAROUSEL
 
@@ -50,6 +56,8 @@ public interface Locators {
     String PRODUCT_DESCRIPTION_PICTURE = "//a[@class='image-viewer-link']";
     String PRODUCT_DESCRIPTION_TITLE = "//h1/span[contains(text(),*)]";
     String PRODUCT_DESCRIPTION = "//div[@class='info-product table-word-wrap']";
+
+    String PRODUCS_PAGE_PAGINATION_LINKS = "(//a[contains(text(),'$1')])[1]";
 
     //TODO: CATEGORIES
 
