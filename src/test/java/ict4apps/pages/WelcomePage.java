@@ -6,12 +6,17 @@ import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.interactions.Actions;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 @DefaultUrl("http://88.198.7.89:8100/")
 public class WelcomePage extends PageObject {
+
+    public void back() {
+        getDriver().navigate().back();
+    }
 
     List<String> languagesList = new ArrayList<>();
 
@@ -23,6 +28,32 @@ public class WelcomePage extends PageObject {
 
     public boolean checkThatPageIsOpened(String arg0) {
         boolean x = getDriver().getCurrentUrl().contains(arg0);
+        getDriver().navigate().back();
+        return x;
+    }
+
+    public void clickOnTheSignInLink(String arg0) {
+        $(Locators.WELCOME_PAGE_SIGN_IN_LINK.replace("$1", arg0)).click();
+    }
+
+    public boolean loginPageIsOpened(String arg0) {
+        return getDriver().getCurrentUrl().contains(arg0);
+    }
+
+    public boolean pageContainsSignInButton(String arg0) {
+        return $(Locators.WELCOME_PAGE_SIGN_IN_BUTTON.replace("$1", arg0)).isVisible();
+    }
+
+    public void clickOnTheLinkedImageOnTheBox(String arg0, String arg1) {
+        $(Locators.WELCOME_PAGE_DOWNLOAD_MOBILE_VER_BOX_LINKS.replace("$1", arg1).replace("$2", arg0)).click();
+    }
+
+    public boolean checkThatAppDownloadPagePageIsOpened(String arg0) {
+        return getDriver().getCurrentUrl().contains(arg0);
+    }
+
+    public boolean checkThatPageWithOurAppIsOpened(String arg0) {
+        boolean x = $(Locators.WELCOME_PAGE_GOOGLE_PLAY_OR_APPSTORE_TITLE.replace("$1", arg0)).isVisible();
         getDriver().navigate().back();
         return x;
     }
@@ -44,14 +75,26 @@ public class WelcomePage extends PageObject {
     }
 
     public boolean moreIsDisplayed(String arg0, String arg1) {
-        return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2",arg0)).isVisible();
+        return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2", arg0)).isVisible();
+    }
+
+    public void clickOnTheFirstBlockContainsTitle(String arg0) {
+        $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatPageOfOurProductIsOpened(String arg0) {
+        return getDriver().getCurrentUrl().contains(arg0);
+    }
+
+    public void clickOnTheLinkOfTheBlock(String arg0, String arg1) {
+        $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg0).replace("$2", arg1)).click();
     }
 
 //TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
 
     public void clickScrollButton(String direction, String arg0) {
-             $(Locators.WELCOME_PAGE_SCROLL_BUTTON.replace("$2", direction).replace("$1",arg0)).click();
-             waitABit(1500);
+        $(Locators.WELCOME_PAGE_SCROLL_BUTTON.replace("$2", direction).replace("$1", arg0)).click();
+        waitABit(1500);
     }
 
 //TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////
@@ -97,6 +140,7 @@ public class WelcomePage extends PageObject {
     public boolean checkThatTitleIsDisplayed(String arg0, String arg1) {
         return $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURE_TITLE.replace("$1", arg0)).getText().equalsIgnoreCase(arg1);
     }
+
 
 }
 

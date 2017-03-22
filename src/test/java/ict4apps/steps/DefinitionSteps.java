@@ -1,10 +1,12 @@
 package ict4apps.steps;
 
+import cucumber.api.PendingException;
 import net.thucydides.core.annotations.Steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import ict4apps.steps.serenity.EndUserSteps;
+
 import java.util.Map;
 
 public class DefinitionSteps {
@@ -17,6 +19,36 @@ public class DefinitionSteps {
     @Given("the user is on the Welcome page")
     public void theUserIsOnTheWelcomePage() {
         steps.is_the_home_page();
+    }
+
+    @When("^click on the \"([^\"]*)\" link$")
+    public void clickOnTheLink(String arg0) throws Throwable {
+        steps.clickOnTheSignInLink(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" page is opened$")
+    public void pageIsOpened(String arg0) throws Throwable {
+        steps.loginPageIsOpened(arg0);
+    }
+
+    @Then("^page contains \"([^\"]*)\" button$")
+    public void pageContainsButton(String arg0) throws Throwable {
+        steps.pageContainsSignInButton(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" linked image on the \"([^\"]*)\" box$")
+    public void clickOnTheLinkedImageOnTheBox(String arg0, String arg1) throws Throwable {
+        steps.clickOnTheLinkedImageOnTheBox(arg0, arg1);
+    }
+
+    @Then("^check that page with our app \"([^\"]*)\" is opened$")
+    public void checkThatPageWithOurAppIsOpened(String arg0) throws Throwable {
+        steps.checkThatPageWithOurAppIsOpened(arg0);
+    }
+
+    @Then("^check that app download page page is opened \"([^\"]*)\"$")
+    public void checkThatAppDownloadPagePageIsOpened(String arg0) throws Throwable {
+        steps.checkThatAppDownloadPagePageIsOpened(arg0);
     }
 
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
@@ -51,6 +83,21 @@ public class DefinitionSteps {
     @Then("^check that \"([^\"]*)\" block contains \"([^\"]*)\" link$")
     public void checkThatBlockContainsLink(String arg0, String arg1) throws Throwable {
         steps.moreIsDisplayed(arg0, arg1);
+    }
+
+    @When("^click on the first block contains \"([^\"]*)\" title$")
+    public void clickOnTheFirstBlockContainsTitle(String arg0) throws Throwable {
+        steps.clickOnTheFirstBlockContainsTitle(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" page of our product is opened$")
+    public void checkThatPageOfOurProductIsOpened(String arg0) throws Throwable {
+        steps.checkThatPageOfOurProductIsOpened(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" link of the \"([^\"]*)\" block$")
+    public void clickOnTheLinkOfTheBlock(String arg0, String arg1) throws Throwable {
+      steps.clickOnTheLinkOfTheBlock(arg0,arg1);
     }
 
 //TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
@@ -240,7 +287,6 @@ public class DefinitionSteps {
         steps.clickOnTheBlogPicture(arg0);
     }
 
-
     @When("^clicking on the \"([^\"]*)\" blog block MORE link$")
     public void clickingOnTheBlogBlockREADMORELink(String arg0) throws Throwable {
         steps.clickOnTheBlockMoreLink(arg0);
@@ -309,7 +355,8 @@ public class DefinitionSteps {
         steps.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1);
     }
 
-}
+ }
+
 
 
 

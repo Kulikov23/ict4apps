@@ -40,7 +40,7 @@ public class BlogsPage extends PageObject {
     }
 
     public void clickOnTheBlockMoreLink(String arg0) {
-        $(Locators.BLOGS_PAGE_BLOG_PICTURE.replace("$1", arg0)).click();
+        $(Locators.BLOGS_PAGE_READ_MORE.replace("$1", arg0)).click();
         waitABit(1500);
     }
 

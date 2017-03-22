@@ -3,6 +3,7 @@ package ict4apps.steps.serenity;
 import ict4apps.pages.*;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
+
 import java.util.Map;
 
 public class EndUserSteps {
@@ -19,6 +20,37 @@ public class EndUserSteps {
     public void is_the_home_page() {
         welcomePage.open();
     }
+
+    @Step
+    public void clickOnTheSignInLink(String arg0) {
+        welcomePage.clickOnTheSignInLink(arg0);
+    }
+
+    @Step
+    public void loginPageIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.loginPageIsOpened(arg0));
+    }
+
+    @Step
+    public void pageContainsSignInButton(String arg0) {
+        Assert.assertTrue(welcomePage.pageContainsSignInButton(arg0));
+    }
+
+    @Step
+    public void clickOnTheLinkedImageOnTheBox(String arg0, String arg1) {
+        welcomePage.clickOnTheLinkedImageOnTheBox(arg0,arg1);
+    }
+
+    @Step
+    public void checkThatPageWithOurAppIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageWithOurAppIsOpened(arg0));
+    }
+
+    @Step
+    public void checkThatAppDownloadPagePageIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatAppDownloadPagePageIsOpened(arg0));
+    }
+
 
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
@@ -49,8 +81,20 @@ public class EndUserSteps {
     }
 
     @Step
-    public void moreIsDisplayed(String arg0,String arg1) {
-        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0,arg1));
+    public void moreIsDisplayed(String arg0, String arg1) {
+        Assert.assertTrue(welcomePage.moreIsDisplayed(arg0, arg1));
+    }
+
+    @Step
+    public void clickOnTheFirstBlockContainsTitle(String arg0) {
+        welcomePage.clickOnTheFirstBlockContainsTitle(arg0);
+    }
+
+    @Step
+    public void clickOnTheLinkOfTheBlock(String arg0, String arg1) {
+        welcomePage.back();
+        welcomePage.moveAction(arg1);
+        welcomePage.clickOnTheLinkOfTheBlock(arg0,arg1);
     }
 
 //TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
@@ -313,5 +357,12 @@ public class EndUserSteps {
     public void checkThatErrorMessageIsNotAppearsAboveTextArea(String arg0, String arg1) {
         Assert.assertTrue(contactUs.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1));
     }
+
+    @Step
+    public void checkThatPageOfOurProductIsOpened(String arg0) {
+        Assert.assertTrue(welcomePage.checkThatPageOfOurProductIsOpened(arg0));
+    }
+
+
 }
 

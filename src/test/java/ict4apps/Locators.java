@@ -2,6 +2,15 @@ package ict4apps;
 
 public interface Locators {
 
+    //TODO: WELCOME PAGE
+
+    String WELCOME_PAGE_SIGN_IN_LINK = "//a[contains(text(),'$1')]";
+    String WELCOME_PAGE_SIGN_IN_BUTTON = "//button[contains(text(),'$1')]";
+
+    String WELCOME_PAGE_DOWNLOAD_MOBILE_VER_BOX_LINKS = "//div[contains(text(),'$1')]//img[@alt='$2']";
+    String WELCOME_PAGE_GOOGLE_PLAY_OR_APPSTORE_TITLE = "//div[contains(text(),'$1')]";
+
+
     //TODO: NAVIGATION LINKS
 
     String WELCOME_PAGE_NAVIGATION_LINKS = "(//ul//span[contains(text(),'$1')])[1]";
@@ -70,6 +79,7 @@ public interface Locators {
     String BLOGS_PAGE_BLOG_BLOCKS = "//div[@class='entry']";
     String BLOGS_PAGE_BLOG_TITLE = "(//h2/a)[$1]";
     String BLOGS_PAGE_BLOG_PICTURE = "(//img[@class='images img-responsive'])[$1]";
+    String BLOGS_PAGE_READ_MORE = "//a[contains(text(),'$1')]";
 
     //TODO: RSS
 
