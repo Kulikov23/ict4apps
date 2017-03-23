@@ -74,8 +74,8 @@ public class EndUserSteps {
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
     @Step
-    public void clickLink(String arg0,String arg1) {
-        welcomePage.linkWithStr(arg0,arg1).click();
+    public void clickLink(String arg0, String arg1) {
+        welcomePage.linkWithStr(arg0, arg1).click();
     }
 
     @Step
@@ -216,6 +216,11 @@ public class EndUserSteps {
         productsPage.back();
     }
 
+    @Step
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) {
+        Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(arg0));
+    }
+
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
 
     @Step
@@ -297,8 +302,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void checkThatPictureIsChangedAndContainsTitle(String arg0, String arg1) {
-        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsTitle(arg0, arg1));
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0) {
+        Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsTitle(arg0));
     }
 
     @Step
@@ -309,6 +314,11 @@ public class EndUserSteps {
     @Step
     public void checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) throws InterruptedException {
         Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsReadMore(arg0, arg1));
+    }
+
+    @Step
+    public void checkThatLabelIsChanged(String arg0, String arg1) {
+        Assert.assertTrue(specialOffersPage.checkThatLabelIsChanged(arg0, arg1));
     }
 
 //TODO:////////////////////////////////         BLOGS PAGE           ///////////////////////////////////////////////////
@@ -399,10 +409,20 @@ public class EndUserSteps {
         Assert.assertTrue(contactUs.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1));
     }
 
+//TODO://////////////////////////////////         SCROLLED HEADER        ///////////////////////////////////////////////
+
+    @Step
+    public void scrollDownPage() {
+        productsPage.scrollDownPage();
+    }
+
+    @Step
+    public void checkThatScrolledHeaderIsAppears() {
+        Assert.assertTrue(productsPage.checkThatScrolledHeaderIsAppears());
+    }
+
+
 //TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
-
-
-
 
 
 }

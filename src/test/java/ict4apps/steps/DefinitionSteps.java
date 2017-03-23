@@ -35,7 +35,7 @@ public class DefinitionSteps {
 
     @Then("^check that \"([^\"]*)\" site logo is appears$")
     public void checkThatSiteLogoIsAppears(String arg0) throws Throwable {
-       steps.checkThatSiteLogoIsAppears(arg0);
+        steps.checkThatSiteLogoIsAppears(arg0);
     }
 
 //TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
@@ -73,8 +73,8 @@ public class DefinitionSteps {
 //TODO://////////////////////////////////     NAVIGATION LINKS       ///////////////////////////////////////////////////
 
     @When("^click \"([^\"]*)\" link of the \"([^\"]*)\" navigation links list$")
-    public void clickLink(String arg0,String arg1) throws Throwable {
-        steps.clickLink(arg0,arg1);
+    public void clickLink(String arg0, String arg1) throws Throwable {
+        steps.clickLink(arg0, arg1);
     }
 
     @Then("^check that \"([^\"]*)\" page is opened$")
@@ -116,7 +116,7 @@ public class DefinitionSteps {
 
     @When("^click on the \"([^\"]*)\" link of the \"([^\"]*)\" block$")
     public void clickOnTheLinkOfTheBlock(String arg0, String arg1) throws Throwable {
-      steps.clickOnTheLinkOfTheBlock(arg0,arg1);
+        steps.clickOnTheLinkOfTheBlock(arg0, arg1);
     }
 
 //TODO://///////////////////////////     CLICK SCROLL BUTTON      //////////////////////////////////////////////////////
@@ -204,6 +204,11 @@ public class DefinitionSteps {
         steps.clickOnTheProductReadMoreLink(arg0);
     }
 
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains social network links$")
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) throws Throwable {
+        steps.checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(arg0);
+    }
+
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" social network icon of the \"([^\"]*)\" block$")
@@ -284,9 +289,9 @@ public class DefinitionSteps {
         steps.move(arg0);
     }
 
-    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains \"([^\"]*)\" title$")
-    public void checkThatPictureIsChangedAndContainsTitle(String arg0, String arg1) throws Throwable {
-        steps.checkThatPictureIsChangedAndContainsTitle(arg0, arg1);
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains title$")
+    public void checkThatPictureIsChangedAndContainsTitle(String arg0) throws Throwable {
+        steps.checkThatPictureIsChangedAndContainsTitle(arg0);
     }
 
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains small description$")
@@ -298,6 +303,12 @@ public class DefinitionSteps {
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsLink(String arg0, String arg1) throws Throwable {
         steps.checkThatPictureIsChangedAndContainsReadMore(arg0, arg1);
     }
+
+    @Then("^check that \"([^\"]*)\" label is changed to \"([^\"]*)\"$")
+    public void checkThatLabelIsChangedTo(String arg0, String arg1) throws Throwable {
+        steps.checkThatLabelIsChanged(arg0, arg1);
+    }
+
 
 //TODO:////////////////////////////////         BLOGS PAGE           ///////////////////////////////////////////////////
 
@@ -391,7 +402,17 @@ public class DefinitionSteps {
         steps.checkThatErrorMessageIsNotAppearsAboveTextArea(arg0, arg1);
     }
 
+//TODO://////////////////////////////////         SCROLLED HEADER        ///////////////////////////////////////////////
 
+    @When("^scroll down page$")
+    public void scrollDownPage() throws Throwable {
+        steps.scrollDownPage();
+    }
+
+    @Then("^check that scrolled header is appears$")
+    public void checkThatScrolledHeaderIsAppears() throws Throwable {
+        steps.checkThatScrolledHeaderIsAppears();
+    }
 
 
 //TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////

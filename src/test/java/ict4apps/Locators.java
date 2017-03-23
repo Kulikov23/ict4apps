@@ -51,13 +51,13 @@ public interface Locators {
     String PRODUCTS_PAGE_PRODUCT_TITLE = "(//h3[@class='galery-product__title']//a)[$1]";
     String PRODUCTS_PAGE_SOCIAL_NETWORK_LINKS = "(//a[@title='$1'])[$2]";
 
+    String PRODUCTS_PAGE_GRID_VIEW_SOCIAL_NETWORK_LINKS = "(//span[@class='b-share'])[$1]";
+
     //TODO: PRODUCT PAGE
 
     String PRODUCT_DESCRIPTION_PICTURE = "//a[@class='image-viewer-link']";
     String PRODUCT_DESCRIPTION_TITLE = "//h1/span[contains(text(),*)]";
     String PRODUCT_DESCRIPTION = "//div[@class='info-product table-word-wrap']";
-
-    String PRODUCS_PAGE_PAGINATION_LINKS = "(//a[contains(text(),'$1')])[1]";
 
     //TODO: CATEGORIES
 
@@ -73,14 +73,16 @@ public interface Locators {
 
     //TODO: LIST VIEW AND GRID VIEW BUTTONS
 
-    String PRODUCTS_PAGE_CHANGE_VIEW_BUTTON = "//i[@class='icon-$1']";
+    String PRODUCTS_PAGE_CHANGE_VIEW_BUTTON = "//a//i[@class='icon-$1']";
 
     //TODO: SPECIAL OFFERS PAGE
 
     String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_PICTURE = "(//div[@class='product-item__img product-img-intro'])[$1]";
-    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_TITLE = "//a[contains(text(),'$1')]";
-    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_SMALL_DESC = "(//div[@class='gallery-product__introtext'])[$1]";
-    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_READ_MORE = "(//div[@class='gallery-product__introtext'])[$1]";
+    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_TITLE = "(//h3[@class='galery-product__title']/a)[$1]";
+    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_SMALL_DESC = "(//div[@class='gallery-product__introtext']/div)[$1]";
+    String SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_READ_MORE = "(//a[contains(text(),'$1')])[$2]";
+
+    String SHOWING_RESULTS_LABEL = "(//small[contains(text(),'$1')])[1]";
 
     //TODO: BLOGS PAGE
 
@@ -102,5 +104,10 @@ public interface Locators {
     String CONTACT_US_PAGE_ERROR_MSG = "//label[contains(text(),'$2 *')]/../../div[not(@class='hide')]/span[contains(text(),'$1')]";
     String CONTACT_US_PAGE_TEXTBOXES = "//label[contains(text(),'$1 *')]/ancestor::div[@class='control-group']/input";
     String CONTACT_US_PAGE_COMMENTS_TEXT_AREA = "//label[contains(text(),'Comments')]/../textarea";
+
+    //TODO: SCROLLED HEADER
+
+    String SCROLLED_HEADER = "//div[@class='text-right menu-wrapper affix-header lfr-hudcrumbs']";
+
 
 }

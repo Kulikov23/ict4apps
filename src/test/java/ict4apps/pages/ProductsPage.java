@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
+
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -44,6 +45,10 @@ public class ProductsPage extends PageObject {
         return $(Locators.PRODUCT_DESCRIPTION).isPresent();
     }
 
+    public boolean checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) {
+        return $(Locators.PRODUCTS_PAGE_GRID_VIEW_SOCIAL_NETWORK_LINKS.replace("$1", arg0)).isVisible();
+    }
+
 //TODO://///////////////////////////////        LOGIN PAGE IS OPENED          //////////////////////////////////////////
 
     public void clickingOnTheSocialLinks(String arg0, String arg1) {
@@ -74,9 +79,9 @@ public class ProductsPage extends PageObject {
     }
 
     public void scroll() {
-        for (int i = 0; i < 1000; i++) {
-            waitABit(10);
-            jsExecutor().executeScript("window.scrollBy(0,1)");
+        for (int i = 0; i < 75; i++) {
+            waitABit(5);
+            jsExecutor().executeScript("window.scrollBy(0,05)");
         }
     }
 
@@ -127,6 +132,16 @@ public class ProductsPage extends PageObject {
 
     public boolean productBlocksAreChangedView() {
         return $(Locators.PRODUCTS_PAGE_PRODUCT_TITLE.replace("$1", "1")).isVisible();
+    }
+
+//TODO://////////////////////////////////         SCROLLED HEADER        ///////////////////////////////////////////////
+
+    public void scrollDownPage() {
+        scroll();
+    }
+
+    public boolean checkThatScrolledHeaderIsAppears() {
+        return $(Locators.SCROLLED_HEADER).isVisible();
     }
 }
 

@@ -14,15 +14,25 @@ public class SpecialOffersPage extends PageObject {
         waitABit(1500);
     }
 
-    public boolean checkThatPictureIsChangedAndContainsTitle(String arg0, String arg1) {
+    public boolean checkThatPictureIsChangedAndContainsTitle(String arg0) {
+        waitABit(100);
         return $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).isVisible();
     }
 
     public boolean checkThatPictureIsChangedAndContainsSmallDesc(String arg0) {
+        waitABit(100);
         return $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_SMALL_DESC.replace("$1", arg0)).isVisible();
     }
 
     public boolean checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) {
-        return $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_READ_MORE.replace("$1", arg0).replace("$2", arg1)).isVisible();
+        waitABit(100);
+        return $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_READ_MORE.replace("$1", arg1).replace("$2", arg0)).isVisible();
     }
+
+    public boolean checkThatLabelIsChanged(String arg0, String arg1) {
+        return $(Locators.SHOWING_RESULTS_LABEL.replace("$1",arg1)).isVisible();
+    }
+
+
+
 }
