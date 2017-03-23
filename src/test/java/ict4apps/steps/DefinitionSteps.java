@@ -334,9 +334,29 @@ public class DefinitionSteps {
         steps.clickOnTheBlogPicture(arg0);
     }
 
-    @When("^clicking on the \"([^\"]*)\" blog block MORE link$")
-    public void clickingOnTheBlogBlockREADMORELink(String arg0) throws Throwable {
-        steps.clickOnTheBlockMoreLink(arg0);
+    @When("^clicking on the \"([^\"]*)\" blog block \"([^\"]*)\" link$")
+    public void clickingOnTheBlogBlockREADMORELink(String arg0, String arg1) throws Throwable {
+        steps.clickOnTheBlockMoreLink(arg0, arg1);
+    }
+
+    @When("^clicking on the \"([^\"]*)\" \"([^\"]*)\" link$")
+    public void clickingOnThe0CommentsLink(String arg0, String arg1) throws Throwable {
+        steps.clickingOnThe0CommentsLink(arg0, arg1);
+    }
+
+    @When("^click on the \"([^\"]*)\" link of the blog page$")
+    public void clickOnTheNextPervLinkOfTheBlogPage(String arg0) throws Throwable {
+        steps.clickOnTheNextPervLinkOfTheBlogPage(arg0);
+    }
+
+    @Then("^check that page is changed$")
+    public void checkThatPageIsChanged() throws Throwable {
+        steps.checkThatPageIsChanged();
+    }
+
+    @When("^clicking on the \"([^\"]*)\" social network icon of the blog$")
+    public void clickingOnTheSocialNetworkIconOfTheBlog(String arg0) throws Throwable {
+        steps.clickingOnTheSocialNetworkIconOfTheBlog(arg0);
     }
 
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
@@ -360,9 +380,14 @@ public class DefinitionSteps {
 
 //TODO:///////////////////        CLICK ON THE VIEW ORIGINAL POST IS OPENING OUR CHOSEN BLOG        ////////////////////
 
-    @Then("^checking that click on the View Original Post is opening news website with our chosen blog$")
+    @Then("^checking that click on the View Original Post is opening news website with our chosen blog in a new tab$")
     public void checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPageOfTheNewsSite() throws Throwable {
         steps.checkingThatClickOnTheViewOriginalPostIsOpeningCorrectPage();
+    }
+
+    @Then("^checking that click on the View Original Post is opening news website with our chosen blog$")
+    public void checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog() throws Throwable {
+        steps.checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog();
     }
 
 //TODO://////////////////////////////////         CONTACT US PAGE        ///////////////////////////////////////////////
@@ -414,8 +439,13 @@ public class DefinitionSteps {
         steps.checkThatScrolledHeaderIsAppears();
     }
 
-
 //TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
+
+    @When("^clicking on the \"([^\"]*)\" social network icon$")
+    public void clickingOnTheSocialNetworkIcon(String arg0) throws Throwable {
+        steps.clickingOnTheSocialNetworkIcon(arg0);
+    }
+
 
 }
 

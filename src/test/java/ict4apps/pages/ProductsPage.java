@@ -60,7 +60,7 @@ public class ProductsPage extends PageObject {
         String url = getDriver().getCurrentUrl();
         getDriver().close();
         switchWindow(0);
-        waitABit(1500);
+        waitABit(1000);
         return url;
     }
 

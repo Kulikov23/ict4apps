@@ -173,5 +173,10 @@ public class WelcomePage extends PageObject {
         return $(Locators.WELCOME_PAGE_READ_MORE_ABOUT_US_TITLE.replace("$1", arg0)).isVisible();
     }
 
+//TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
+
+    public void clickingOnTheSocialNetworkIcon(String arg0) {
+        $(Locators.WELCOME_PAGE_FOOTER.replace("$1",arg0)).click();
+    }
 }
 

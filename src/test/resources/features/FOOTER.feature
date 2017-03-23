@@ -15,3 +15,13 @@ Feature: FOOTER
     When click "Contact Us" link of the "2" navigation links list
     Then check that "contact-us" page is opened
 
+    Scenario: 02
+      When clicking on the "Facebook" social network icon
+      Then checking that login page is opened and contains "https://www.facebook.com"
+      When clicking on the "Twitter" social network icon
+      Then checking that login page is opened and contains "https://twitter.com"
+      When clicking on the "LinkedIn" social network icon
+      Then checking that login page is opened and contains "https://www.linkedin.com"
+      When clicking on the "Google+" social network icon
+      Then checking that login page is opened and contains "https://accounts.google.com"
+

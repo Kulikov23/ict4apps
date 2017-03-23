@@ -12,10 +12,11 @@ public interface Locators {
 
     String WELCOME_PAGE_SITE_LOGO = "//img[@alt='$1']";
 
-//    String WELCOME_PAGE_READ_MORE_ABOUT_US = "//a[contains(text(),'$1')]";
     String WELCOME_PAGE_READ_MORE_ABOUT_US_TITLE = "//*[contains(text(),'Read more About us')]";
 
-    //a//span[contains(text(),'Share to Facebook')]
+    //TODO: FOOTER
+
+    String WELCOME_PAGE_FOOTER = "//span[contains(text(),'Share to $1')]/..";
 
     //TODO: NAVIGATION LINKS
 
@@ -89,7 +90,12 @@ public interface Locators {
     String BLOGS_PAGE_BLOG_BLOCKS = "//div[@class='entry']";
     String BLOGS_PAGE_BLOG_TITLE = "(//h2/a)[$1]";
     String BLOGS_PAGE_BLOG_PICTURE = "(//img[@class='images img-responsive'])[$1]";
-    String BLOGS_PAGE_READ_MORE = "//a[contains(text(),'$1')]";
+    String BLOGS_PAGE_READ_MORE = "(//a[contains(text(),'$1')])[$2]";
+
+    String BLOGS_PAGE_0_COMMENTS_LINK = "(//span[contains(text(),'$2')])[$1]";
+
+    String BLOGS_PAGE_NEXT_PERV_LINKS = "//a[contains(text(),'$1')]";
+    String BLOGS_PAGE_SOCIAL_NETWORK_LINKS = "//ul/li[@class='taglib-social-bookmark-$1']";
 
     //TODO: RSS
 

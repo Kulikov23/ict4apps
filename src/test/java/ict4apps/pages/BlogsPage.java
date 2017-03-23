@@ -3,6 +3,7 @@ package ict4apps.pages;
 import ict4apps.Locators;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
+
 import java.util.ArrayList;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
@@ -31,17 +32,34 @@ public class BlogsPage extends PageObject {
 
     public void clickOnTheBlockTitle(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_TITLE.replace("$1", arg0)).click();
-        waitABit(1500);
+        waitABit(1000);
     }
 
     public void clickOnTheBlockPicture(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_PICTURE.replace("$1", arg0)).click();
-        waitABit(1500);
+        waitABit(1000);
     }
 
-    public void clickOnTheBlockMoreLink(String arg0) {
-        $(Locators.BLOGS_PAGE_READ_MORE.replace("$1", arg0)).click();
-        waitABit(1500);
+    public void clickOnTheBlockMoreLink(String arg0, String arg1) {
+        $(Locators.BLOGS_PAGE_READ_MORE.replace("$1", arg1).replace("$2", arg0)).click();
+        waitABit(1000);
+    }
+
+    public void clickingOnThe0CommentsLink(String arg0, String arg1) {
+        $(Locators.BLOGS_PAGE_0_COMMENTS_LINK.replace("$1", arg0).replace("$2", arg1)).click();
+    }
+
+    public void clickOnTheNextPervLinkOfTheBlogPage(String arg0) {
+        title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
+        $(Locators.BLOGS_PAGE_NEXT_PERV_LINKS.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatPageIsChanged() {
+        return !$(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title)).isPresent();
+    }
+
+    public void clickingOnTheSocialNetworkIconOfTheBlog(String arg0) {
+        $(Locators.BLOGS_PAGE_SOCIAL_NETWORK_LINKS.replace("$1", arg0)).click();
     }
 
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
@@ -69,11 +87,17 @@ public class BlogsPage extends PageObject {
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         switchWindow(1);
-        boolean x = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
+        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
         waitABit(1500);
-        return x;
+        return y;
+    }
+
+    public boolean checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog() {
+        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
+        getDriver().navigate().back();
+        return y;
     }
 
 

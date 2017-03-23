@@ -345,9 +345,35 @@ public class EndUserSteps {
     }
 
     @Step
-    public void clickOnTheBlockMoreLink(String arg0) {
+    public void clickOnTheBlockMoreLink(String arg0, String arg1) {
         blogsPage.back();
-        blogsPage.clickOnTheBlockMoreLink(arg0);
+        blogsPage.clickOnTheBlockMoreLink(arg0, arg1);
+    }
+
+    @Step
+    public void checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog() {
+        Assert.assertTrue(blogsPage.checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog());
+    }
+
+    @Step
+    public void clickingOnThe0CommentsLink(String arg0, String arg1) {
+        blogsPage.back();
+        blogsPage.clickingOnThe0CommentsLink(arg0, arg1);
+    }
+
+    @Step
+    public void clickOnTheNextPervLinkOfTheBlogPage(String arg0) {
+        blogsPage.clickOnTheNextPervLinkOfTheBlogPage(arg0);
+    }
+
+    @Step
+    public void checkThatPageIsChanged() {
+        Assert.assertTrue(blogsPage.checkThatPageIsChanged());
+    }
+
+    @Step
+    public void clickingOnTheSocialNetworkIconOfTheBlog(String arg0) {
+        blogsPage.clickingOnTheSocialNetworkIconOfTheBlog(arg0);
     }
 
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
@@ -421,8 +447,12 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatScrolledHeaderIsAppears());
     }
 
-
 //TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
+
+    @Step
+    public void clickingOnTheSocialNetworkIcon(String arg0) {
+        welcomePage.clickingOnTheSocialNetworkIcon(arg0);
+    }
 
 
 }
