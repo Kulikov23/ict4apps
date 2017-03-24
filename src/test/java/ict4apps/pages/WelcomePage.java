@@ -34,6 +34,19 @@ public class WelcomePage extends PageObject {
         return $(Locators.WELCOME_PAGE_SITE_LOGO.replace("$1", arg0)).isVisible();
     }
 
+//TODO:///////////////////////////////////         SEARCH BUTTON            ////////////////////////////////////////////
+
+    public void clickOnTheSearch() {
+        $(Locators.WELCOME_PAGE_SEARCH_BUTTON).click();
+    }
+
+    public boolean checkThatSearchPageIsOpened() {
+        return getDriver().getCurrentUrl().contains("search");
+    }
+    public boolean checkThatSearchPageContainsSearchBth() {
+        return $(Locators.WELCOME_PAGE_SEARCH_BUTTON).isVisible();
+    }
+
 //TODO:////////////////////////////         NAVIGATION LINKS            ////////////////////////////////////////////////
 
     public WebElement linkWithStr(String arg0,String arg1) {
@@ -178,5 +191,8 @@ public class WelcomePage extends PageObject {
     public void clickingOnTheSocialNetworkIcon(String arg0) {
         $(Locators.WELCOME_PAGE_FOOTER.replace("$1",arg0)).click();
     }
+
+
+
 }
 

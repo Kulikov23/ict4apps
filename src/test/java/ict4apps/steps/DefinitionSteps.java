@@ -38,6 +38,18 @@ public class DefinitionSteps {
         steps.checkThatSiteLogoIsAppears(arg0);
     }
 
+//TODO://///////////////////////////////      SEARCH BUTTON       //////////////////////////////////////////////////////
+
+    @When("^click on the search button$")
+    public void clickOnTheSearchButton() throws Throwable {
+        steps.clickOnTheSearch();
+    }
+
+    @Then("^check that search page is opened$")
+    public void checkThatSearchPageIsOpened() throws Throwable {
+        steps.checkThatSearchPageIsOpened();
+    }
+
 //TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
 
     @When("^click on the \"([^\"]*)\" link$")
@@ -359,6 +371,12 @@ public class DefinitionSteps {
         steps.clickingOnTheSocialNetworkIconOfTheBlog(arg0);
     }
 
+
+    @When("^click on the \"([^\"]*)\" link of the BLOGS page$")
+    public void clickOnTheLinkOfTheBLOGSPage(String arg0) throws Throwable {
+        steps.clickOnTheLinkOfTheBLOGSPage(arg0);
+    }
+
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" link$")
@@ -447,6 +465,77 @@ public class DefinitionSteps {
     }
 
 
+    @Then("^check that page is changed to the next$")
+    public void checkThatPageIsChangedToTheNext() throws Throwable {
+        steps.checkThatPageIsChangedToTheNext();
+    }
+
+    @When("^click on the \"([^\"]*)\" button of the BLOGS page$")
+    public void clickOnTheButtonOfTheBLOGSPage(String arg0) throws Throwable {
+        steps.clickOnTheButtonOfTheBLOGSPage(arg0);
+    }
+
+    @Then("^check that drop down menu is opened and contains \"([^\"]*)\" items$")
+    public void checkThatDropDownMenuIsOpenedAndContainsItems(String arg0) throws Throwable {
+
+    }
+
+//TODO:////////////////////////////////////////      BREADCRUMB       //////////////////////////////////////////////////
+
+    @When("^click on the \"([^\"]*)\" category$")
+    public void clickOnTheCategory(String arg0) throws Throwable {
+        steps.clickOnTheCategoryWithSubCategory(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" category with sub category is active$")
+    public void categoryWithSubCategoryIsActive(String arg0) throws Throwable {
+        steps.categoryWithSubCategoryIsActive(arg0);
+    }
+
+    @Then("^breadcrumb added \"([^\"]*)\" link$")
+    public void breadcrumbAddedLink(String arg0) throws Throwable {
+        steps.breadcrumbAddedLink(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" of the active link$")
+    public void clickOnTheOfTheActiveLink(String arg0) throws Throwable {
+        steps.clickOnTheOfTheActiveLink(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" sub category appears$")
+    public void checkThatSubCategoryAppears(String arg0) throws Throwable {
+        steps.checkThatSubCategoryAppears(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" title of product$")
+    public void clickOnTheTitleOfProduct(String arg0) throws Throwable {
+        steps.clickOnTheTitleOfProduct(arg0);
+    }
+
+    @When("^click on the \"([^\"]*)\" breadcrumb link$")
+    public void clickOnTheBreadcrumbLink(String arg0) throws Throwable {
+        steps.clickOnTheBreadcrumbLink(arg0);
+    }
+
+    @Then("^page is changed and should contain \"([^\"]*)\"$")
+    public void pageIsChangedAndShouldContain(String arg0) throws Throwable {
+        steps.pageIsChangedAndShouldContain(arg0);
+    }
+
+    @Then("^check that Welcome page is opened and contains \"([^\"]*)\"$")
+    public void checkThatWelcomePageIsOpenedAndContains(String arg0) throws Throwable {
+        steps.checkThatWelcomePageIsOpenedAndContains(arg0);
+    }
+
+    @Then("^breadcrumb added link with name of the \"([^\"]*)\" blog block$")
+    public void breadcrumbAddedLinkWithNameOfTheFirstBlogBlock(String arg0) throws Throwable {
+        steps.breadcrumbAddedLinkWithNameOfTheFirstBlogBlock(arg0);
+    }
+
+    @When("^clicking on the \"([^\"]*)\" blog block title on the Blogs page$")
+    public void clickingOnTheBlogBlockTitleOnTheBlogsPage(String arg0) throws Throwable {
+        steps.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
+    }
 }
 
 

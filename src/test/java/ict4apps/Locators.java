@@ -14,6 +14,8 @@ public interface Locators {
 
     String WELCOME_PAGE_READ_MORE_ABOUT_US_TITLE = "//*[contains(text(),'Read more About us')]";
 
+    String WELCOME_PAGE_SEARCH_BUTTON = "//button[contains(text(),'Search')]";
+
     //TODO: FOOTER
 
     String WELCOME_PAGE_FOOTER = "//span[contains(text(),'Share to $1')]/..";
@@ -95,7 +97,27 @@ public interface Locators {
     String BLOGS_PAGE_0_COMMENTS_LINK = "(//span[contains(text(),'$2')])[$1]";
 
     String BLOGS_PAGE_NEXT_PERV_LINKS = "//a[contains(text(),'$1')]";
-    String BLOGS_PAGE_SOCIAL_NETWORK_LINKS = "//ul/li[@class='taglib-social-bookmark-$1']";
+
+    //TODO: PAGE OF DROPDOWN MENU
+
+    String BLOGS_PAGE_PAGE_OF_BUTTON = "//span[contains(text(),'$1')]";
+    String BLOGS_PAGE_PAGE_OF_LISTBOX = "//div[@class='open']";
+    String BLOGS_PAGE_PAGE_OF_TEXTBOX = "//input[@class='lfr-menu-list-search']";
+    String BLOGS_PAGE_PAGE_OF_ITEMS = "(//span[@class='taglib-text-icon'])[$1]";
+
+    //TODO: FRAMES
+
+    String BLOGS_PAGE_TWITTER_FRAME = "//iframe[@id='twitter-widget-0']";
+    String BLOGS_PAGE_TWITTER_LINK = ".//*[@id='l']";
+
+    String BLOGS_PAGE_FACEBOOK_FRAME = "//iframe[@title='fb:like Facebook Social Plugin']";
+    String BLOGS_PAGE_FACEBOOK_LINK = "    //div[@title='Like']";
+
+    String BLOGS_PAGE_GOOGLE_FRAME = "//iframe[@id='I0_1490342396275']";
+    String BLOGS_PAGE_GOOGLE_LINK = ".//*[@id='button']";
+
+
+    String BLOGS_PAGE_SHOWING_RESULTS_LABEL = "//small[@class = 'search-results']";
 
     //TODO: RSS
 
@@ -114,6 +136,17 @@ public interface Locators {
     //TODO: SCROLLED HEADER
 
     String SCROLLED_HEADER = "//div[@class='text-right menu-wrapper affix-header lfr-hudcrumbs']";
+
+    //TODO: BREADCRUMB
+
+    String PRODUCTS_PAGE_CATEGORY_WITH_SUB_CATEGORY = "//li//a[text()='$1']";
+    String PRODUCTS_PAGE_ACTIVE_CATEGORY_WITH_SUB_CATEGORY = "//li[@class='jqtree_common jqtree-folder jqtree-closed active']//span[contains(text(),'$1')]";
+    String PRODUCTS_PAGE_BREADCRUMB_1 = "//ul[@aria-label='Breadcrumb']//li[contains(text(),'$1')]";
+    String PRODUCTS_PAGE_BREADCRUMB_2 = "//li/span/../a[contains(text(),'$1')]";
+
+    String WELCOME_PAGE_HEADER = "//span[contains(text(),'$1')]";
+
+    String PRODUCTS_PAGE_OPN_SUB_LINK = "//span[contains(text(),*)]/../a[contains(text(),'$1')]";
 
 
 }

@@ -25,7 +25,11 @@ Feature: WELCOME PAGE
     Then "login" page is opened
     Then page contains "Sign In" button
 
-  Scenario: 04
+    Scenario: 04
+      When click on the search button
+      Then check that search page is opened
+
+  Scenario: 05
     When click on the "Android app on Google Play" linked image on the "DOWNLOAD MOBILE VERSION" box
     Then check that app download page page is opened "https://play.google.com"
     Then check that page with our app "Demo ICT4APPS SERIES BASIC" is opened
@@ -33,54 +37,54 @@ Feature: WELCOME PAGE
     Then check that "http://www.apple.com" page is opened
     Then check that page with our app "Demo ICT4APPS SERIES BASIC" is opened
 
-  Scenario: 05
+  Scenario: 06
     When move mouse to the "1" block picture
     Then check that first block contains "Bacon and Tomato Sandwich" title
     Then check that "1" block contains small description
     Then check that "1" block contains "More" link
 
-  Scenario: 06
+  Scenario: 07
     When move mouse to the "1" block picture
     When click on the first block contains "Bacon and Tomato Sandwich" title
     Then check that "special-offers" page of our product is opened
 #    Then checking that product page contains title,picture and description
     When click on the "More" link of the "1" block
 
-  Scenario: 07
+  Scenario: 08
     When move mouse to the "3" block picture
     Then check that first block contains "Classic Canapes" title
     Then check that "3" block contains small description
     Then check that "3" block contains "More" link
 
-  Scenario: 08
+  Scenario: 09
     When move mouse to the "3" block picture
     When click on the first block contains "Classic Canapes" title
     Then check that "special-offers" page of our product is opened
 #    Then checking that product page contains title,picture and description
     When click on the "More" link of the "3" block
 
-  Scenario: 09
+  Scenario: 10
     When click on the scroll button "Next" of the "1" picture carousel
 #    Then check that pictures are changed
 
-  Scenario: 10
+  Scenario: 11
     When move mouse to the "3" block picture
     Then check that first block contains "Classic Mushroom Soup" title
     Then check that "3" block contains small description
     Then check that "3" block contains "More" link
 
-  Scenario: 11
+  Scenario: 12
     When move mouse to the "3" block picture
     When click on the first block contains "Classic Mushroom Soup" title
     Then check that "special-offers" page of our product is opened
 #    Then checking that product page contains title,picture and description
     When click on the "More" link of the "3" block
 
-  Scenario: 12
+  Scenario: 13
     When click on the scroll button "Previous" of the "1" picture carousel
 #    Then check that pictures are changed
 
-  Scenario Outline: 13
+  Scenario Outline: 14
     When clicking on the blog links "<blogNumber>"
     Then blog pages contains following links "View Original Post", "Read More"
     Examples:
@@ -89,14 +93,14 @@ Feature: WELCOME PAGE
       | 3          |
       | 5          |
 
-  Scenario: 14
+  Scenario: 15
     Then the languages should be in the correct order:
       | 1 | English    |
       | 2 | italiano   |
       | 3 | українська |
       | 4 | русский    |
 
-  Scenario Outline: 15
+  Scenario Outline: 16
     When moving on the block "<pictures>"
     Then checking that elements changing "<pictures>" and contains "<titles>":
     When click on the "<pictures>"
@@ -108,7 +112,7 @@ Feature: WELCOME PAGE
       | 0        | Appetizers |
       | 5        | Desserts   |
 
-  Scenario: 16
+  Scenario: 17
     When click on the "Read more About us »" link
     Then "about-us" page is opened
     Then check that page contains "Read more About us" header

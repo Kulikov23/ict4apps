@@ -13,6 +13,7 @@ public class EndUserSteps {
     SpecialOffersPage specialOffersPage;
     BlogsPage blogsPage;
     ContactUs contactUs;
+    Breadcrumb breadcrumb;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -36,6 +37,20 @@ public class EndUserSteps {
     @Step
     public void checkThatSiteLogoIsAppears(String arg0) {
         Assert.assertTrue(welcomePage.checkThatSiteLogoIsAppears(arg0));
+    }
+
+//TODO://///////////////////////////////      SEARCH BUTTON       //////////////////////////////////////////////////////
+
+    @Step
+    public void clickOnTheSearch() {
+        welcomePage.clickOnTheSearch();
+    }
+
+    @Step
+    public void checkThatSearchPageIsOpened() {
+        Assert.assertTrue(welcomePage.checkThatSearchPageIsOpened());
+        Assert.assertTrue(welcomePage.checkThatSearchPageContainsSearchBth());
+        welcomePage.back();
     }
 
 //TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
@@ -454,6 +469,76 @@ public class EndUserSteps {
         welcomePage.clickingOnTheSocialNetworkIcon(arg0);
     }
 
+    @Step
+    public void clickOnTheLinkOfTheBLOGSPage(String arg0) {
+        blogsPage.clickOnTheLinkOfTheBLOGSPage(arg0);
+    }
 
+    @Step
+    public void checkThatPageIsChangedToTheNext() {
+        Assert.assertTrue(blogsPage.checkThatPageIsChangedToTheNext());
+    }
+
+    @Step
+    public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
+        blogsPage.clickOnTheButtonOfTheBLOGSPage(arg0);
+    }
+
+//TODO:////////////////////////////////////////      BREADCRUMB       //////////////////////////////////////////////////
+
+    @Step
+    public void clickOnTheCategoryWithSubCategory(String arg0) {
+        breadcrumb.clickOnTheCategoryWithSubCategory(arg0);
+    }
+
+    @Step
+    public void categoryWithSubCategoryIsActive(String arg0) {
+        Assert.assertTrue(breadcrumb.categoryWithSubCategoryIsActive(arg0));
+    }
+
+    @Step
+    public void breadcrumbAddedLink(String arg0) {
+        Assert.assertTrue(breadcrumb.breadcrumbAddedLink(arg0));
+    }
+
+    @Step
+    public void clickOnTheOfTheActiveLink(String arg0) {
+        breadcrumb.clickOnTheOfTheActiveLink(arg0);
+    }
+
+    @Step
+    public void checkThatSubCategoryAppears(String arg0) {
+        Assert.assertTrue(breadcrumb.checkThatSubCategoryAppears(arg0));
+    }
+
+    @Step
+    public void clickOnTheTitleOfProduct(String arg0) {
+        breadcrumb.clickOnTheTitleOfProduct(arg0);
+    }
+
+    @Step
+    public void clickOnTheBreadcrumbLink(String arg0) {
+        breadcrumb.clickOnTheBreadcrumbLink(arg0);
+    }
+
+    @Step
+    public void pageIsChangedAndShouldContain(String arg0) {
+        Assert.assertTrue(breadcrumb.pageIsChangedAndShouldContain(arg0));
+    }
+
+    @Step
+    public void checkThatWelcomePageIsOpenedAndContains(String arg0) {
+        Assert.assertTrue(breadcrumb.checkThatWelcomePageIsOpenedAndContains(arg0));
+    }
+
+    @Step
+    public void breadcrumbAddedLinkWithNameOfTheFirstBlogBlock(String arg0) {
+        Assert.assertTrue(breadcrumb.breadcrumbAddedLinkWithNameOfTheFirstBlogBlock(arg0));
+    }
+
+    @Step
+    public void clickingOnTheBlogBlockTitleOnTheBlogsPage(String arg0) {
+        breadcrumb.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
+    }
 }
 

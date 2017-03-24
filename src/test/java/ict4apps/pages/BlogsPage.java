@@ -3,13 +3,17 @@ package ict4apps.pages;
 import ict4apps.Locators;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.By;
 
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
 
     String title;
+    String numb1;
 
     public void back() {
         getDriver().navigate().back();
@@ -59,7 +63,8 @@ public class BlogsPage extends PageObject {
     }
 
     public void clickingOnTheSocialNetworkIconOfTheBlog(String arg0) {
-        $(Locators.BLOGS_PAGE_SOCIAL_NETWORK_LINKS.replace("$1", arg0)).click();
+        getDriver().switchTo().frame(getDriver().findElement((By) $(Locators.BLOGS_PAGE_FACEBOOK_FRAME)));
+        $(Locators.BLOGS_PAGE_FACEBOOK_LINK).click();
     }
 
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
@@ -101,6 +106,20 @@ public class BlogsPage extends PageObject {
     }
 
 
+    public void clickOnTheLinkOfTheBLOGSPage(String arg0) {
+        String text = $(Locators.BLOGS_PAGE_SHOWING_RESULTS_LABEL).getText();
+        numb1 = text.substring(text.lastIndexOf("of") + 2, text.indexOf("results"));
+        $(Locators.WELCOME_PAGE_SIGN_IN_LINK.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatPageIsChangedToTheNext() {
+        return !$(Locators.BLOGS_PAGE_SHOWING_RESULTS_LABEL).getText().contains(numb1);
+    }
+
+    public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
+        $(Locators.BLOGS_PAGE_PAGE_OF_BUTTON.replace("$1",arg0)).click();
+        waitABit(1000);
+    }
 }
 
 
