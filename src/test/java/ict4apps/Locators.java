@@ -143,6 +143,7 @@ public interface Locators {
     String PRODUCTS_PAGE_ACTIVE_CATEGORY_WITH_SUB_CATEGORY = "//li[@class='jqtree_common jqtree-folder jqtree-closed active']//span[contains(text(),'$1')]";
     String PRODUCTS_PAGE_BREADCRUMB_1 = "//ul[@aria-label='Breadcrumb']//li[contains(text(),'$1')]";
     String PRODUCTS_PAGE_BREADCRUMB_2 = "//li/span/../a[contains(text(),'$1')]";
+    String PRODUCTS_PAGE_BREADCRUMB_3  = "//ul[@aria-label='Breadcrumb']//li[@class='active last breadcrumb-truncate']";
 
     String WELCOME_PAGE_HEADER = "//span[contains(text(),'$1')]";
 

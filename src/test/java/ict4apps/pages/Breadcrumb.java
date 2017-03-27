@@ -50,7 +50,7 @@ public class Breadcrumb extends PageObject {
     }
 
     public boolean breadcrumbAddedLinkWithNameOfTheFirstBlogBlock(String arg0) {
-        return $(Locators.PRODUCTS_PAGE_BREADCRUMB_1.replace("$1", title)).isVisible();
+        return $(Locators.PRODUCTS_PAGE_BREADCRUMB_3).getText().equalsIgnoreCase(title);
     }
 
     public void clickingOnTheBlogBlockTitleOnTheBlogsPage(String arg0) {
