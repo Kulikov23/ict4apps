@@ -16,9 +16,15 @@ public interface Locators {
 
     String WELCOME_PAGE_SEARCH_BUTTON = "//button[contains(text(),'Search')]";
 
+    String WELCOME_PAGE_HEADER = "//span[contains(text(),'$1')]";
+
+    String WELCOME_PAGE_REVIEW_PICTURE_CAROUSEL_HEADER = "//li[@class='slick-slide slick-active']//h4";
+
     //TODO: FOOTER
 
     String WELCOME_PAGE_FOOTER = "//span[contains(text(),'Share to $1')]/..";
+
+    String WELCOME_PAGE_BACK_TO_TOP = "//a[@href='#']";
 
     //TODO: NAVIGATION LINKS
 
@@ -143,9 +149,7 @@ public interface Locators {
     String PRODUCTS_PAGE_ACTIVE_CATEGORY_WITH_SUB_CATEGORY = "//li[@class='jqtree_common jqtree-folder jqtree-closed active']//span[contains(text(),'$1')]";
     String PRODUCTS_PAGE_BREADCRUMB_1 = "//ul[@aria-label='Breadcrumb']//li[contains(text(),'$1')]";
     String PRODUCTS_PAGE_BREADCRUMB_2 = "//li/span/../a[contains(text(),'$1')]";
-    String PRODUCTS_PAGE_BREADCRUMB_3  = "//ul[@aria-label='Breadcrumb']//li[@class='active last breadcrumb-truncate']";
-
-    String WELCOME_PAGE_HEADER = "//span[contains(text(),'$1')]";
+    String PRODUCTS_PAGE_BREADCRUMB_3 = "//ul[@aria-label='Breadcrumb']//li[@class='active last breadcrumb-truncate']";
 
     String PRODUCTS_PAGE_OPN_SUB_LINK = "//span[contains(text(),*)]/../a[contains(text(),'$1')]";
 

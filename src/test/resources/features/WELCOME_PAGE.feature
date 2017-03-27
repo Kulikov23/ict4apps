@@ -3,10 +3,10 @@ Feature: WELCOME PAGE
   Background:
     Given the user is on the Welcome page
 
-    Scenario: 01
-      When click on the "ict4apps" site logo
-      Then check that "welcome" page is refreshed
-      Then check that "ict4apps" site logo is appears
+  Scenario: 01
+    When click on the "ict4apps" site logo
+    Then check that "welcome" page is refreshed
+    Then check that "ict4apps" site logo is appears
 
   Scenario: 02
     When click "Welcome" link of the "1" navigation links list
@@ -25,9 +25,9 @@ Feature: WELCOME PAGE
     Then "login" page is opened
     Then page contains "Sign In" button
 
-    Scenario: 04
-      When click on the search button
-      Then check that search page is opened
+  Scenario: 04
+    When click on the search button
+    Then check that search page is opened
 
   Scenario: 05
     When click on the "Android app on Google Play" linked image on the "DOWNLOAD MOBILE VERSION" box
@@ -47,7 +47,7 @@ Feature: WELCOME PAGE
     When move mouse to the "1" block picture
     When click on the first block contains "Bacon and Tomato Sandwich" title
     Then check that "special-offers" page of our product is opened
-#    Then checking that product page contains title,picture and description
+    Then checking that product page contains title,picture and description
     When click on the "More" link of the "1" block
 
   Scenario: 08
@@ -60,7 +60,7 @@ Feature: WELCOME PAGE
     When move mouse to the "3" block picture
     When click on the first block contains "Classic Canapes" title
     Then check that "special-offers" page of our product is opened
-#    Then checking that product page contains title,picture and description
+    Then checking that product page contains title,picture and description
     When click on the "More" link of the "3" block
 
   Scenario: 10
@@ -77,7 +77,7 @@ Feature: WELCOME PAGE
     When move mouse to the "3" block picture
     When click on the first block contains "Classic Mushroom Soup" title
     Then check that "special-offers" page of our product is opened
-#    Then checking that product page contains title,picture and description
+    Then checking that product page contains title,picture and description
     When click on the "More" link of the "3" block
 
   Scenario: 13
@@ -104,7 +104,7 @@ Feature: WELCOME PAGE
     When moving on the block "<pictures>"
     Then checking that elements changing "<pictures>" and contains "<titles>":
     When click on the "<pictures>"
-#    Then check that "products" page is opened with our chosen category
+    Then check that "products" page is opened with our chosen category
     When click on the scroll button "Next" of the "2" picture carousel
     When click on the scroll button "Previous" of the "2" picture carousel
     Examples:
@@ -116,3 +116,8 @@ Feature: WELCOME PAGE
     When click on the "Read more About us »" link
     Then "about-us" page is opened
     Then check that page contains "Read more About us" header
+
+#  Scenario: 17
+#    When move mouse to the "3" block picture
+#    Then
+

@@ -72,4 +72,4 @@ Feature: BLOGS PAGE
 
   Scenario: 08
     When click on the "Page 1 of" button of the BLOGS page
-    Then check that drop down menu is opened and contains "26" items
+#    Then check that drop down menu is opened and contains "26" items

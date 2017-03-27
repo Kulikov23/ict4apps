@@ -188,6 +188,7 @@ public class EndUserSteps {
     @Step
     public void checkThatPageIsOpenedWithOurChosenCategory(String arg0) {
         Assert.assertTrue(welcomePage.checkThatPageIsOpenedWithOurChosenCategory(arg0));
+        welcomePage.back();
     }
 
 //TODO://///////////////////////////////      READ MORE ABOUT US       /////////////////////////////////////////////////
@@ -391,6 +392,21 @@ public class EndUserSteps {
         blogsPage.clickingOnTheSocialNetworkIconOfTheBlog(arg0);
     }
 
+    @Step
+    public void clickOnTheLinkOfTheBLOGSPage(String arg0) {
+        blogsPage.clickOnTheLinkOfTheBLOGSPage(arg0);
+    }
+
+    @Step
+    public void checkThatPageIsChangedToTheNext() {
+        Assert.assertTrue(blogsPage.checkThatPageIsChangedToTheNext());
+    }
+
+    @Step
+    public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
+        blogsPage.clickOnTheButtonOfTheBLOGSPage(arg0);
+    }
+
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
 
     @Step
@@ -470,18 +486,13 @@ public class EndUserSteps {
     }
 
     @Step
-    public void clickOnTheLinkOfTheBLOGSPage(String arg0) {
-        blogsPage.clickOnTheLinkOfTheBLOGSPage(arg0);
+    public void checkThatBackToTopLinkIsAppears() {
+        Assert.assertTrue(welcomePage.checkThatBackToTopLinkIsAppears());
     }
 
     @Step
-    public void checkThatPageIsChangedToTheNext() {
-        Assert.assertTrue(blogsPage.checkThatPageIsChangedToTheNext());
-    }
-
-    @Step
-    public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
-        blogsPage.clickOnTheButtonOfTheBLOGSPage(arg0);
+    public void clickOnTheBackToTopLink() {
+        welcomePage.clickOnTheBackToTopLink();
     }
 
 //TODO:////////////////////////////////////////      BREADCRUMB       //////////////////////////////////////////////////
@@ -540,5 +551,7 @@ public class EndUserSteps {
     public void clickingOnTheBlogBlockTitleOnTheBlogsPage(String arg0) {
         breadcrumb.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
     }
+
+
 }
 

@@ -321,7 +321,6 @@ public class DefinitionSteps {
         steps.checkThatLabelIsChanged(arg0, arg1);
     }
 
-
 //TODO:////////////////////////////////         BLOGS PAGE           ///////////////////////////////////////////////////
 
     @Given("^the user is on the Blogs page$")
@@ -371,10 +370,24 @@ public class DefinitionSteps {
         steps.clickingOnTheSocialNetworkIconOfTheBlog(arg0);
     }
 
-
     @When("^click on the \"([^\"]*)\" link of the BLOGS page$")
     public void clickOnTheLinkOfTheBLOGSPage(String arg0) throws Throwable {
         steps.clickOnTheLinkOfTheBLOGSPage(arg0);
+    }
+
+    @Then("^check that page is changed to the next$")
+    public void checkThatPageIsChangedToTheNext() throws Throwable {
+        steps.checkThatPageIsChangedToTheNext();
+    }
+
+    @When("^click on the \"([^\"]*)\" button of the BLOGS page$")
+    public void clickOnTheButtonOfTheBLOGSPage(String arg0) throws Throwable {
+        steps.clickOnTheButtonOfTheBLOGSPage(arg0);
+    }
+
+    @When("^clicking on the \"([^\"]*)\"$")
+    public void clickingOnTheIsOpeningNewsWebsiteWithOurChosenBlog(String arg0) throws Throwable {
+        steps.clickingOnTheViewOriginalPost(arg0);
     }
 
 //TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
@@ -387,13 +400,6 @@ public class DefinitionSteps {
     @Then("^check that rss subscribe page is opened$")
     public void checkThatRssSubscribePageIsOpened() throws Throwable {
         steps.checkThatRssSubscribePageIsOpened();
-    }
-
-//TODO://////////////////////////////////         RSS LINK        //////////////////////////////////////////////////////
-
-    @When("^clicking on the \"([^\"]*)\"$")
-    public void clickingOnTheIsOpeningNewsWebsiteWithOurChosenBlog(String arg0) throws Throwable {
-        steps.clickingOnTheViewOriginalPost(arg0);
     }
 
 //TODO:///////////////////        CLICK ON THE VIEW ORIGINAL POST IS OPENING OUR CHOSEN BLOG        ////////////////////
@@ -464,20 +470,14 @@ public class DefinitionSteps {
         steps.clickingOnTheSocialNetworkIcon(arg0);
     }
 
-
-    @Then("^check that page is changed to the next$")
-    public void checkThatPageIsChangedToTheNext() throws Throwable {
-        steps.checkThatPageIsChangedToTheNext();
+    @Then("^check that back to top link is appears$")
+    public void checkThatBackToTopLinkIsAppears() throws Throwable {
+        steps.checkThatBackToTopLinkIsAppears();
     }
 
-    @When("^click on the \"([^\"]*)\" button of the BLOGS page$")
-    public void clickOnTheButtonOfTheBLOGSPage(String arg0) throws Throwable {
-        steps.clickOnTheButtonOfTheBLOGSPage(arg0);
-    }
-
-    @Then("^check that drop down menu is opened and contains \"([^\"]*)\" items$")
-    public void checkThatDropDownMenuIsOpenedAndContainsItems(String arg0) throws Throwable {
-
+    @When("^click on the back to top link$")
+    public void clickOnTheBackToTopLink() throws Throwable {
+        steps.clickOnTheBackToTopLink();
     }
 
 //TODO:////////////////////////////////////////      BREADCRUMB       //////////////////////////////////////////////////
@@ -536,6 +536,8 @@ public class DefinitionSteps {
     public void clickingOnTheBlogBlockTitleOnTheBlogsPage(String arg0) throws Throwable {
         steps.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
     }
+
+
 }
 
 

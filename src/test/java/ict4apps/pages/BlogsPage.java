@@ -105,7 +105,6 @@ public class BlogsPage extends PageObject {
         return y;
     }
 
-
     public void clickOnTheLinkOfTheBLOGSPage(String arg0) {
         String text = $(Locators.BLOGS_PAGE_SHOWING_RESULTS_LABEL).getText();
         numb1 = text.substring(text.lastIndexOf("of") + 2, text.indexOf("results"));

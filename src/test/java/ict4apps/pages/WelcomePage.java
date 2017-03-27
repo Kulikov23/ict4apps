@@ -43,14 +43,15 @@ public class WelcomePage extends PageObject {
     public boolean checkThatSearchPageIsOpened() {
         return getDriver().getCurrentUrl().contains("search");
     }
+
     public boolean checkThatSearchPageContainsSearchBth() {
         return $(Locators.WELCOME_PAGE_SEARCH_BUTTON).isVisible();
     }
 
 //TODO:////////////////////////////         NAVIGATION LINKS            ////////////////////////////////////////////////
 
-    public WebElement linkWithStr(String arg0,String arg1) {
-        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0).replace("$2",arg1));
+    public WebElement linkWithStr(String arg0, String arg1) {
+        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0).replace("$2", arg1));
     }
 
     public boolean checkThatPageIsOpened(String arg0) {
@@ -173,7 +174,7 @@ public class WelcomePage extends PageObject {
 
     public void clickOnTheProductPic(String arg0) {
         $(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURES.replace("$1", arg0)).click();
-        back();
+//        back();
     }
 
     public boolean checkThatPageIsOpenedWithOurChosenCategory(String arg0) {
@@ -189,10 +190,16 @@ public class WelcomePage extends PageObject {
 //TODO:////////////////////////////////////////      FOOTER       //////////////////////////////////////////////////////
 
     public void clickingOnTheSocialNetworkIcon(String arg0) {
-        $(Locators.WELCOME_PAGE_FOOTER.replace("$1",arg0)).click();
+        $(Locators.WELCOME_PAGE_FOOTER.replace("$1", arg0)).click();
     }
 
+    public boolean checkThatBackToTopLinkIsAppears() {
+        return $(Locators.WELCOME_PAGE_BACK_TO_TOP).isVisible();
+    }
 
-
+    public void clickOnTheBackToTopLink() {
+        $(Locators.WELCOME_PAGE_BACK_TO_TOP).click();
+        waitABit(1000);
+    }
 }
 
