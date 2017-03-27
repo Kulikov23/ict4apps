@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/pages/BlogsPage.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/pages/BlogsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/FOOTER.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/FOOTER.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,17 +36,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+            <state relative-caret-position="234">
+              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefinitionTestSuite_WELCOME.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefinitionTestSuite_WELCOME.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -193,10 +184,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/WelcomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/DefinitionTestSuite_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
       </list>
     </option>
   </component>
@@ -1068,7 +1059,7 @@
       <workItem from="1490253831560" duration="24750000" />
       <workItem from="1490339697755" duration="28693000" />
       <workItem from="1490595166302" duration="2379000" />
-      <workItem from="1490604941885" duration="8603000" />
+      <workItem from="1490604941885" duration="9279000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1273,7 +1264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490600250952</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Twenty ninth  commit (27/03)">
+      <created>1490621982802</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1490621982802</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1309,11 +1307,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343376000" />
+    <option name="totallyTimeSpent" value="344052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1323,7 +1321,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28961176" sideWeight="0.5040431" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17142858" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17142858" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37670514" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1357,7 +1355,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fifth  commit" />
     <MESSAGE value="Sixth  commit" />
     <MESSAGE value="Seventh  commit" />
     <MESSAGE value="Eighth  commit" />
@@ -1382,7 +1379,8 @@
     <MESSAGE value="Twenty seventh  commit" />
     <MESSAGE value="Twenty eighth  commit" />
     <MESSAGE value="Twenty ninth  commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Twenty ninth  commit" />
+    <MESSAGE value="Twenty ninth  commit (27/03)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Twenty ninth  commit (27/03)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1772,14 +1770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1797,6 +1787,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
