@@ -42,6 +42,7 @@ Feature: PRODUCTS PAGE
     Then product blocks are changed to grid view
 
   Scenario Outline: 05
+    When click on the "th-large" list view
     When move mouse to the "<ProductBlock>" product picture
     Then check that picture of the "<ProductBlock>" product block is changed and contains title
     Then check that picture of the "<ProductBlock>" product block is changed and contains small description
@@ -54,6 +55,7 @@ Feature: PRODUCTS PAGE
       | 12           |
 
   Scenario Outline: 06
+    When click on the "th-large" list view
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "<ProductBlock>" product block title
     Then checking that product page contains title,picture and description
