@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_02_PRODUCTS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_03_SPECIAL_OFFERS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SPECIAL_OFFERS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_04_BLOGS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_05_CONTACT_US.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_CONTACT_US.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_06_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_07_FOOTER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_FOOTER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_08_BREADCRUMB.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_09_SCROLLED_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SCROLLED_HEADER.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,6 +35,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="78" column="65" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="78" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BLOGS_PAGE.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefinitionTestSuite_WELCOME.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefinitionTestSuite_WELCOME.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -1269,7 +1269,7 @@
       <workItem from="1490339697755" duration="28693000" />
       <workItem from="1490595166302" duration="2379000" />
       <workItem from="1490604941885" duration="10586000" />
-      <workItem from="1490684404833" duration="5968000" />
+      <workItem from="1490684404833" duration="7763000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1516,7 +1516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490696778709</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary=" (28/03)_3">
+      <created>1490697795452</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1490697795452</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1552,7 +1559,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351327000" />
+    <option name="totallyTimeSpent" value="353122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1600,7 +1607,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ninth  commit" />
     <MESSAGE value="Tenth  commit" />
     <MESSAGE value="Eleventh  commit" />
     <MESSAGE value="Twelfth  commit" />
@@ -1625,7 +1631,8 @@
     <MESSAGE value=" (28/03)" />
     <MESSAGE value=" (28/03)_1" />
     <MESSAGE value=" (28/03)_2" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (28/03)_2" />
+    <MESSAGE value=" (28/03)_3" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (28/03)_3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2039,14 +2046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -2158,6 +2157,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="78" column="65" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="78" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
