@@ -6,6 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {
-        "src/test/resources/features/FOOTER.feature",
+        "src/test/resources/features/SCROLLED_HEADER.feature",
 })
-public class TestSuite_07_FOOTER {}
+public class DefinitionTestSuite_SCROLLED_HEADER {}

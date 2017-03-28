@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_04_BLOGS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_08_BREADCRUMB.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_CONTACT_US.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_05_CONTACT_US.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_FOOTER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_07_FOOTER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_06_HEADER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_02_PRODUCTS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SCROLLED_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_09_SCROLLED_HEADER.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SPECIAL_OFFERS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_03_SPECIAL_OFFERS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_02_PRODUCTS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_03_SPECIAL_OFFERS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SPECIAL_OFFERS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_04_BLOGS.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_05_CONTACT_US.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_CONTACT_US.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_06_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_07_FOOTER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_FOOTER.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_08_BREADCRUMB.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_09_SCROLLED_HEADER.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SCROLLED_HEADER.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,11 +55,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSuite_01_WELCOME.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java">
+      <file leaf-file-name="DefinitionTestSuite_WELCOME.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_PRODUCTS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_BLOGS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_HEADER.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_FOOTER.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_FOOTER.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_BREADCRUMB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionTestSuite_SCROLLED_HEADER.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SCROLLED_HEADER.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,8 +208,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_CONTACT_US.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionTestSuite_WELCOME.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
       </list>
     </option>
   </component>
@@ -369,7 +439,7 @@
       <recent name="ict4apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.DefinitionTestSuite_BREADCRUMB">
+  <component name="RunManager" selected="Maven.DefinitionTestSuite_WELCOME">
     <configuration default="false" name="Scenario: 03 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -892,7 +962,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="DefinitionTestSuite_WELCOME " type="MavenRunConfiguration" factoryName="Maven">
+    <configuration default="false" name="DefinitionTestSuite_WELCOME" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -1127,7 +1197,7 @@
       <method />
     </configuration>
     <list size="14">
-      <item index="0" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_WELCOME " />
+      <item index="0" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_WELCOME" />
       <item index="1" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_HEADER" />
       <item index="2" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_PRODUCTS " />
       <item index="3" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_BLOGS " />
@@ -1199,7 +1269,7 @@
       <workItem from="1490339697755" duration="28693000" />
       <workItem from="1490595166302" duration="2379000" />
       <workItem from="1490604941885" duration="10586000" />
-      <workItem from="1490684404833" duration="5017000" />
+      <workItem from="1490684404833" duration="5968000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1439,7 +1509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490688305238</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary=" (28/03)_2">
+      <created>1490696778709</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1490696778709</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1475,11 +1552,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350376000" />
+    <option name="totallyTimeSpent" value="351327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1501,7 +1578,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46065056" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25714287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25714287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1523,7 +1600,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Eighth  commit" />
     <MESSAGE value="Ninth  commit" />
     <MESSAGE value="Tenth  commit" />
     <MESSAGE value="Eleventh  commit" />
@@ -1548,7 +1624,8 @@
     <MESSAGE value="Twenty ninth  commit (27/03)" />
     <MESSAGE value=" (28/03)" />
     <MESSAGE value=" (28/03)_1" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (28/03)_1" />
+    <MESSAGE value=" (28/03)_2" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (28/03)_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1970,7 +2047,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
@@ -1980,7 +2057,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_03_SPECIAL_OFFERS.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SPECIAL_OFFERS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
@@ -1990,50 +2067,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_05_CONTACT_US.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_CONTACT_US.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_08_BREADCRUMB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_07_FOOTER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_09_SCROLLED_HEADER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_06_HEADER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2048,7 +2085,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_02_PRODUCTS.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -2058,28 +2103,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        <state relative-caret-position="108">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_04_BLOGS.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_FOOTER.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SCROLLED_HEADER.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
