@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {
-        "src/test/resources/features/BREADCRUMB.feature",
+        "src/test/resources/features/SCROLLED_HEADER.feature",
 })
-public class DefinitionTestSuite_BREADCRUMB {
-}
+public class TestSuite_09_SCROLLED_HEADER {}

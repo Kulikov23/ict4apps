@@ -16,5 +16,5 @@ import org.junit.runner.RunWith;
 //        "src/test/resources/features/SCROLLED_HEADER.feature",
 //        "src/test/resources/features/BREADCRUMB.feature"
 })
-public class DefinitionTestSuite {
+public class TestSuite {
 }

@@ -8,4 +8,4 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = {
         "src/test/resources/features/CONTACT_US_PAGE.feature",
 })
-public class DefinitionTestSuite_CONTACT_US {}
+public class TestSuite_05_CONTACT_US {}

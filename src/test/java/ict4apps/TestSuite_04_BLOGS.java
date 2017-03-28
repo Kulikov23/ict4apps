@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {
-        "src/test/resources/features/SPECIAL_OFFERS_PAGE.feature",
+        "src/test/resources/features/BLOGS_PAGE.feature",
 })
-public class DefinitionTestSuite_SPECIAL_OFFERS {
+public class TestSuite_04_BLOGS {
 }
