@@ -68,12 +68,14 @@ Feature: WELCOME PAGE
 #    Then check that pictures are changed
 
   Scenario: 11
+    When click on the scroll button "Next" of the "1" picture carousel
     When move mouse to the "3" block picture
     Then check that first block contains "Classic Mushroom Soup" title
     Then check that "3" block contains small description
     Then check that "3" block contains "More" link
 
   Scenario: 12
+    When click on the scroll button "Next" of the "1" picture carousel
     When move mouse to the "3" block picture
     When click on the first block contains "Classic Mushroom Soup" title
     Then check that "special-offers" page of our product is opened
