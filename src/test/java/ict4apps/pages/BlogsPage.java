@@ -2,15 +2,22 @@ package ict4apps.pages;
 
 import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector;
 import ict4apps.Locators;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.joda.time.Seconds;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
@@ -95,12 +102,7 @@ public class BlogsPage extends PageObject {
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         switchWindow(1);
-        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        textToBePresentInElement()
-
-        boolean y =   $(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title)).isPresent();
-
-//        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
+        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
         waitABit(1500);
@@ -124,7 +126,7 @@ public class BlogsPage extends PageObject {
     }
 
     public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
-        $(Locators.BLOGS_PAGE_PAGE_OF_BUTTON.replace("$1",arg0)).click();
+        $(Locators.BLOGS_PAGE_PAGE_OF_BUTTON.replace("$1", arg0)).click();
         waitABit(1000);
     }
 }
