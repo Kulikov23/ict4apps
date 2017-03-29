@@ -21,8 +21,8 @@ Feature: PRODUCTS PAGE
   Scenario Outline: : 03
     When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "http://oauth.vk.com"
-     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
-     Then checking that login page is opened and contains "https://www.facebook.com"
+    When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.facebook.com"
     When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "https://twitter.com"
     When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
@@ -64,8 +64,8 @@ Feature: PRODUCTS PAGE
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "http://oauth.vk.com"
-     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
-     Then checking that login page is opened and contains "https://www.facebook.com"
+    When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.facebook.com"
     When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "https://twitter.com"
     When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
@@ -92,13 +92,13 @@ Feature: PRODUCTS PAGE
 
   Scenario: 09
     When click on the "Page 1 Of 9" button
-    When click on the "1" item
+    When click on the "'1'" item
     Then check that "Showing 1 - 12 Of 98 Results" label is changed to "Showing 1 - 12 Of 98 Results"
     When click on the "Page 1 Of 9" button
-    When click on the "5" item
+    When click on the "'5'" item
     Then check that "Showing 1 - 12 Of 98 Results" label is changed to "Showing 48 - 60 Of 98 Results"
     When click on the "Page 1 Of 9" button
-    When click on the "9" item
+    When click on the "'9'" item
     Then check that "Showing 48 - 60 Of 98 Results" label is changed to "Showing 96 - 98 Of 98 Results"
 
   Scenario: 10
@@ -118,6 +118,7 @@ Feature: PRODUCTS PAGE
     Then page should contains "36" product blocks
 
   Scenario: 12
+    When click on the "th-large" list view
     When click on the "list" list view
     Then product blocks are changed to list view
 

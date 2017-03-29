@@ -39,8 +39,61 @@
       <file leaf-file-name="PRODUCTS_PAGE.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-452">
-              <caret line="67" column="28" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="67" selection-end-column="28" />
+            <state relative-caret-position="286">
+              <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinitionSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndUserSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="282" column="36" lean-forward="true" selection-start-line="282" selection-start-column="36" selection-end-line="282" selection-end-column="36" />
+              <folding>
+                <element signature="e#8829#8830#0" expanded="true" />
+                <element signature="e#8890#8891#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecialOffersPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/SpecialOffersPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/ProductsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="143" />
               <folding />
             </state>
           </provider>
@@ -348,55 +401,7 @@
       <recent name="ict4apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: 11">
-    <configuration default="false" name="Scenario: 08" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
-      <option name="myNameFilter" value="^08$" />
-      <option name="myGeneratedName" value="Scenario: 08" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^08$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ict4appsTestProject" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: 09" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
-      <option name="myNameFilter" value="^09$" />
-      <option name="myGeneratedName" value="Scenario: 09" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^09$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ict4appsTestProject" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Cucumber java.Scenario: 12">
     <configuration default="false" name="Scenario: 11" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -459,6 +464,54 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^16$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ict4appsTestProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: 09 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
+      <option name="myNameFilter" value="^09$" />
+      <option name="myGeneratedName" value="Scenario: 09" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^09$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ict4appsTestProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: 12" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
+      <option name="myNameFilter" value="^12$" />
+      <option name="myGeneratedName" value="Scenario: 12" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^12$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1115,19 +1168,19 @@
       <item index="6" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_SCROLLED_HEADER" />
       <item index="7" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_SPECIAL_OFFERS" />
       <item index="8" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_CONTACT_US" />
-      <item index="9" class="java.lang.String" itemvalue="Cucumber java.Scenario: 08" />
-      <item index="10" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09" />
-      <item index="11" class="java.lang.String" itemvalue="Cucumber java.Scenario: 11" />
-      <item index="12" class="java.lang.String" itemvalue="Cucumber java.Scenario: 14" />
-      <item index="13" class="java.lang.String" itemvalue="Cucumber java.Scenario: 16" />
+      <item index="9" class="java.lang.String" itemvalue="Cucumber java.Scenario: 11" />
+      <item index="10" class="java.lang.String" itemvalue="Cucumber java.Scenario: 14" />
+      <item index="11" class="java.lang.String" itemvalue="Cucumber java.Scenario: 16" />
+      <item index="12" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09 (1)" />
+      <item index="13" class="java.lang.String" itemvalue="Cucumber java.Scenario: 12" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 11" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 16" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 14" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 08" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 12" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09 (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 11" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 16" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 14" />
       </list>
     </recent_temporary>
   </component>
@@ -1180,7 +1233,7 @@
       <workItem from="1490604941885" duration="10586000" />
       <workItem from="1490684404833" duration="8387000" />
       <workItem from="1490708466683" duration="1226000" />
-      <workItem from="1490773790475" duration="2790000" />
+      <workItem from="1490773790475" duration="4221000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1448,24 +1501,28 @@
       <option name="project" value="LOCAL" />
       <updated>1490775589037</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary=" (29/03) second">
+      <created>1490777360388</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1490777360388</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__06 - 2017.03.29 at 10h 53m 54s.xml">
-      <configuration name="Scenario: 06" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_(1) - 2017.03.29 at 11h 56m 21s.xml">
+      <configuration name="Scenario: 09 (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__07 - 2017.03.29 at 10h 54m 23s.xml">
-      <configuration name="Scenario: 07" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_(1) - 2017.03.29 at 11h 57m 19s.xml">
+      <configuration name="Scenario: 09 (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__08 - 2017.03.29 at 10h 55m 34s.xml">
-      <configuration name="Scenario: 08" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_(1) - 2017.03.29 at 11h 57m 46s.xml">
+      <configuration name="Scenario: 09 (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__09 - 2017.03.29 at 10h 55m 57s.xml">
-      <configuration name="Scenario: 09" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__11 - 2017.03.29 at 10h 56m 38s.xml">
-      <configuration name="Scenario: 11" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_(1) - 2017.03.29 at 11h 59m 43s.xml">
+      <configuration name="Scenario: 09 (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__11 - 2017.03.29 at 10h 57m 19s.xml">
       <configuration name="Scenario: 11" configurationId="CucumberJavaRunConfigurationType" />
@@ -1476,6 +1533,9 @@
     <history-entry file="Scenario__11 - 2017.03.29 at 11h 07m 21s.xml">
       <configuration name="Scenario: 11" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__12 - 2017.03.29 at 12h 02m 04s.xml">
+      <configuration name="Scenario: 12" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
     <history-entry file="Scenario__14 - 2017.03.29 at 10h 58m 34s.xml">
       <configuration name="Scenario: 14" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -1484,11 +1544,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357762000" />
+    <option name="totallyTimeSpent" value="359193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1500,7 +1560,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28961176" sideWeight="0.5040431" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20485175" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46065056" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46065056" sideWeight="0.49595687" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1532,7 +1592,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Twelfth  commit" />
     <MESSAGE value="Thirteenth  commit" />
     <MESSAGE value="Fourteenth  commit" />
     <MESSAGE value="Fifteenth  commit" />
@@ -1557,7 +1616,8 @@
     <MESSAGE value=" (28/03)_3" />
     <MESSAGE value=" (28/03)_4" />
     <MESSAGE value=" (29/03) first" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (29/03) first" />
+    <MESSAGE value=" (29/03) second" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (29/03) second" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1720,14 +1780,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/Footer.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/SpecialOffersPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.2.2-rc.1/serenity-core-1.2.2-rc.1.jar!/net/serenitybdd/core/pages/PageObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1746,17 +1798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="349" column="0" lean-forward="false" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/ProductsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-          <folding>
-            <element signature="e#4923#4924#0" expanded="false" />
-            <element signature="e#4947#4948#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1812,31 +1853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-858">
           <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="103" lean-forward="false" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="93" column="32" lean-forward="false" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="97" column="55" lean-forward="false" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1978,10 +1994,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/SpecialOffersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="266" column="27" lean-forward="false" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="282" column="36" lean-forward="true" selection-start-line="282" selection-start-column="36" selection-end-line="282" selection-end-column="36" />
+          <folding>
+            <element signature="e#8829#8830#0" expanded="true" />
+            <element signature="e#8890#8891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/ProductsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="286">
+          <caret line="120" column="16" lean-forward="true" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
           <folding />
         </state>
       </provider>
