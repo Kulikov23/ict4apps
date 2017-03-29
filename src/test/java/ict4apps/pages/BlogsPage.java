@@ -1,11 +1,14 @@
 package ict4apps.pages;
 
+import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector;
 import ict4apps.Locators;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
+import org.joda.time.Seconds;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -92,7 +95,12 @@ public class BlogsPage extends PageObject {
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         switchWindow(1);
-        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        textToBePresentInElement()
+
+        boolean y =   $(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title)).isPresent();
+
+//        boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
         waitABit(1500);

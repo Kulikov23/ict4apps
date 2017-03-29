@@ -55,9 +55,9 @@ public class ProductsPage extends PageObject {
         $(Locators.PRODUCTS_PAGE_SOCIAL_NETWORK_LINKS.replace("$1", arg0).replace("$2", arg1)).click();
     }
 
-    public String checkThatLoginPageIsOpened() {
+    public boolean checkThatLoginPageIsOpened(String arg0) {
         switchWindow(1);
-        String url = getDriver().getCurrentUrl();
+        boolean url = getDriver().getCurrentUrl().contains(arg0);
         getDriver().close();
         switchWindow(0);
         waitABit(1000);

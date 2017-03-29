@@ -40,8 +40,8 @@ Feature: BLOGS PAGE
     Examples:
       | BlogBlock |
       | 1         |
-      | 11        |
-      | 20        |
+      | 2         |
+      | 3         |
 
   Scenario Outline: 05
     When clicking on the "<BlogBlock>" blog block title

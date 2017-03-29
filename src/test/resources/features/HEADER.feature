@@ -11,8 +11,8 @@ Feature: PRODUCTS PAGE
   Scenario: 02
     When click "Welcome" link of the "1" navigation links list
     Then check that "welcome" page is opened
-    When click "Products" link of the "1" navigation links list
-    Then check that "products" page is opened
+#    When click "Products" link of the "1" navigation links list
+#    Then check that "products" page is opened
     When click "Special Offers" link of the "1" navigation links list
     Then check that "special-offers" page is opened
     When click "Blogs" link of the "1" navigation links list

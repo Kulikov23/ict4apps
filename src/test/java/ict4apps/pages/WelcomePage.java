@@ -57,6 +57,7 @@ public class WelcomePage extends PageObject {
     public boolean checkThatPageIsOpened(String arg0) {
         boolean x = getDriver().getCurrentUrl().contains(arg0);
         getDriver().navigate().back();
+        waitABit(500);
         return x;
     }
 

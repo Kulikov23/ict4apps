@@ -8,6 +8,7 @@ Feature: SPECIAL OFFERS PAGE
     Then product blocks are changed to grid view
 
   Scenario Outline: 02
+#    Given click on the "th-large" list view
     When move mouse to the "<ProductBlock>" product picture
     Then check that picture of the "<ProductBlock>" product block is changed and contains title
     Then check that picture of the "<ProductBlock>" product block is changed and contains small description
@@ -18,7 +19,9 @@ Feature: SPECIAL OFFERS PAGE
       | 6            |
       | 12           |
 
+
   Scenario Outline: 03
+    When click on the "th-large" list view
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "<ProductBlock>" product block title
     Then checking that product page contains title,picture and description
@@ -31,6 +34,7 @@ Feature: SPECIAL OFFERS PAGE
       | 12           |
 
   Scenario: 04
+    When click on the "th-large" list view
     When click on the "list" list view
     Then product blocks are changed to list view
 

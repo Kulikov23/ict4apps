@@ -246,7 +246,7 @@ public class EndUserSteps {
 
     @Step
     public void LoginPageIsOpened(String arg0) {
-        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened().contains(arg0));
+        Assert.assertTrue(productsPage.checkThatLoginPageIsOpened(arg0));
     }
 
 //TODO:////////////////////////////////     CATEGORIES      ////////////////////////////////////////////////////////////
