@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,11 +36,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+      <file leaf-file-name="PRODUCTS_PAGE.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="-452">
+              <caret line="67" column="28" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="67" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -107,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/DefinitionTestSuite_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_PRODUCTS.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SPECIAL_OFFERS.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BLOGS.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_HEADER.java" />
@@ -119,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/TestSuite_01_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_WELCOME.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
       </list>
     </option>
   </component>
@@ -1180,7 +1180,7 @@
       <workItem from="1490604941885" duration="10586000" />
       <workItem from="1490684404833" duration="8387000" />
       <workItem from="1490708466683" duration="1226000" />
-      <workItem from="1490773790475" duration="1779000" />
+      <workItem from="1490773790475" duration="2790000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1489060898966</created>
@@ -1441,7 +1441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490700511584</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary=" (29/03) first">
+      <created>1490775589037</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1490775589037</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1477,7 +1484,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356751000" />
+    <option name="totallyTimeSpent" value="357762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1525,7 +1532,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Eleventh  commit" />
     <MESSAGE value="Twelfth  commit" />
     <MESSAGE value="Thirteenth  commit" />
     <MESSAGE value="Fourteenth  commit" />
@@ -1550,7 +1556,8 @@
     <MESSAGE value=" (28/03)_2" />
     <MESSAGE value=" (28/03)_3" />
     <MESSAGE value=" (28/03)_4" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (28/03)_4" />
+    <MESSAGE value=" (29/03) first" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (29/03) first" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1891,13 +1898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/BLOGS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -1972,8 +1972,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="1566">
           <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-452">
+          <caret line="67" column="28" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="67" selection-end-column="28" />
           <folding />
         </state>
       </provider>

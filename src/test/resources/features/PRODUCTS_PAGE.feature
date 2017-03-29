@@ -21,8 +21,8 @@ Feature: PRODUCTS PAGE
   Scenario Outline: : 03
     When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "http://oauth.vk.com"
-#     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
-#     Then checking that login page is opened and contains "https://www.facebook.com"
+     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
+     Then checking that login page is opened and contains "https://www.facebook.com"
     When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "https://twitter.com"
     When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
@@ -64,8 +64,8 @@ Feature: PRODUCTS PAGE
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "http://oauth.vk.com"
-#     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
-#     Then checking that login page is opened and contains "https://www.facebook.com"
+     When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
+     Then checking that login page is opened and contains "https://www.facebook.com"
     When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
     Then checking that login page is opened and contains "https://twitter.com"
     When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
