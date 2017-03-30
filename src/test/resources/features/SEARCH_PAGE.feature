@@ -44,6 +44,8 @@ Feature: SEARCH PAGE
     When write "meat" in the textbox
     When click on the search button
     Then check that "meat" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_07
     When the user is on the Welcome page
@@ -53,6 +55,8 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_08
     When the user is on the Welcome page
@@ -62,6 +66,8 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: : SEARCH_PAGE_09
     When the user is on the Products page
@@ -104,6 +110,9 @@ Feature: SEARCH PAGE
     When write "meat" in the textbox
     When click on the search button
     Then check that "meat" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
+
 
   Scenario: SEARCH_PAGE_15
     When the user is on the Products page
@@ -113,6 +122,8 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_16
     When the user is on the Products page
@@ -122,6 +133,9 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
+
 
   Scenario: : SEARCH_PAGE_17
     When the user is on the Blogs page
@@ -164,6 +178,8 @@ Feature: SEARCH PAGE
     When write "meat" in the textbox
     When click on the search button
     Then check that "meat" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_23
     When the user is on the Blogs page
@@ -173,6 +189,8 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_24
     When the user is on the Blogs page
@@ -182,3 +200,16 @@ Feature: SEARCH PAGE
     When write "test" in the textbox
     When click on the search button
     Then check that "test" search results are appears
+    When click on the title of the "1" result block
+    Then check that click on the result title is moving us to chosen blog page
+
+  Scenario: SEARCH_PAGE_25
+    When the user is on the Blogs page
+    When click on the search button
+    When click on the "More" link
+    Then check that "Showing 1 - 20" label is changed to "Showing 21 - 40"
+    When click on the "More" link
+    When click on the "Previous" link
+    Then check that "Showing 41 - 60" label is changed to "Showing 21 - 40"
+    When click on the "First" link
+    Then check that "Showing 21 - 40" label is changed to "Showing 1 - 20"

@@ -584,7 +584,15 @@ public class DefinitionSteps {
         steps.writeInTheTextbox(arg0);
     }
 
+    @When("^click on the title of the \"([^\"]*)\" result block$")
+    public void clickOnTheTitleOfTheResultBlock(String arg0) throws Throwable {
+        steps.clickOnTheTitleOfTheResultBlock(arg0);
+    }
 
+    @Then("^check that click on the result title is moving us to chosen blog page$")
+    public void checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage() throws Throwable {
+        steps.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage();
+    }
 }
 
 

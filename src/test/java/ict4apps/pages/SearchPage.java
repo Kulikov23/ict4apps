@@ -9,9 +9,10 @@ import net.thucydides.core.pages.PageObject;
 public class SearchPage extends PageObject {
 
     String url;
+    String title;
 
     public boolean checkThatSearchSearchResultsAreAppears(String arg0) {
-        return $(Locators.SEARCH_PAGE_SEARCH_RESULT.replace("$1",arg0)).isVisible();
+        return $(Locators.SEARCH_PAGE_SEARCH_RESULT.replace("$1", arg0)).isVisible();
     }
 
     public void clickOnTheScopeDropdownMenu() {
@@ -41,5 +42,14 @@ public class SearchPage extends PageObject {
 
     public void clickOnTheElementOfTheListbox(String arg0) {
         $(Locators.SEARCH_PAGE_SCOPE_LISTBOX.replace("$1", arg0)).click();
+    }
+
+    public void clickOnTheTitleOfTheResultBlock(String arg0) {
+        title = $(Locators.SEARCH_PAGE_RESULT_TITLE.replace("$1", arg0)).getText();
+        $(Locators.SEARCH_PAGE_RESULT_TITLE.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage() {
+        return $(Locators.PRODUCTS_PAGE_BREADCRUMB_3).getText().equalsIgnoreCase(title);
     }
 }

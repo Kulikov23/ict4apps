@@ -600,8 +600,14 @@ public class EndUserSteps {
         searchPage.clickOnTheElementOfTheListbox(arg0);
     }
 
+    @Step
+    public void clickOnTheTitleOfTheResultBlock(String arg0) {
+        searchPage.clickOnTheTitleOfTheResultBlock(arg0);
+    }
 
-
-
+    @Step
+    public void checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage() {
+        Assert.assertTrue(searchPage.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage());
+    }
 }
 

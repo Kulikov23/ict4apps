@@ -163,6 +163,7 @@ public interface Locators {
 
     String SEARCH_PAGE_SEARCH_RESULT = "//span[contains(text(),'$1')]";
 
+    String SEARCH_PAGE_RESULT_TITLE = "(//span[@class='asset-entry-title']/a)[$1]";
 
 
 }
