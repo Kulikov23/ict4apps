@@ -594,5 +594,14 @@ public class EndUserSteps {
     public void writeInTheTextbox(String arg0) {
         searchPage.writeInTheTextbox(arg0);
     }
+
+    @Step
+    public void clickOnTheElementOfTheListbox(String arg0) {
+        searchPage.clickOnTheElementOfTheListbox(arg0);
+    }
+
+
+
+
 }
 

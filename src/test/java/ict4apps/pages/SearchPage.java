@@ -11,7 +11,7 @@ public class SearchPage extends PageObject {
     String url;
 
     public boolean checkThatSearchSearchResultsAreAppears() {
-        return $(Locators.SEARCH_PAGE_SEARCH_RESULTS).isVisible();
+        return $(Locators.SEARCH_PAGE_SEARCH_RESULT).isVisible();
     }
 
     public void clickOnTheScopeDropdownMenu() {
@@ -37,5 +37,9 @@ public class SearchPage extends PageObject {
 
     public void writeInTheTextbox(String arg0) {
         $(Locators.SEARCH_PAGE_TEXTBOX).sendKeys(arg0);
+    }
+
+    public void clickOnTheElementOfTheListbox(String arg0) {
+        $(Locators.SEARCH_PAGE_SCOPE_LISTBOX.replace("$1", arg0)).click();
     }
 }

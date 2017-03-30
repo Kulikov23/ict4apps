@@ -574,10 +574,17 @@ public class DefinitionSteps {
         steps.checkThatButtonIsHidden(arg0);
     }
 
+    @When("^click on the \"([^\"]*)\" element of the listbox$")
+    public void clickOnTheElementOfTheListbox(String arg0) throws Throwable {
+        steps.clickOnTheElementOfTheListbox(arg0);
+    }
+
     @When("^write \"([^\"]*)\" in the textbox$")
     public void writeInTheTextbox(String arg0) throws Throwable {
         steps.writeInTheTextbox(arg0);
     }
+
+
 }
 
 

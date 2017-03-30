@@ -162,7 +162,7 @@ public interface Locators {
 
     String SEARCH_PAGE_TEXTBOX = "//input[@name='_3_keywords']";
 
-
+    String SEARCH_PAGE_SEARCH_RESULT = "//span[contains(text(),'$1')]";
 
 
 
