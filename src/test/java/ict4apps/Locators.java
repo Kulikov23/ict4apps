@@ -160,6 +160,8 @@ public interface Locators {
     String SEARCH_PAGE_SCOPE_LISTBOX = " //option[@value='$1']";
     String SEARCH_PAGE_BUTTONS = "//button[contains(text(),'$1')]";
 
+    String SEARCH_PAGE_TEXTBOX = "//input[@name='_3_keywords']";
+
 
 
 

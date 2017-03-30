@@ -573,6 +573,11 @@ public class DefinitionSteps {
     public void checkThatButtonIsHidden(String arg0) throws Throwable {
         steps.checkThatButtonIsHidden(arg0);
     }
+
+    @When("^write \"([^\"]*)\" in the textbox$")
+    public void writeInTheTextbox(String arg0) throws Throwable {
+        steps.writeInTheTextbox(arg0);
+    }
 }
 
 

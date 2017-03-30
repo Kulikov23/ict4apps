@@ -589,5 +589,10 @@ public class EndUserSteps {
     public void checkThatButtonIsHidden(String arg0) {
         Assert.assertTrue(searchPage.checkThatButtonIsHidden(arg0));
     }
+
+    @Step
+    public void writeInTheTextbox(String arg0) {
+        searchPage.writeInTheTextbox(arg0);
+    }
 }
 

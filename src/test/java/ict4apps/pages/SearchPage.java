@@ -34,4 +34,8 @@ public class SearchPage extends PageObject {
     public boolean checkThatButtonIsHidden(String arg0) {
         return !$(Locators.SEARCH_PAGE_BUTTONS.replace("$1", arg0)).isVisible();
     }
+
+    public void writeInTheTextbox(String arg0) {
+        $(Locators.SEARCH_PAGE_TEXTBOX).sendKeys(arg0);
+    }
 }
