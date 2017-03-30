@@ -153,5 +153,15 @@ public interface Locators {
 
     String PRODUCTS_PAGE_OPN_SUB_LINK = "//span[contains(text(),*)]/../a[contains(text(),'$1')]";
 
+//TODO:///////////////////////////////////////      SEARCH PAGE       //////////////////////////////////////////////////
+
+    String SEARCH_PAGE_SCOPE_DROPDOWN = "//select[@name='_3_selected_scope']";
+    String SEARCH_PAGE_SEARCH_RESULTS = "//div[@class='lfr-search-container']";
+    String SEARCH_PAGE_SCOPE_LISTBOX = " //option[@value='$1']";
+    String SEARCH_PAGE_BUTTONS = "//button[contains(text(),'$1')]";
+
+
+
+
 
 }

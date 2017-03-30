@@ -14,7 +14,8 @@ import org.junit.runner.RunWith;
         "src/test/resources/features/FOOTER.feature",
         "src/test/resources/features/HEADER.feature",
         "src/test/resources/features/SCROLLED_HEADER.feature",
-       "src/test/resources/features/BREADCRUMB.feature"
+        "src/test/resources/features/BREADCRUMB.feature",
+        "src/test/resources/features/SEARCH_PAGE.feature"
 })
 public class DefinitionTestSuite {
 }

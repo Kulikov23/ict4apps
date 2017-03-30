@@ -38,7 +38,7 @@ public class DefinitionSteps {
         steps.checkThatSiteLogoIsAppears(arg0);
     }
 
-//TODO://///////////////////////////////      SEARCH BUTTON       //////////////////////////////////////////////////////
+//TODO://///////////////////////////////      SRCH BUTTON       //////////////////////////////////////////////////////
 
     @When("^click on the search button$")
     public void clickOnTheSearchButton() throws Throwable {
@@ -537,7 +537,42 @@ public class DefinitionSteps {
         steps.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
     }
 
+//TODO:///////////////////////////////////////      SEARCH PAGE       //////////////////////////////////////////////////
 
+    @Given("^the user is on the Search page$")
+    public void theUserIsOnTheSearchPage() throws Throwable {
+        steps.theUserIsOnTheSearchPage();
+    }
+
+    @Then("^check that search search results are appears$")
+    public void checkThatSearchSearchResultsAreAppears() throws Throwable {
+        steps.checkThatSearchSearchResultsAreAppears();
+    }
+
+    @When("^click on the Scope dropdown menu$")
+    public void clickOnTheScopeDropdownMenu() throws Throwable {
+        steps.clickOnTheScopeDropdownMenu();
+    }
+
+    @Then("^check that list box is opened and contains following \"([^\"]*)\"$")
+    public void checkThatListBoxIsOpenedAndContainsFollowing(String arg0) throws Throwable {
+        steps.checkThatListBoxIsOpenedAndContainsFollowing(arg0);
+    }
+
+    @Then("^check that page is not changing$")
+    public void checkThatPageIsNotChanging() throws Throwable {
+        steps.checkThatPageIsNotChanging();
+    }
+
+    @When("^click on the \"([^\"]*)\" button of the search page$")
+    public void clickOnTheButtonOfTheSearchPage(String arg0) throws Throwable {
+        steps.clickOnTheButtonOfTheSearchPage(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" button is hidden$")
+    public void checkThatButtonIsHidden(String arg0) throws Throwable {
+        steps.checkThatButtonIsHidden(arg0);
+    }
 }
 
 

@@ -1,23 +1,11 @@
 package ict4apps.pages;
 
-import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector;
 import ict4apps.Locators;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-import org.joda.time.Seconds;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
@@ -46,17 +34,17 @@ public class BlogsPage extends PageObject {
 
     public void clickOnTheBlockTitle(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_TITLE.replace("$1", arg0)).click();
-        waitABit(1000);
+        waitABit(750);
     }
 
     public void clickOnTheBlockPicture(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_PICTURE.replace("$1", arg0)).click();
-        waitABit(1000);
+        waitABit(750);
     }
 
     public void clickOnTheBlockMoreLink(String arg0, String arg1) {
         $(Locators.BLOGS_PAGE_READ_MORE.replace("$1", arg1).replace("$2", arg0)).click();
-        waitABit(1000);
+        waitABit(750);
     }
 
     public void clickingOnThe0CommentsLink(String arg0, String arg1) {
@@ -88,7 +76,7 @@ public class BlogsPage extends PageObject {
         boolean x = $(Locators.BLOGS_PAGE_RSS_SUBSCRIBE_BUTTON).isVisible();
         getDriver().close();
         switchWindow(0);
-        waitABit(1500);
+        waitABit(750);
         return x;
     }
 
@@ -97,7 +85,7 @@ public class BlogsPage extends PageObject {
     public void clickingOnTheViewOriginalPost(String arg0) {
         title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
         $(Locators.LINKS.replace("$1", arg0)).click();
-        waitABit(1500);
+        waitABit(750);
     }
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
@@ -105,7 +93,7 @@ public class BlogsPage extends PageObject {
         boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
-        waitABit(1500);
+        waitABit(750);
         return y;
     }
 
@@ -122,12 +110,12 @@ public class BlogsPage extends PageObject {
     }
 
     public boolean checkThatPageIsChangedToTheNext() {
-        return !$(Locators.BLOGS_PAGE_SHOWING_RESULTS_LABEL).getText().contains(numb1);
+        return $(Locators.BLOGS_PAGE_SHOWING_RESULTS_LABEL).getText().contains(numb1);
     }
 
     public void clickOnTheButtonOfTheBLOGSPage(String arg0) {
         $(Locators.BLOGS_PAGE_PAGE_OF_BUTTON.replace("$1", arg0)).click();
-        waitABit(1000);
+        waitABit(750);
     }
 }
 

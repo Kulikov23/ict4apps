@@ -3,11 +3,11 @@ Feature: SCROLLED HEADER
   Background:
     Given the user is on the Products page
 
-  Scenario: 01
+  Scenario: PRODUCTS_PAGE_SCROLLED_HEADER_01
     When scroll down page
     Then check that scrolled header is appears
 
-  Scenario: 02
+  Scenario: PRODUCTS_PAGE_SCROLLED_HEADER_02
     When scroll down page
     When click "Welcome" link of the "1" navigation links list
     Then check that "welcome" page is opened

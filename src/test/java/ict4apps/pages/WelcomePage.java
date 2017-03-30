@@ -34,7 +34,7 @@ public class WelcomePage extends PageObject {
         return $(Locators.WELCOME_PAGE_SITE_LOGO.replace("$1", arg0)).isVisible();
     }
 
-//TODO:///////////////////////////////////         SEARCH BUTTON            ////////////////////////////////////////////
+//TODO:///////////////////////////////////         SRCH BUTTON            ////////////////////////////////////////////
 
     public void clickOnTheSearch() {
         $(Locators.WELCOME_PAGE_SEARCH_BUTTON).click();

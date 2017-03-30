@@ -3,11 +3,11 @@ Feature: CONTACT US PAGE
   Background:
     Given the user is on the Contact Us page
 
-  Scenario: 01
+  Scenario: CONTACT_US_PAGE_01
     When clicking on the "Send" button
     Then check that "This field is mandatory." error messages are appears near all "" text boxes
 
-  Scenario: 02
+  Scenario: CONTACT_US_PAGE_02
     When write "qwe" in the "Name" text box
     When clicking on the "Send" button
     Then check that "This field is mandatory." error message is not appears above the "Name" text box

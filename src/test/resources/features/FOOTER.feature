@@ -3,7 +3,7 @@ Feature: FOOTER
   Background:
     Given the user is on the Welcome page
 
-  Scenario: 01
+  Scenario: WELCOME_PAGE_FOOTER_01
     When click "Welcome" link of the "2" navigation links list
     Then check that "welcome" page is opened
     When click "Products" link of the "2" navigation links list
@@ -15,7 +15,7 @@ Feature: FOOTER
     When click "Contact Us" link of the "2" navigation links list
     Then check that "contact-us" page is opened
 
-  Scenario: 02
+  Scenario: WELCOME_PAGE_FOOTER_02
     When clicking on the "Facebook" social network icon
     Then checking that login page is opened and contains "https://www.facebook.com"
     When clicking on the "Twitter" social network icon
@@ -25,7 +25,7 @@ Feature: FOOTER
     When clicking on the "Google+" social network icon
     Then checking that login page is opened and contains "https://accounts.google.com"
 
-  Scenario: 03
+  Scenario: WELCOME_PAGE_FOOTER_03
     When scroll down page
     Then check that back to top link is appears
     When click on the back to top link

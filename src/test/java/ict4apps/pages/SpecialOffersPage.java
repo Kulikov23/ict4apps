@@ -11,7 +11,7 @@ public class SpecialOffersPage extends PageObject {
     public void move(String arg0) {
         Actions action = new Actions(getDriver());
         action.moveToElement($(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1", arg0))).build().perform();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public boolean checkThatPictureIsChangedAndContainsTitle(String arg0) {

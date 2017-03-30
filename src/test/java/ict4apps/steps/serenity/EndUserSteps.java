@@ -14,6 +14,7 @@ public class EndUserSteps {
     BlogsPage blogsPage;
     ContactUs contactUs;
     Breadcrumb breadcrumb;
+    SearchPage searchPage;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -39,7 +40,7 @@ public class EndUserSteps {
         Assert.assertTrue(welcomePage.checkThatSiteLogoIsAppears(arg0));
     }
 
-//TODO://///////////////////////////////      SEARCH BUTTON       //////////////////////////////////////////////////////
+//TODO://///////////////////////////////      SRCH BUTTON       //////////////////////////////////////////////////////
 
     @Step
     public void clickOnTheSearch() {
@@ -50,7 +51,7 @@ public class EndUserSteps {
     public void checkThatSearchPageIsOpened() {
         Assert.assertTrue(welcomePage.checkThatSearchPageIsOpened());
         Assert.assertTrue(welcomePage.checkThatSearchPageContainsSearchBth());
-        welcomePage.back();
+//        welcomePage.back();
     }
 
 //TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
@@ -552,6 +553,41 @@ public class EndUserSteps {
         breadcrumb.clickingOnTheBlogBlockTitleOnTheBlogsPage(arg0);
     }
 
+//TODO:///////////////////////////////////////      SEARCH PAGE       //////////////////////////////////////////////////
 
+    @Step
+    public void theUserIsOnTheSearchPage() {
+        searchPage.open();
+    }
+
+    @Step
+    public void clickOnTheScopeDropdownMenu() {
+        searchPage.clickOnTheScopeDropdownMenu();
+    }
+
+    @Step
+    public void checkThatListBoxIsOpenedAndContainsFollowing(String arg0) {
+        Assert.assertTrue(searchPage.checkThatListBoxIsOpenedAndContainsFollowing(arg0));
+    }
+
+    @Step
+    public void checkThatSearchSearchResultsAreAppears() {
+        Assert.assertTrue(searchPage.checkThatSearchSearchResultsAreAppears());
+    }
+
+    @Step
+    public void checkThatPageIsNotChanging() {
+        Assert.assertTrue(searchPage.checkThatPageIsNotChanging());
+    }
+
+    @Step
+    public void clickOnTheButtonOfTheSearchPage(String arg0) {
+        searchPage.clickOnTheSearchButtonOfTheSearchPage(arg0);
+    }
+
+    @Step
+    public void checkThatButtonIsHidden(String arg0) {
+        Assert.assertTrue(searchPage.checkThatButtonIsHidden(arg0));
+    }
 }
 

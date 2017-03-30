@@ -1,6 +1,6 @@
 Feature: BREADCRUMB
 
-  Scenario: 01
+  Scenario: BREADCRUMB_01
     Given the user is on the Products page
     When click on the "Desserts" category
     Then "Desserts" category with sub category is active
@@ -21,7 +21,7 @@ Feature: BREADCRUMB
     When click on the "ict4apps" breadcrumb link
     Then check that Welcome page is opened and contains "OUR SPECIAL OFFERS"
 
-  Scenario: 02
+  Scenario: BREADCRUMB_02
     Given the user is on the Special offers page
     When click on the "Grilled Vegetable Tortilla Roll" title of product
     Then breadcrumb added "Grilled Vegetable Tortilla Roll" link
@@ -30,7 +30,7 @@ Feature: BREADCRUMB
     When click on the "ict4apps" breadcrumb link
     Then check that Welcome page is opened and contains "OUR SPECIAL OFFERS"
 
-  Scenario: 03
+  Scenario: BREADCRUMB_03
     Given the user is on the Blogs page
     When clicking on the "1" blog block title on the Blogs page
     Then breadcrumb added link with name of the "1" blog block
