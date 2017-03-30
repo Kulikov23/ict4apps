@@ -544,9 +544,9 @@ public class DefinitionSteps {
         steps.theUserIsOnTheSearchPage();
     }
 
-    @Then("^check that search search results are appears$")
-    public void checkThatSearchSearchResultsAreAppears() throws Throwable {
-        steps.checkThatSearchSearchResultsAreAppears();
+    @Then("^check that \"([^\"]*)\" search results are appears$")
+    public void checkThatSearchSearchResultsAreAppears(String arg0) throws Throwable {
+        steps.checkThatSearchSearchResultsAreAppears(arg0);
     }
 
     @When("^click on the Scope dropdown menu$")

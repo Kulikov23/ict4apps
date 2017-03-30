@@ -571,8 +571,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void checkThatSearchSearchResultsAreAppears() {
-        Assert.assertTrue(searchPage.checkThatSearchSearchResultsAreAppears());
+    public void checkThatSearchSearchResultsAreAppears(String arg0) {
+        Assert.assertTrue(searchPage.checkThatSearchSearchResultsAreAppears(arg0));
     }
 
     @Step

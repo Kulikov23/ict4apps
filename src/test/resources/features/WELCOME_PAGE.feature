@@ -95,12 +95,12 @@ Feature: WELCOME PAGE
       | 3          |
       | 5          |
 
-  Scenario: WELCOME_PAGE_15
-    Then the languages should be in the correct order:
-      | 1 | English    |
-      | 2 | italiano   |
-      | 3 | українська |
-      | 4 | русский    |
+#  Scenario: WELCOME_PAGE_15
+#    Then the languages should be in the correct order:
+#      | 1 | English    |
+#      | 2 | italiano   |
+#      | 3 | українська |
+#      | 4 | русский    |
 
   Scenario Outline: WELCOME_PAGE_16
     When moving on the block "<pictures>"

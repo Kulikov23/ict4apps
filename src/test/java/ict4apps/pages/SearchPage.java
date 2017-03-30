@@ -10,8 +10,8 @@ public class SearchPage extends PageObject {
 
     String url;
 
-    public boolean checkThatSearchSearchResultsAreAppears() {
-        return $(Locators.SEARCH_PAGE_SEARCH_RESULT).isVisible();
+    public boolean checkThatSearchSearchResultsAreAppears(String arg0) {
+        return $(Locators.SEARCH_PAGE_SEARCH_RESULT.replace("$1",arg0)).isVisible();
     }
 
     public void clickOnTheScopeDropdownMenu() {

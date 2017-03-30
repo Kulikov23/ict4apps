@@ -11,7 +11,7 @@ Feature: SEARCH PAGE
   Scenario: : SEARCH_PAGE_02
     When the user is on the Welcome page
     When click on the "Search" button of the search page
-    Then check that search search results are appears
+#    Then check that search search results are appears
 
   Scenario Outline: SEARCH_PAGE_03
     When the user is on the Welcome page
@@ -43,25 +43,25 @@ Feature: SEARCH PAGE
     When click on the "product" element of the listbox
     When write "meat" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "meat" search results are appears
 
   Scenario: SEARCH_PAGE_07
     When the user is on the Welcome page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "blogs" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
 
   Scenario: SEARCH_PAGE_08
     When the user is on the Welcome page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "global" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
 
   Scenario: : SEARCH_PAGE_09
     When the user is on the Products page
@@ -71,7 +71,7 @@ Feature: SEARCH PAGE
   Scenario: : SEARCH_PAGE_10
     When the user is on the Products page
     When click on the "Search" button of the search page
-    Then check that search search results are appears
+#    Then check that search search results are appears
 
   Scenario Outline: SEARCH_PAGE_11
     When the user is on the Products page
@@ -103,25 +103,25 @@ Feature: SEARCH PAGE
     When click on the "product" element of the listbox
     When write "meat" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "meat" search results are appears
 
   Scenario: SEARCH_PAGE_15
     When the user is on the Products page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "blogs" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
 
   Scenario: SEARCH_PAGE_16
     When the user is on the Products page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "global" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
 
   Scenario: : SEARCH_PAGE_17
     When the user is on the Blogs page
@@ -131,7 +131,7 @@ Feature: SEARCH PAGE
   Scenario: : SEARCH_PAGE_18
     When the user is on the Blogs page
     When click on the "Search" button of the search page
-    Then check that search search results are appears
+#    Then check that "apple" search results are appears
 
   Scenario Outline: SEARCH_PAGE_19
     When the user is on the Blogs page
@@ -163,22 +163,22 @@ Feature: SEARCH PAGE
     When click on the "product" element of the listbox
     When write "meat" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "meat" search results are appears
 
   Scenario: SEARCH_PAGE_23
     When the user is on the Blogs page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "blogs" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
 
   Scenario: SEARCH_PAGE_24
     When the user is on the Blogs page
     When click on the search button
     When click on the Scope dropdown menu
     When click on the "global" element of the listbox
-    When write "apple" in the textbox
+    When write "test" in the textbox
     When click on the search button
-    Then check that search search results are appears
+    Then check that "test" search results are appears
