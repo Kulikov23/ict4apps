@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +36,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SEARCH_PAGE.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SEARCH_PAGE.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-378">
@@ -45,55 +46,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SPECIAL_OFFERS_PAGE.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
+      <file leaf-file-name="DefinitionTestSuite_BREADCRUMB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefinitionSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java">
+      <file leaf-file-name="BREADCRUMB.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/BREADCRUMB.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10332">
-              <caret line="583" column="23" lean-forward="false" selection-start-line="583" selection-start-column="23" selection-end-line="583" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#561#562#0" expanded="false" />
-                <element signature="e#601#602#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="43" />
+            <state relative-caret-position="369">
+              <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -104,163 +81,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndUserSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8514">
-              <caret line="594" column="26" lean-forward="false" selection-start-line="594" selection-start-column="26" selection-end-line="594" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#555#556#0" expanded="false" />
-                <element signature="e#589#590#0" expanded="false" />
-                <element signature="e#772#773#0" expanded="false" />
-                <element signature="e#824#825#0" expanded="false" />
-                <element signature="e#891#892#0" expanded="false" />
-                <element signature="e#968#969#0" expanded="false" />
-                <element signature="e#1284#1285#0" expanded="false" />
-                <element signature="e#1330#1331#0" expanded="false" />
-                <element signature="e#1759#1760#0" expanded="false" />
-                <element signature="e#1813#1814#0" expanded="false" />
-                <element signature="e#1873#1874#0" expanded="false" />
-                <element signature="e#1943#1944#0" expanded="false" />
-                <element signature="e#2010#2011#0" expanded="false" />
-                <element signature="e#2087#2088#0" expanded="false" />
-                <element signature="e#2755#2756#0" expanded="false" />
-                <element signature="e#2814#2815#0" expanded="false" />
-                <element signature="e#2878#2879#0" expanded="false" />
-                <element signature="e#2952#2953#0" expanded="false" />
-                <element signature="e#3116#3117#0" expanded="false" />
-                <element signature="e#3160#3161#0" expanded="false" />
-                <element signature="e#3219#3220#0" expanded="false" />
-                <element signature="e#3284#3285#0" expanded="false" />
-                <element signature="e#3349#3350#0" expanded="false" />
-                <element signature="e#3424#3425#0" expanded="false" />
-                <element signature="e#3645#3646#0" expanded="false" />
-                <element signature="e#3712#3713#0" expanded="false" />
-                <element signature="e#4284#4285#0" expanded="false" />
-                <element signature="e#4346#4347#0" expanded="false" />
-                <element signature="e#4522#4523#0" expanded="false" />
-                <element signature="e#4565#4566#0" expanded="false" />
-                <element signature="e#4976#4977#0" expanded="false" />
-                <element signature="e#5024#5025#0" expanded="false" />
-                <element signature="e#5370#5371#0" expanded="false" />
-                <element signature="e#5417#5418#0" expanded="false" />
-                <element signature="e#5645#5646#0" expanded="false" />
-                <element signature="e#5699#5700#0" expanded="false" />
-                <element signature="e#6359#6360#0" expanded="false" />
-                <element signature="e#6394#6395#0" expanded="false" />
-                <element signature="e#6581#6582#0" expanded="false" />
-                <element signature="e#6637#6638#0" expanded="false" />
-                <element signature="e#7840#7841#0" expanded="false" />
-                <element signature="e#7920#7921#0" expanded="false" />
-                <element signature="e#8103#8104#0" expanded="false" />
-                <element signature="e#8156#8157#0" expanded="false" />
-                <element signature="e#8215#8216#0" expanded="false" />
-                <element signature="e#8285#8286#0" expanded="false" />
-                <element signature="e#8466#8467#0" expanded="false" />
-                <element signature="e#8517#8518#0" expanded="false" />
-                <element signature="e#8569#8570#0" expanded="false" />
-                <element signature="e#8639#8640#0" expanded="false" />
-                <element signature="e#8702#8703#0" expanded="false" />
-                <element signature="e#8776#8777#0" expanded="false" />
-                <element signature="e#8845#8846#0" expanded="false" />
-                <element signature="e#8906#8907#0" expanded="false" />
-                <element signature="e#9140#9141#0" expanded="false" />
-                <element signature="e#9196#9197#0" expanded="false" />
-                <element signature="e#9383#9384#0" expanded="false" />
-                <element signature="e#9461#9462#0" expanded="false" />
-                <element signature="e#9526#9527#0" expanded="false" />
-                <element signature="e#9603#9604#0" expanded="false" />
-                <element signature="e#9788#9789#0" expanded="false" />
-                <element signature="e#9828#9829#0" expanded="false" />
-                <element signature="e#9875#9876#0" expanded="false" />
-                <element signature="e#9919#9920#0" expanded="false" />
-                <element signature="e#10876#10877#0" expanded="false" />
-                <element signature="e#10908#10909#0" expanded="false" />
-                <element signature="e#11146#11147#0" expanded="false" />
-                <element signature="e#11198#11199#0" expanded="false" />
-                <element signature="e#12108#12109#0" expanded="false" />
-                <element signature="e#12177#12178#0" expanded="false" />
-                <element signature="e#12401#12402#0" expanded="false" />
-                <element signature="e#12461#12462#0" expanded="false" />
-                <element signature="e#12524#12525#0" expanded="false" />
-                <element signature="e#12602#12603#0" expanded="false" />
-                <element signature="e#12675#12676#0" expanded="false" />
-                <element signature="e#12737#12738#0" expanded="false" />
-                <element signature="e#12919#12920#0" expanded="false" />
-                <element signature="e#12968#12969#0" expanded="false" />
-                <element signature="e#13186#13187#0" expanded="false" />
-                <element signature="e#13247#13248#0" expanded="false" />
-                <element signature="e#13620#13621#0" expanded="false" />
-                <element signature="e#13652#13653#0" expanded="false" />
-                <element signature="e#13715#13716#0" expanded="false" />
-                <element signature="e#13767#13768#0" expanded="false" />
-                <element signature="e#14033#14034#0" expanded="false" />
-                <element signature="e#14088#14089#0" expanded="false" />
-                <element signature="e#14338#14339#0" expanded="false" />
-                <element signature="e#14394#14395#0" expanded="false" />
-                <element signature="e#14767#14768#0" expanded="false" />
-                <element signature="e#14812#14813#0" expanded="false" />
-                <element signature="e#15153#15154#0" expanded="false" />
-                <element signature="e#15217#15218#0" expanded="false" />
-                <element signature="e#15280#15281#0" expanded="false" />
-                <element signature="e#15360#15361#0" expanded="false" />
-                <element signature="e#15415#15416#0" expanded="false" />
-                <element signature="e#15468#15469#0" expanded="false" />
-                <element signature="e#15666#15667#0" expanded="false" />
-                <element signature="e#15732#15733#0" expanded="false" />
-                <element signature="e#15951#15952#0" expanded="false" />
-                <element signature="e#16022#16023#0" expanded="false" />
-                <element signature="e#16090#16091#0" expanded="false" />
-                <element signature="e#16148#16149#0" expanded="false" />
-                <element signature="e#16364#16365#0" expanded="false" />
-                <element signature="e#16421#16422#0" expanded="false" />
-                <element signature="e#16488#16489#0" expanded="false" />
-                <element signature="e#16545#16546#0" expanded="false" />
-                <element signature="e#17394#17395#0" expanded="false" />
-                <element signature="e#17427#17428#0" expanded="false" />
-                <element signature="e#17486#17487#0" expanded="false" />
-                <element signature="e#17542#17543#0" expanded="false" />
-                <element signature="e#17954#17955#0" expanded="false" />
-                <element signature="e#18028#18029#0" expanded="false" />
-                <element signature="e#18102#18103#0" expanded="false" />
-                <element signature="e#18172#18173#0" expanded="false" />
-                <element signature="e#18238#18239#0" expanded="false" />
-                <element signature="e#18313#18314#0" expanded="false" />
-                <element signature="e#18495#18496#0" expanded="false" />
-                <element signature="e#18557#18558#0" expanded="false" />
-                <element signature="e#18631#18632#0" expanded="false" />
-                <element signature="e#18695#18696#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/pages/SearchPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-              <folding>
-                <element signature="e#498#499#0" expanded="false" />
-                <element signature="e#560#561#0" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#1033#1034#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/Locators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="125" column="19" lean-forward="false" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -369,7 +189,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Coviproject" />
+          <option name="myItemId" value="ict4apps" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -379,7 +199,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Coviproject" />
+          <option name="myItemId" value="ict4apps" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -393,7 +213,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Coviproject" />
+          <option name="myItemId" value="ict4apps" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -1437,14 +1257,7 @@
       <workItem from="1490941070275" duration="1012000" />
       <workItem from="1490953811298" duration="286000" />
       <workItem from="1490962545400" duration="2899000" />
-      <workItem from="1490968845455" duration="2325000" />
-    </task>
-    <task id="LOCAL-00009" summary="Tenth  commit">
-      <created>1489164352767</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1489164352767</updated>
+      <workItem from="1490968845455" duration="3736000" />
     </task>
     <task id="LOCAL-00010" summary="Eleventh  commit">
       <created>1489400976711</created>
@@ -1782,7 +1595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490974767610</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary=" (31/03) seventh&#10;">
+      <created>1490974782942</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1490974782942</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1818,7 +1638,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401683000" />
+    <option name="totallyTimeSpent" value="403094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1901,7 +1721,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Twenty ninth  commit" />
     <MESSAGE value="Twenty ninth  commit (27/03)" />
     <MESSAGE value=" (28/03)" />
     <MESSAGE value=" (28/03)_1" />
@@ -1926,7 +1745,8 @@
     <MESSAGE value=" (31/03) fourth&#10;" />
     <MESSAGE value=" (31/03) fifth&#10;" />
     <MESSAGE value=" (31/03) sixth&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) sixth&#10;" />
+    <MESSAGE value=" (31/03) seventh&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) seventh&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1956,14 +1776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -2189,31 +2001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/BREADCRUMB.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/FOOTER.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SCROLLED_HEADER.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -2396,22 +2187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -2428,18 +2203,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
           <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_BREADCRUMB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SCROLLED_HEADER.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CONTACT_US_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/BREADCRUMB.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="42" />
           <folding />
         </state>
       </provider>
