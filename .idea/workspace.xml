@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_java8_1_0_0m1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_25.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ict4appsTestProject.iml" afterPath="$PROJECT_DIR$/ict4appsTestProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,6 +39,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SEARCH_PAGE.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -70,11 +83,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HEADER.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HEADER.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -269,7 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/features/consult_dictionary/WELCOME_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/DictionaryPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS.feature" />
@@ -315,6 +347,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -517,55 +550,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: SPECIAL_OFFERS_PAGE_02">
-    <configuration default="false" name="Scenario: SEARCH_PAGE_07" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
-      <option name="myNameFilter" value="^SEARCH_PAGE_07$" />
-      <option name="myGeneratedName" value="Scenario: SEARCH_PAGE_07" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^SEARCH_PAGE_07$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ict4appsTestProject" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Scenario: SEARCH_PAGE_23" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
-      <option name="myNameFilter" value="^SEARCH_PAGE_23$" />
-      <option name="myGeneratedName" value="Scenario: SEARCH_PAGE_23" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^SEARCH_PAGE_23$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ict4appsTestProject" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Cucumber java.Scenario: : SEARCH_PAGE_01">
     <configuration default="false" name="Scenario: SEARCH_PAGE_24" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -590,30 +575,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Scenario: SEARCH_PAGE_25" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
-      <option name="myNameFilter" value="^SEARCH_PAGE_25$" />
-      <option name="myGeneratedName" value="Scenario: SEARCH_PAGE_25" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^SEARCH_PAGE_25$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ict4appsTestProject" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="Scenario: SPECIAL_OFFERS_PAGE_02" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -628,6 +589,78 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^SPECIAL_OFFERS_PAGE_02$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ict4appsTestProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature: HEADER" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/HEADER.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: HEADER" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ict4appsTestProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature: FOOTER" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/FOOTER.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: FOOTER" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ict4appsTestProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: : SEARCH_PAGE_01" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors ict4apps.steps" />
+      <option name="myNameFilter" value="^\: SEARCH_PAGE_01$" />
+      <option name="myGeneratedName" value="Scenario: : SEARCH_PAGE_01" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^\: SEARCH_PAGE_01$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1338,19 +1371,19 @@
       <item index="8" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_CONTACT_US" />
       <item index="9" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite" />
       <item index="10" class="java.lang.String" itemvalue="Maven.DefinitionTestSuite_SEARCH" />
-      <item index="11" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_07" />
-      <item index="12" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_23" />
-      <item index="13" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_24" />
-      <item index="14" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_25" />
-      <item index="15" class="java.lang.String" itemvalue="Cucumber java.Scenario: SPECIAL_OFFERS_PAGE_02" />
+      <item index="11" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_24" />
+      <item index="12" class="java.lang.String" itemvalue="Cucumber java.Scenario: SPECIAL_OFFERS_PAGE_02" />
+      <item index="13" class="java.lang.String" itemvalue="Cucumber java.Feature: HEADER" />
+      <item index="14" class="java.lang.String" itemvalue="Cucumber java.Feature: FOOTER" />
+      <item index="15" class="java.lang.String" itemvalue="Cucumber java.Scenario: : SEARCH_PAGE_01" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: SPECIAL_OFFERS_PAGE_02" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_24" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_25" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_23" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_07" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: : SEARCH_PAGE_01" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: FOOTER" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: HEADER" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: SPECIAL_OFFERS_PAGE_02" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: SEARCH_PAGE_24" />
       </list>
     </recent_temporary>
   </component>
@@ -1408,14 +1441,7 @@
       <workItem from="1490941070275" duration="1012000" />
       <workItem from="1490953811298" duration="286000" />
       <workItem from="1490962545400" duration="2899000" />
-      <workItem from="1490968845455" duration="1217000" />
-    </task>
-    <task id="LOCAL-00007" summary="Eighth  commit">
-      <created>1489160360785</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1489160360785</updated>
+      <workItem from="1490968845455" duration="2312000" />
     </task>
     <task id="LOCAL-00008" summary="Ninth  commit">
       <created>1489160551010</created>
@@ -1753,18 +1779,22 @@
       <option name="project" value="LOCAL" />
       <updated>1490973184585</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary=" (31/03) sixth&#10;">
+      <created>1490973674076</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1490973674076</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__SEARCH_PAGE_07 - 2017.03.30 at 14h 52m 03s.xml">
-      <configuration name="Scenario: SEARCH_PAGE_07" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__FOOTER - 2017.03.31 at 18h 34m 21s.xml">
+      <configuration name="Feature: FOOTER" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__SEARCH_PAGE_07 - 2017.03.30 at 14h 52m 23s.xml">
-      <configuration name="Scenario: SEARCH_PAGE_07" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__SEARCH_PAGE_07 - 2017.03.30 at 15h 05m 25s.xml">
-      <configuration name="Scenario: SEARCH_PAGE_07" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__HEADER - 2017.03.31 at 18h 33m 34s.xml">
+      <configuration name="Feature: HEADER" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__SEARCH_PAGE_23 - 2017.03.30 at 15h 06m 52s.xml">
       <configuration name="Scenario: SEARCH_PAGE_23" configurationId="CucumberJavaRunConfigurationType" />
@@ -1787,9 +1817,12 @@
     <history-entry file="Scenario__SPECIAL_OFFERS_PAGE_02 - 2017.03.31 at 18h 19m 09s.xml">
       <configuration name="Scenario: SPECIAL_OFFERS_PAGE_02" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario____SEARCH_PAGE_01 - 2017.03.31 at 18h 36m 04s.xml">
+      <configuration name="Scenario: : SEARCH_PAGE_01" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400575000" />
+    <option name="totallyTimeSpent" value="401670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1805,7 +1838,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46021506" sideWeight="0.2161725" order="11" side_tool="false" content_ui="tabs" x="862" y="690" width="388" height="276" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15422885" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" x="1540" y="52" width="380" height="578" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43548387" sideWeight="0.7838275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43548387" sideWeight="0.7838275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1872,7 +1905,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Twenty eighth  commit" />
     <MESSAGE value="Twenty ninth  commit" />
     <MESSAGE value="Twenty ninth  commit (27/03)" />
     <MESSAGE value=" (28/03)" />
@@ -1897,7 +1929,8 @@
     <MESSAGE value=" (31/03) third&#10;" />
     <MESSAGE value=" (31/03) fourth&#10;" />
     <MESSAGE value=" (31/03) fifth&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) fifth&#10;" />
+    <MESSAGE value=" (31/03) sixth&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) sixth&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2181,13 +2214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HEADER.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/SCROLLED_HEADER.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -2374,22 +2400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-711">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="109" column="12" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -2401,7 +2411,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2409,7 +2419,31 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HEADER.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="116" column="43" lean-forward="false" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SEARCH_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding />
         </state>
       </provider>
