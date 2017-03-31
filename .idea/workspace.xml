@@ -49,8 +49,8 @@
       <file leaf-file-name="WELCOME_PAGE.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="31" />
+            <state relative-caret-position="558">
+              <caret line="112" column="31" lean-forward="true" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -69,8 +69,8 @@
       <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -1293,14 +1293,7 @@
       <workItem from="1490854843464" duration="20522000" />
       <workItem from="1490941070275" duration="1012000" />
       <workItem from="1490953811298" duration="286000" />
-      <workItem from="1490962545400" duration="1592000" />
-    </task>
-    <task id="LOCAL-00002" summary="Third commit">
-      <created>1489061102013</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1489061102013</updated>
+      <workItem from="1490962545400" duration="2270000" />
     </task>
     <task id="LOCAL-00003" summary="Fourth commit">
       <created>1489062514682</created>
@@ -1638,7 +1631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490953995417</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary=" (31/03) second">
+      <created>1490965487848</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1490965487849</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1674,7 +1674,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398051000" />
+    <option name="totallyTimeSpent" value="398729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1757,7 +1757,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Twenty fourth  commit" />
     <MESSAGE value="Twenty fifth  commit" />
     <MESSAGE value="Twenty sixth  commit" />
     <MESSAGE value="Twenty seventh  commit" />
@@ -1782,7 +1781,8 @@
     <MESSAGE value=" (30/03) fourth" />
     <MESSAGE value=" (30/03) fifth" />
     <MESSAGE value=" (31/03) first" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) first" />
+    <MESSAGE value=" (31/03) second" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (31/03) second" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2154,14 +2154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1206">
@@ -2170,10 +2162,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/WELCOME_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="112" column="31" lean-forward="true" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
