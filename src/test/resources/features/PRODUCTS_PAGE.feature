@@ -18,24 +18,24 @@ Feature: PRODUCTS PAGE
       | 6            |
       | 12           |
 
-#  Scenario Outline: : PRODUCTS_PAGE_03
-#    When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "http://oauth.vk.com"
-#    When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://www.facebook.com"
-#    When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://twitter.com"
-#    When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://www.linkedin.com"
-#    When clicking on the "Pinterest" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://www.pinterest.com"
-#    When clicking on the "Google Plus" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://accounts.google.com"
-#    Examples:
-#      | ProductBlock |
-#      | 1            |
-#      | 6            |
-#      | 12           |
+  Scenario Outline: : PRODUCTS_PAGE_03
+    When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "http://oauth.vk.com"
+    When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.facebook.com"
+    When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://twitter.com"
+    When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.linkedin.com"
+    When clicking on the "Pinterest" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.pinterest.com"
+    When clicking on the "Google Plus" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://accounts.google.com"
+    Examples:
+      | ProductBlock |
+      | 1            |
+      | 6            |
+      | 12           |
 
   Scenario: PRODUCTS_PAGE_04
     When click on the "th-large" list view

@@ -46,10 +46,10 @@ Feature: SPECIAL OFFERS PAGE
     When click on the "list" list view
     Then product blocks are changed to list view
 
-#  Scenario: SPECIAL_OFFERS_PAGE_07
-#    When click on the "Page 1 Of 2" button
-#    Then dropdown menu is opened
-#    Then dropdown menu contains "2" elements
+  Scenario: SPECIAL_OFFERS_PAGE_07
+    When click on the "Page 1 Of 2" button
+    Then dropdown menu is opened
+    Then dropdown menu contains "2" elements
 
   Scenario: SPECIAL_OFFERS_PAGE_08
     When click on the "Page 1 Of 2" button
