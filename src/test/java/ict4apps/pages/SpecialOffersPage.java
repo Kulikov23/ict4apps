@@ -30,9 +30,8 @@ public class SpecialOffersPage extends PageObject {
     }
 
     public boolean checkThatLabelIsChanged(String arg0, String arg1) {
-        return $(Locators.SHOWING_RESULTS_LABEL.replace("$1",arg1)).isVisible();
+        return $(Locators.SHOWING_RESULTS_LABEL.replace("$1", arg1)).isVisible();
     }
-
 
 
 }

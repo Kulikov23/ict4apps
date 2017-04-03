@@ -62,9 +62,9 @@ Feature: BLOGS PAGE
   Scenario: BLOGS_PAGE_07
     When click on the "Next" link of the BLOGS page
     Then check that page is changed to the next
-    Then check that "Showing 1 - 12 Of  Results" label is changed to "Showing 12 - 24 Of  Results"
+    Then check that "Showing 1 - 20 Of  Results" label is changed to "Showing 21 - 40 Of  Results"
     When click on the "First" link
-    Then check that "Showing 12 - 24 Of  Results" label is changed to "Showing 1 - 12 Of  Results"
+    Then check that "Showing 21 - 40 Of  Results" label is changed to "Showing 1 - 20 Of  Results"
     When click on the "Last" link
     Then check that "Showing 1 - 12 Of  Results" label is changed to "Showing 96 - 98 Of  Results"
     When click on the "Previous" link

@@ -57,7 +57,7 @@ public class BlogsPage extends PageObject {
     }
 
     public boolean checkThatPageIsChanged() {
-        return !$(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title)).isPresent();
+        return !$(Locators.BLOGS_PAGE_BREADCRUMB).getText().equalsIgnoreCase(title);
     }
 
     public void clickingOnTheSocialNetworkIconOfTheBlog(String arg0) {

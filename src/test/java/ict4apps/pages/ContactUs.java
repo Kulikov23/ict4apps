@@ -18,10 +18,14 @@ public class ContactUs extends PageObject {
     }
 
     public boolean checkThatErrorMessageIsAppears(String arg0, String arg1) {
-        boolean x = !$(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
-        $(Locators.CONTACT_US_PAGE_TEXTBOXES.replace("$1", arg1)).clear();
-        waitABit(500);
-        return x;
+        try {
+            $(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
+            return false;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            $(Locators.CONTACT_US_PAGE_TEXTBOXES.replace("$1", arg1)).clear();
+            waitABit(500);
+            return true;
+        }
     }
 
     public void writeInTheTextarea(String arg0, String arg1) {
@@ -30,10 +34,18 @@ public class ContactUs extends PageObject {
     }
 
     public boolean checkThatErrorMessageIsNotAppearsAboveTextArea(String arg0, String arg1) {
-        boolean x = !$(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
-        $(Locators.CONTACT_US_PAGE_COMMENTS_TEXT_AREA.replace("$1", arg1)).clear();
-        waitABit(500);
-        return x;
+        try {
+            $(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
+            return false;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            return true;
+        }
     }
+
+
 }
+
+
+
+
 

@@ -33,7 +33,12 @@ public class SearchPage extends PageObject {
     }
 
     public boolean checkThatButtonIsHidden(String arg0) {
-        return !$(Locators.SEARCH_PAGE_BUTTONS.replace("$1", arg0)).isVisible();
+        try {
+            $(Locators.SEARCH_PAGE_BUTTONS.replace("$1", arg0)).isVisible();
+            return false;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            return true;
+        }
     }
 
     public void writeInTheTextbox(String arg0) {
