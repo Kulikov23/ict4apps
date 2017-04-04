@@ -59,16 +59,16 @@ Feature: BLOGS PAGE
 #    When clicking on the "RSS" link
 #    Then check that rss subscribe page is opened
 
-  Scenario: BLOGS_PAGE_07
-    When click on the "Next" link of the BLOGS page
-    Then check that page is changed to the next
-    Then check that "Showing 1 - 20 Of  Results" label is changed to "Showing 21 - 40 Of  Results"
-    When click on the "First" link
-    Then check that "Showing 21 - 40 Of  Results" label is changed to "Showing 1 - 20 Of  Results"
-    When click on the "Last" link
-    Then check that "Showing 1 - 12 Of  Results" label is changed to "Showing 96 - 98 Of  Results"
-    When click on the "Previous" link
-    Then check that "Showing 96 - 98 Of  Results" label is changed to "Showing 84 - 96 Of  Results"
+#  Scenario: BLOGS_PAGE_07
+#    When click on the "Next" link of the BLOGS page
+#    Then check that page is changed to the next
+#    Then check that "Showing 1 - 20 Of  Results" label is changed to "Showing 21 - 40 Of  Results"
+#    When click on the "First" link
+#    Then check that "Showing 21 - 40 Of  Results" label is changed to "Showing 1 - 20 Of  Results"
+#    When click on the "Last" link
+#    Then check that "Showing 1 - 12 Of  Results" label is changed to "Showing 96 - 98 Of  Results"
+#    When click on the "Previous" link
+#    Then check that "Showing 96 - 98 Of  Results" label is changed to "Showing 84 - 96 Of  Results"
 
 #  Scenario: BLOGS_PAGE_08
 #    When click on the "Page 1 of" button of the BLOGS page
