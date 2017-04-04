@@ -3,10 +3,10 @@ Feature: HEADER
   Background:
     Given the user is on the Products page
 
-  Scenario: PRODUCTS_PAGE_HEADER_01
-    When click on the "ict4apps" site logo
-    Then check that "welcome" page is refreshed
-    Then check that "ict4apps" site logo is appears
+#  Scenario: PRODUCTS_PAGE_HEADER_01
+#    When click on the "ict4apps" site logo
+#    Then check that "welcome" page is refreshed
+#    Then check that "ict4apps" site logo is appears
 
   Scenario: PRODUCTS_PAGE_HEADER_02
     When click "Welcome" link of the "1" navigation links list

@@ -55,9 +55,9 @@ Feature: BLOGS PAGE
       | 11        |
       | 20        |
 
-  Scenario: BLOGS_PAGE_06
-    When clicking on the "RSS" link
-    Then check that rss subscribe page is opened
+#  Scenario: BLOGS_PAGE_06
+#    When clicking on the "RSS" link
+#    Then check that rss subscribe page is opened
 
   Scenario: BLOGS_PAGE_07
     When click on the "Next" link of the BLOGS page
@@ -70,6 +70,6 @@ Feature: BLOGS PAGE
     When click on the "Previous" link
     Then check that "Showing 96 - 98 Of  Results" label is changed to "Showing 84 - 96 Of  Results"
 
-  Scenario: BLOGS_PAGE_08
-    When click on the "Page 1 of" button of the BLOGS page
+#  Scenario: BLOGS_PAGE_08
+#    When click on the "Page 1 of" button of the BLOGS page
 #    Then check that drop down menu is opened and contains "26" items

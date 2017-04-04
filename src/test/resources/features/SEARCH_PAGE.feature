@@ -36,16 +36,16 @@ Feature: SEARCH PAGE
     When click on the "Clear" button of the search page
     Then check that "Clear" button is hidden
 
-  Scenario: SEARCH_PAGE_06
-    When the user is on the Welcome page
-    When click on the search button
-    When click on the Scope dropdown menu
-    When click on the "product" element of the listbox
-    When write "meat" in the textbox
-    When click on the search button
-    Then check that "meat" search results are appears
-    When click on the title of the "1" result block
-    Then check that click on the result title is moving us to chosen blog page
+#  Scenario: SEARCH_PAGE_06
+#    When the user is on the Welcome page
+#    When click on the search button
+#    When click on the Scope dropdown menu
+#    When click on the "product" element of the listbox
+#    When write "meat" in the textbox
+#    When click on the search button
+#    Then check that "meat" search results are appears
+#    When click on the title of the "1" result block
+#    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_07
     When the user is on the Welcome page
@@ -102,16 +102,16 @@ Feature: SEARCH PAGE
     When click on the "Clear" button of the search page
     Then check that "Clear" button is hidden
 
-  Scenario: SEARCH_PAGE_14
-    When the user is on the Products page
-    When click on the search button
-    When click on the Scope dropdown menu
-    When click on the "product" element of the listbox
-    When write "meat" in the textbox
-    When click on the search button
-    Then check that "meat" search results are appears
-    When click on the title of the "1" result block
-    Then check that click on the result title is moving us to chosen blog page
+#  Scenario: SEARCH_PAGE_14
+#    When the user is on the Products page
+#    When click on the search button
+#    When click on the Scope dropdown menu
+#    When click on the "product" element of the listbox
+#    When write "meat" in the textbox
+#    When click on the search button
+#    Then check that "meat" search results are appears
+#    When click on the title of the "1" result block
+#    Then check that click on the result title is moving us to chosen blog page
 
 
   Scenario: SEARCH_PAGE_15
@@ -170,16 +170,16 @@ Feature: SEARCH PAGE
     When click on the "Clear" button of the search page
     Then check that "Clear" button is hidden
 
-  Scenario: SEARCH_PAGE_22
-    When the user is on the Blogs page
-    When click on the search button
-    When click on the Scope dropdown menu
-    When click on the "product" element of the listbox
-    When write "meat" in the textbox
-    When click on the search button
-    Then check that "meat" search results are appears
-    When click on the title of the "1" result block
-    Then check that click on the result title is moving us to chosen blog page
+#  Scenario: SEARCH_PAGE_22
+#    When the user is on the Blogs page
+#    When click on the search button
+#    When click on the Scope dropdown menu
+#    When click on the "product" element of the listbox
+#    When write "meat" in the textbox
+#    When click on the search button
+#    Then check that "meat" search results are appears
+#    When click on the title of the "1" result block
+#    Then check that click on the result title is moving us to chosen blog page
 
   Scenario: SEARCH_PAGE_23
     When the user is on the Blogs page
