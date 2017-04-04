@@ -5,9 +5,11 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/products")
 public class ProductsPage extends PageObject {
@@ -57,6 +59,7 @@ public class ProductsPage extends PageObject {
 
     public boolean checkThatLoginPageIsOpened(String arg0) {
         switchWindow(1);
+        withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.urlContains(arg0));
         boolean url = getDriver().getCurrentUrl().contains(arg0);
         getDriver().close();
         switchWindow(0);
