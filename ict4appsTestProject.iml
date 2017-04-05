@@ -112,11 +112,11 @@
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: com.google.jimfs:jimfs:1.0" level="project" />
     <orderEntry type="library" name="Maven: es.nitaur.markdown:txtmark:0.16" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-cucumber:1.1.27" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-screenplay:1.2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-screenplay-webdriver:1.2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-java:1.2.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-junit:1.2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-cucumber:1.1.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-screenplay:1.1.42" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-screenplay-webdriver:1.1.42" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-java:1.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-junit:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.assertj:assertj-core-java8:1.0.0m1" level="project" />
