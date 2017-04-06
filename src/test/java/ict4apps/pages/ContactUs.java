@@ -24,7 +24,6 @@ public class ContactUs extends PageObject {
             waitABit(500);
             return true;
         } catch (org.openqa.selenium.NoSuchElementException e) {
-
             return false;
         }
     }

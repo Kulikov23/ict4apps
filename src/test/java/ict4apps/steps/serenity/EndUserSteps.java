@@ -444,7 +444,7 @@ public class EndUserSteps {
 
     @Step
     public void checkThatErrorMessagesAreAppearsAboveAllTextBoxes(String arg0, String arg1) {
-        Assert.assertFalse(contactUs.checkThatErrorMessageIsAppears(arg0, arg1));
+        Assert.assertTrue(contactUs.checkThatErrorMessageIsAppears(arg0, arg1));
     }
 
     @Step
