@@ -20,11 +20,11 @@ public class ContactUs extends PageObject {
     public boolean checkThatErrorMessageIsAppears(String arg0, String arg1) {
         try {
             $(Locators.CONTACT_US_PAGE_ERROR_MSG.replace("$1", arg0).replace("$2", arg1)).isVisible();
-            return false;
+            return true;
         } catch (org.openqa.selenium.NoSuchElementException e) {
             $(Locators.CONTACT_US_PAGE_TEXTBOXES.replace("$1", arg1)).clear();
             waitABit(500);
-            return true;
+            return false;
         }
     }
 

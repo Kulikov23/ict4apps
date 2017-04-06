@@ -35,9 +35,9 @@ public class SearchPage extends PageObject {
     public boolean checkThatButtonIsHidden(String arg0) {
         try {
             $(Locators.SEARCH_PAGE_BUTTONS.replace("$1", arg0)).isVisible();
-            return false;
-        } catch (org.openqa.selenium.NoSuchElementException e) {
             return true;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            return false;
         }
     }
 
