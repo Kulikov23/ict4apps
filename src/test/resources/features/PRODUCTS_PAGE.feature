@@ -41,18 +41,42 @@ Feature: PRODUCTS PAGE
     When click on the "th-large" list view
     Then product blocks are changed to grid view
 
-  Scenario Outline: PRODUCTS_PAGE_05
+#  Scenario Outline: PRODUCTS_PAGE_05
+#    When click on the "th-large" list view
+#    When move mouse to the "<ProductBlock>" product picture
+#    Then check that picture of the "<ProductBlock>" product block is changed and contains title
+#    Then check that picture of the "<ProductBlock>" product block is changed and contains small description
+#    Then check that picture of the "<ProductBlock>" product block is changed and contains "Read More" link
+#    Then check that picture of the "<ProductBlock>" product block is changed and contains social network links
+#    Examples:
+#      | ProductBlock |
+#      | 1            |
+#      | 6            |
+#      | 12           |
+
+  Scenario: PRODUCTS_PAGE_00
     When click on the "th-large" list view
-    When move mouse to the "<ProductBlock>" product picture
-    Then check that picture of the "<ProductBlock>" product block is changed and contains title
-    Then check that picture of the "<ProductBlock>" product block is changed and contains small description
-    Then check that picture of the "<ProductBlock>" product block is changed and contains "Read More" link
-    Then check that picture of the "<ProductBlock>" product block is changed and contains social network links
-    Examples:
-      | ProductBlock |
-      | 1            |
-      | 6            |
-      | 12           |
+    When move mouse to the "1" product picture
+    Then check that picture of the "1" product block is changed and contains title
+    Then check that picture of the "1" product block is changed and contains small description
+    Then check that picture of the "1" product block is changed and contains "Read More" link
+    Then check that picture of the "1" product block is changed and contains social network links
+
+  Scenario: PRODUCTS_PAGE_0001
+    When click on the "th-large" list view
+    When move mouse to the "2" product picture
+    Then check that picture of the "2" product block is changed and contains title
+    Then check that picture of the "2" product block is changed and contains small description
+    Then check that picture of the "2" product block is changed and contains "Read More" link
+    Then check that picture of the "2" product block is changed and contains social network links
+
+  Scenario: PRODUCTS_PAGE_0002
+    When click on the "th-large" list view
+    When move mouse to the "3" product picture
+    Then check that picture of the "3" product block is changed and contains title
+    Then check that picture of the "3" product block is changed and contains small description
+    Then check that picture of the "3" product block is changed and contains "Read More" link
+    Then check that picture of the "3" product block is changed and contains social network links
 
 #  Scenario Outline: PRODUCTS_PAGE_06
 #    When click on the "th-large" list view
