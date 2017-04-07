@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_cucumber_1_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_cucumber_1_1_27.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_screenplay_1_1_42.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_screenplay_1_2_3.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_screenplay_webdriver_1_1_42.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_screenplay_webdriver_1_2_3.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_java8_1_0_0m1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_6_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ict4appsTestProject.iml" afterPath="$PROJECT_DIR$/ict4appsTestProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,7 +35,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/SCROLLED_HEADER.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite_SEARCH.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/BlogsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/SpecialOffersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" />
@@ -121,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
       </list>
     </option>
   </component>
@@ -204,9 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,6 +303,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +315,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AIM-Chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -335,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.DefinitionTestSuite_HEADER">
+  <component name="RunManager" selected="Maven.DefinitionTestSuite_WELCOME">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1118,14 +1121,9 @@
       <workItem from="1491491859405" duration="323000" />
       <workItem from="1491546064066" duration="32000" />
       <workItem from="1491549043621" duration="1688000" />
-      <workItem from="1491566554933" duration="14000" />
-    </task>
-    <task id="LOCAL-00024" summary="Twenty fourth  commit">
-      <created>1490184412135</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1490184412135</updated>
+      <workItem from="1491566554933" duration="204000" />
+      <workItem from="1491567737567" duration="49000" />
+      <workItem from="1491573594114" duration="25000" />
     </task>
     <task id="LOCAL-00025" summary="Twenty fifth  commit">
       <created>1490198532574</created>
@@ -1463,7 +1461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491486486420</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary=" (07/04) first">
+      <created>1491566582592</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1491566582593</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1499,10 +1504,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441331000" />
+    <option name="totallyTimeSpent" value="441595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1524,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17965727" sideWeight="0.49569893" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25317854" sideWeight="0.49569893" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1581,7 +1587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (30/03) second" />
     <MESSAGE value=" (30/03) third" />
     <MESSAGE value=" (30/03) fourth" />
     <MESSAGE value=" (30/03) fifth" />
@@ -1606,7 +1611,8 @@
     <MESSAGE value=" (05/04) fourth&#10;" />
     <MESSAGE value=" (05/04) fifth&#10;" />
     <MESSAGE value=" (06/04) sixth&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (06/04) sixth&#10;" />
+    <MESSAGE value=" (07/04) first" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (07/04) first" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1637,7 +1643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1653,7 +1658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,6 +1665,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
