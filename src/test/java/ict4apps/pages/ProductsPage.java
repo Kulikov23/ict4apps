@@ -146,6 +146,19 @@ public class ProductsPage extends PageObject {
     public boolean checkThatScrolledHeaderIsAppears() {
         return $(Locators.SCROLLED_HEADER).isVisible();
     }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public boolean checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) {
+        try {
+            $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).isVisible();
+            $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_SMALL_DESC.replace("$1", arg0)).isVisible();
+            $(Locators.SPECIAL_OFFERS_PAGE_PRODUCT_BLOCK_READ_MORE.replace("$1", arg1).replace("$2", arg0)).isVisible();
+            return true;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            return false;
+        }
+    }
 }
 
 

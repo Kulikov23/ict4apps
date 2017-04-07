@@ -593,6 +593,12 @@ public class DefinitionSteps {
     public void checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage() throws Throwable {
         steps.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage();
     }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains title,small description and \"([^\"]*)\" link$")
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) throws Throwable {
+     steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1);
+    }
 }
 
 

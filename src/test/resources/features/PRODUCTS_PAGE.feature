@@ -41,44 +41,23 @@ Feature: PRODUCTS PAGE
     When click on the "th-large" list view
     Then product blocks are changed to grid view
 
-#  Scenario Outline: PRODUCTS_PAGE_05
-#    When click on the "th-large" list view
-#    When move mouse to the "<ProductBlock>" product picture
-#    Then check that picture of the "<ProductBlock>" product block is changed and contains title
-#    Then check that picture of the "<ProductBlock>" product block is changed and contains small description
-#    Then check that picture of the "<ProductBlock>" product block is changed and contains "Read More" link
-#    Then check that picture of the "<ProductBlock>" product block is changed and contains social network links
-#    Examples:
-#      | ProductBlock |
-#      | 1            |
-#      | 6            |
-#      | 12           |
 
-  Scenario: PRODUCTS_PAGE_00
+  Scenario: PRODUCTS_PAGE_5
     When click on the "th-large" list view
     When move mouse to the "1" product picture
-    Then check that picture of the "1" product block is changed and contains title
-    Then check that picture of the "1" product block is changed and contains small description
-    Then check that picture of the "1" product block is changed and contains "Read More" link
-    Then check that picture of the "1" product block is changed and contains social network links
+    Then check that picture of the "1" product block is changed and contains title,small description and "Read More" link
 
-  Scenario: PRODUCTS_PAGE_0001
+  Scenario: PRODUCTS_PAGE_6
     When click on the "th-large" list view
     When move mouse to the "2" product picture
-    Then check that picture of the "2" product block is changed and contains title
-    Then check that picture of the "2" product block is changed and contains small description
-    Then check that picture of the "2" product block is changed and contains "Read More" link
-    Then check that picture of the "2" product block is changed and contains social network links
+    Then check that picture of the "2" product block is changed and contains title,small description and "Read More" link
 
-  Scenario: PRODUCTS_PAGE_0002
+  Scenario: PRODUCTS_PAGE_7
     When click on the "th-large" list view
     When move mouse to the "3" product picture
-    Then check that picture of the "3" product block is changed and contains title
-    Then check that picture of the "3" product block is changed and contains small description
-    Then check that picture of the "3" product block is changed and contains "Read More" link
-    Then check that picture of the "3" product block is changed and contains social network links
+    Then check that picture of the "3" product block is changed and contains title,small description and "Read More" link
 
-#  Scenario Outline: PRODUCTS_PAGE_06
+#  Scenario Outline: PRODUCTS_PAGE_08
 #    When click on the "th-large" list view
 #    When move mouse to the "<ProductBlock>" product picture
 #    When clicking on the "<ProductBlock>" product block title
@@ -104,17 +83,17 @@ Feature: PRODUCTS PAGE
 #      | 6            |
 #      | 12           |
 
-  Scenario: PRODUCTS_PAGE_07
+  Scenario: PRODUCTS_PAGE_09
     When clicking on the "Appetizers" category
     Then "Appetizers" category is active
 #        Then "Appetizers" category contains all product blocks from this category
 
-  Scenario: PRODUCTS_PAGE_08
+  Scenario: PRODUCTS_PAGE_10
     When click on the "Page 1 Of 9" button
     Then dropdown menu is opened
     Then dropdown menu contains "9" elements
 
-#  Scenario: PRODUCTS_PAGE_09
+#  Scenario: PRODUCTS_PAGE_11
 #    When click on the "Page 1 Of 9" button
 #    When click on the "'1'" item
 #    Then check that "Showing 1 - 12 Of 98 Results" label is changed to "Showing 1 - 12 Of 98 Results"
@@ -125,7 +104,7 @@ Feature: PRODUCTS PAGE
 #    When click on the "'9'" item
 #    Then check that "Showing 48 - 60 Of 98 Results" label is changed to "Showing 96 - 98 Of 98 Results"
 
-#  Scenario: PRODUCTS_PAGE_10
+#  Scenario: PRODUCTS_PAGE_12
 #    When click on the "Next" link
 #    Then check that "Showing 1 - 12 Of 98 Results" label is changed to "Showing 12 - 24 Of 98 Results"
 #    When click on the "First" link
@@ -135,13 +114,13 @@ Feature: PRODUCTS PAGE
 #    When click on the "Previous" link
 #    Then check that "Showing 96 - 98 Of 98 Results" label is changed to "Showing 84 - 96 Of 98 Results"
 
-  Scenario: PRODUCTS_PAGE_11
+  Scenario: PRODUCTS_PAGE_13
     When click on the "12 Items Per Page" button
     Then dropdown menu is opened
     When click on the "36" item
     Then page should contains "36" product blocks
 
-  Scenario: PRODUCTS_PAGE_12
+  Scenario: PRODUCTS_PAGE_14
     When click on the "th-large" list view
     When click on the "list" list view
     Then product blocks are changed to list view

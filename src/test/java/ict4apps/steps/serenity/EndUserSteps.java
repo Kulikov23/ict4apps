@@ -609,5 +609,11 @@ public class EndUserSteps {
     public void checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage() {
         Assert.assertTrue(searchPage.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage());
     }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @Step
+    public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) {
+        Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1));
+    }
 }
 
