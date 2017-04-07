@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,21 +36,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefinitionTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="220">
+              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PRODUCTS_PAGE.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PRODUCTS_PAGE.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="-740">
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1223">
+              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -132,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/pages/ContactUs.java" />
         <option value="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java" />
       </list>
     </option>
   </component>
@@ -1196,14 +1206,7 @@
       <workItem from="1491549043621" duration="1688000" />
       <workItem from="1491566554933" duration="204000" />
       <workItem from="1491567737567" duration="49000" />
-      <workItem from="1491573594114" duration="1230000" />
-    </task>
-    <task id="LOCAL-00026" summary="Twenty sixth  commit">
-      <created>1490269696288</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1490269696288</updated>
+      <workItem from="1491573594114" duration="1298000" />
     </task>
     <task id="LOCAL-00027" summary="Twenty seventh  commit">
       <created>1490284983368</created>
@@ -1541,7 +1544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491573629052</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary=" (07/04) third">
+      <created>1491574945228</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1491574945228</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1577,7 +1587,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442800000" />
+    <option name="totallyTimeSpent" value="442868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -1591,9 +1601,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46021506" sideWeight="0.2161725" order="11" side_tool="false" content_ui="tabs" x="862" y="690" width="388" height="276" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22775014" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" x="1540" y="52" width="380" height="578" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22775014" sideWeight="0.48989898" order="4" side_tool="false" content_ui="tabs" x="1540" y="52" width="380" height="578" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39462367" sideWeight="0.7838275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39462367" sideWeight="0.7838275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1660,7 +1670,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (30/03) fourth" />
     <MESSAGE value=" (30/03) fifth" />
     <MESSAGE value=" (31/03) first" />
     <MESSAGE value=" (31/03) second" />
@@ -1685,7 +1694,8 @@
     <MESSAGE value=" (06/04) sixth&#10;" />
     <MESSAGE value=" (07/04) first" />
     <MESSAGE value=" (07/04) second" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (07/04) second" />
+    <MESSAGE value=" (07/04) third" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (07/04) third" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1734,9 +1744,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-740">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1640">
+        <state relative-caret-position="1223">
           <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding />
         </state>
@@ -1744,16 +1762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ict4apps/DefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding />
         </state>
       </provider>
