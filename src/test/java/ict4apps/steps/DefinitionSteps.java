@@ -241,6 +241,11 @@ public class DefinitionSteps {
         steps.checkThatFullScreenPictureIsClosed();
     }
 
+    @When("^click on the circle arrow link$")
+    public void clickOnTheCircleArrowLink() throws Throwable {
+        steps.clickOnTheCircleArrowLink();
+    }
+
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
 
     @When("^clicking on the \"([^\"]*)\" social network icon of the \"([^\"]*)\" block$")
@@ -619,6 +624,7 @@ public class DefinitionSteps {
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) throws Throwable {
      steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1);
     }
+
 
 
 }

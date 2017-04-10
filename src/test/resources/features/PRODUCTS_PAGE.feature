@@ -14,8 +14,13 @@ Feature: PRODUCTS PAGE
     Then check that full screen picture is opened
     When click on the close "×" button
     Then check that full screen picture is closed
+    When click on the circle arrow link
     When clicking on the "<ProductBlock>" product block picture
+    Then checking that product page contains title,picture and description
+    When click on the circle arrow link
     When clicking on the "<ProductBlock>" product block READ MORE link
+    Then checking that product page contains title,picture and description
+    When click on the circle arrow link
     Examples:
       | ProductBlock |
       | 1            |

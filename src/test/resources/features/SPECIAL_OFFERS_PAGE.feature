@@ -33,13 +33,17 @@ Feature: SPECIAL OFFERS PAGE
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "<ProductBlock>" product block title
     Then checking that product page contains title,picture and description
+    When click on the circle arrow link
     When move mouse to the "<ProductBlock>" product picture
     When clicking on the "<ProductBlock>" product block READ MORE link
+    Then checking that product page contains title,picture and description
+    When click on the circle arrow link
     Examples:
       | ProductBlock |
       | 1            |
       | 6            |
       | 12           |
+
 
   Scenario: SPECIAL_OFFERS_PAGE_06
     When click on the "th-large" list view

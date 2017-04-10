@@ -223,13 +223,11 @@ public class EndUserSteps {
     @Step
     public void clickOnTheProductBlockPicture(String arg0) {
         productsPage.clickOnPicture_products(arg0);
-        productsPage.back();
     }
 
     @Step
     public void clickOnTheProductReadMoreLink(String arg0) {
         productsPage.clickOnReadMore_products(arg0);
-        productsPage.back();
     }
 
     @Step
@@ -255,7 +253,11 @@ public class EndUserSteps {
     @Step
     public void checkThatFullScreenPictureIsClosed() {
         Assert.assertFalse(productsPage.checkThatFullScreenPictureIsClosed());
-        productsPage.back();
+    }
+
+    @Step
+    public void clickOnTheCircleArrowLink() {
+        productsPage.clickOnTheCircleArrowLink();
     }
 
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
@@ -635,7 +637,6 @@ public class EndUserSteps {
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) {
         Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0, arg1));
     }
-
 
 }
 

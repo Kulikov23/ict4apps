@@ -22,17 +22,17 @@ public class ProductsPage extends PageObject {
 
     public void clickOnTitle_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_PRODUCT_TITLE.replace("$1", arg1)).click();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public void clickOnPicture_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_PRODUCT_PICTURE.replace("$1", arg1)).click();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public void clickOnReadMore_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_READ_MORE.replace("$1", arg1)).click();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public boolean checkThatTitleIsPresented() {
@@ -65,6 +65,10 @@ public class ProductsPage extends PageObject {
 
     public boolean checkThatFullScreenPictureIsClosed() {
         return $(Locators.FULL_SCREEN_PICTURE).isVisible();
+    }
+
+    public void clickOnTheCircleArrowLink() {
+        $(Locators.CIRCLE_ARROW_BACK_LINK).click();
     }
 
 //TODO://///////////////////////////////        LOGIN PAGE IS OPENED          //////////////////////////////////////////

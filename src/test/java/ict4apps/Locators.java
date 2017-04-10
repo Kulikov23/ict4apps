@@ -69,6 +69,8 @@ public interface Locators {
     String PRODUCT_DESCRIPTION = "//div[@class='info-product table-word-wrap']";
     String FULL_SCREEN_PICTURE = "// img[@class='image-viewer-image']";
 
+    String CIRCLE_ARROW_BACK_LINK = "//a[@class='icon-circle-arrow-left previous-level']";
+
     //TODO: CATEGORIES
 
     String PRODUCTS_PAGE_CATEGORIES = "//a[contains(text(),'$1')]";
