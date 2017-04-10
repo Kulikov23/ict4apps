@@ -218,11 +218,10 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatTitleIsPresented());
         Assert.assertTrue(productsPage.checkThatPictureIsPresented());
         Assert.assertTrue(productsPage.checkThatDescriptionIsPresented());
-        productsPage.back();
     }
 
     @Step
-    public void clickOnTheProductPicture(String arg0) {
+    public void clickOnTheProductBlockPicture(String arg0) {
         productsPage.clickOnPicture_products(arg0);
         productsPage.back();
     }
@@ -236,6 +235,27 @@ public class EndUserSteps {
     @Step
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) {
         Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(arg0));
+    }
+
+    @Step
+    public void clickOnTheProductPicture() {
+        productsPage.clickOnTheProductPicture();
+    }
+
+    @Step
+    public void checkThatFullScreenPictureIsOpened() {
+        Assert.assertTrue(productsPage.checkThatFullScreenPictureIsOpened());
+    }
+
+    @Step
+    public void clickOnTheCloseButton(String arg0) {
+        productsPage.clickOnTheCloseButton(arg0);
+    }
+
+    @Step
+    public void checkThatFullScreenPictureIsClosed() {
+        Assert.assertFalse(productsPage.checkThatFullScreenPictureIsClosed());
+        productsPage.back();
     }
 
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
@@ -610,10 +630,12 @@ public class EndUserSteps {
         Assert.assertTrue(searchPage.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage());
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Step
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) {
-        Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1));
+        Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0, arg1));
     }
+
+
 }
 

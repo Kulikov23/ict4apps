@@ -36,19 +36,35 @@ public class ProductsPage extends PageObject {
     }
 
     public boolean checkThatTitleIsPresented() {
-        return $(Locators.PRODUCT_DESCRIPTION_TITLE).isPresent();
+        return $(Locators.PRODUCT_DESCRIPTION_TITLE).isVisible();
     }
 
     public boolean checkThatPictureIsPresented() {
-        return $(Locators.PRODUCT_DESCRIPTION_PICTURE).isPresent();
+        return $(Locators.PRODUCT_DESCRIPTION_PICTURE).isVisible();
     }
 
     public boolean checkThatDescriptionIsPresented() {
-        return $(Locators.PRODUCT_DESCRIPTION).isPresent();
+        return $(Locators.PRODUCT_DESCRIPTION).isVisible();
     }
 
     public boolean checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) {
         return $(Locators.PRODUCTS_PAGE_GRID_VIEW_SOCIAL_NETWORK_LINKS.replace("$1", arg0)).isVisible();
+    }
+
+    public void clickOnTheProductPicture() {
+        $(Locators.PRODUCT_DESCRIPTION_PICTURE).click();
+    }
+
+    public boolean checkThatFullScreenPictureIsOpened() {
+        return $(Locators.FULL_SCREEN_PICTURE).isVisible();
+    }
+
+    public void clickOnTheCloseButton(String arg0) {
+        $(Locators.WELCOME_PAGE_SIGN_IN_BUTTON.replace("$1", arg0)).click();
+    }
+
+    public boolean checkThatFullScreenPictureIsClosed() {
+        return $(Locators.FULL_SCREEN_PICTURE).isVisible();
     }
 
 //TODO://///////////////////////////////        LOGIN PAGE IS OPENED          //////////////////////////////////////////
@@ -159,6 +175,8 @@ public class ProductsPage extends PageObject {
             return false;
         }
     }
+
+
 }
 
 

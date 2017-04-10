@@ -208,7 +208,7 @@ public class DefinitionSteps {
 
     @When("^clicking on the \"([^\"]*)\" product block picture$")
     public void clickingOnTheProductBlockPicture(String arg0) throws Throwable {
-        steps.clickOnTheProductPicture(arg0);
+        steps.clickOnTheProductBlockPicture(arg0);
     }
 
     @When("^clicking on the \"([^\"]*)\" product block READ MORE link$")
@@ -219,6 +219,26 @@ public class DefinitionSteps {
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains social network links$")
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(String arg0) throws Throwable {
         steps.checkThatPictureOfTheProductBlockIsChangedAndContainsSocialNetworkLinks(arg0);
+    }
+
+    @When("^click on the product picture$")
+    public void clickOnTheProductPicture() throws Throwable {
+        steps.clickOnTheProductPicture();
+    }
+
+    @Then("^check that full screen picture is opened$")
+    public void checkThatFullScreenPictureIsOpened() throws Throwable {
+        steps.checkThatFullScreenPictureIsOpened();
+    }
+
+    @When("^click on the close \"([^\"]*)\" button$")
+    public void clickOnTheCloseButton(String arg0) throws Throwable {
+        steps.clickOnTheCloseButton(arg0);
+    }
+
+    @Then("^check that full screen picture is closed$")
+    public void checkThatFullScreenPictureIsClosed() throws Throwable {
+        steps.checkThatFullScreenPictureIsClosed();
     }
 
 //TODO:////////////////////////////         SOCIAL NETWORK LINKS         ///////////////////////////////////////////////
@@ -599,6 +619,8 @@ public class DefinitionSteps {
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) throws Throwable {
      steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1);
     }
+
+
 }
 
 

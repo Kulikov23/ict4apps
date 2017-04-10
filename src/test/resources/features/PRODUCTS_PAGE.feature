@@ -10,6 +10,10 @@ Feature: PRODUCTS PAGE
   Scenario Outline: PRODUCTS_PAGE_02
     When clicking on the "<ProductBlock>" product block title
     Then checking that product page contains title,picture and description
+    When click on the product picture
+    Then check that full screen picture is opened
+    When click on the close "×" button
+    Then check that full screen picture is closed
     When clicking on the "<ProductBlock>" product block picture
     When clicking on the "<ProductBlock>" product block READ MORE link
     Examples:
@@ -57,31 +61,31 @@ Feature: PRODUCTS PAGE
     When move mouse to the "3" product picture
     Then check that picture of the "3" product block is changed and contains title,small description and "Read More" link
 
-#  Scenario Outline: PRODUCTS_PAGE_08
-#    When click on the "th-large" list view
-#    When move mouse to the "<ProductBlock>" product picture
-#    When clicking on the "<ProductBlock>" product block title
-#    Then checking that product page contains title,picture and description
-#    When move mouse to the "<ProductBlock>" product picture
-#    When clicking on the "<ProductBlock>" product block READ MORE link
-#    When move mouse to the "<ProductBlock>" product picture
-#    When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "http://oauth.vk.com"
+  Scenario Outline: PRODUCTS_PAGE_08
+    When click on the "th-large" list view
+    When move mouse to the "<ProductBlock>" product picture
+    When clicking on the "<ProductBlock>" product block title
+    Then checking that product page contains title,picture and description
+    When move mouse to the "<ProductBlock>" product picture
+    When clicking on the "<ProductBlock>" product block READ MORE link
+    When move mouse to the "<ProductBlock>" product picture
+    When clicking on the "VKontakte" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "http://oauth.vk.com"
 #    When clicking on the "Facebook" social network icon of the "<ProductBlock>" block
 #    Then checking that login page is opened and contains "https://www.facebook.com"
-#    When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://twitter.com"
-#    When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://www.linkedin.com"
-#    When clicking on the "Pinterest" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://www.pinterest.com"
-#    When clicking on the "Google Plus" social network icon of the "<ProductBlock>" block
-#    Then checking that login page is opened and contains "https://accounts.google.com"
-#    Examples:
-#      | ProductBlock |
-#      | 1            |
-#      | 6            |
-#      | 12           |
+    When clicking on the "Twitter" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://twitter.com"
+    When clicking on the "LinkedIn" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.linkedin.com"
+    When clicking on the "Pinterest" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://www.pinterest.com"
+    When clicking on the "Google Plus" social network icon of the "<ProductBlock>" block
+    Then checking that login page is opened and contains "https://accounts.google.com"
+    Examples:
+      | ProductBlock |
+      | 1            |
+      | 6            |
+      | 12           |
 
   Scenario: PRODUCTS_PAGE_09
     When clicking on the "Appetizers" category
