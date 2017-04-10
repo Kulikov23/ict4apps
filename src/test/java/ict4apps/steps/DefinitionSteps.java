@@ -625,8 +625,47 @@ public class DefinitionSteps {
      steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1);
     }
 
+//TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
 
+    @Given("^the user is on the Sign in page$")
+    public void theUserIsOnTheSignInPage() throws Throwable {
+       steps.theUserIsOnTheSignInPage();
+    }
 
+    @When("^click on the \"([^\"]*)\" button on the content part$")
+    public void clickOnTheButtonOnTheContentPart(String arg0) throws Throwable {
+        steps.clickOnTheButtonOnTheContentPart(arg0);
+    }
+
+    @Then("^check that \"([^\"]*)\" error massage appears near \"([^\"]*)\" text box$")
+    public void checkThatErrorMassageAppearsNearAndTextBoxes(String arg0, String arg1 ) throws Throwable {
+       steps.checkThatErrorMassageAppearsNearAndTextBoxes(arg0,arg1);
+    }
+
+    @When("^click on the Remember Me checkbox$")
+    public void clickOnTheRememberMeCheckbox() throws Throwable {
+        steps.clickOnTheRememberMeCheckbox();
+    }
+
+    @Then("^check that Remember Me checkbox is checked$")
+    public void checkThatRememberMeCheckboxIsChecked() throws Throwable {
+        steps.checkThatRememberMeCheckboxIsChecked();
+    }
+
+    @Then("^check that Remember Me checkbox is unchecked$")
+    public void checkThatRememberMeCheckboxIsNotChecked() throws Throwable {
+        steps.checkThatRememberMeCheckboxIsNotChecked();
+    }
+
+    @Then("^check that page is changed to Welcome page$")
+    public void checkThatPageIsChangedToWelcomePage() throws Throwable {
+        steps.checkThatPageIsChangedToWelcomePage();
+    }
+
+    @When("^click on the \"([^\"]*)\" linked image$")
+    public void clickOnTheLinkedImage(String arg0) throws Throwable {
+        steps.clickOnTheLinkedImage(arg0);
+    }
 }
 
 

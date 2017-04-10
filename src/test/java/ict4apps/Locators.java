@@ -168,5 +168,11 @@ public interface Locators {
 
     String SEARCH_PAGE_RESULT_TITLE = "(//span[@class='asset-entry-title']/a)[$1]";
 
+    //TODO: SIGN IN
+
+    String SIGN_IN_PAGE_ERROR_MSG = "//label[contains(text(),'$2')]/..//div[contains(text(),'$1')]";
+    String SIGN_IN_PAGE_CHECKBOX = ".//*[@id='_58_rememberMeCheckbox']";
+
+    String SIGN_IN_PAGE_LINKS = "//span[contains(text(),'$1')]";
 
 }

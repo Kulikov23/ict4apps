@@ -15,6 +15,7 @@ public class EndUserSteps {
     ContactUs contactUs;
     Breadcrumb breadcrumb;
     SearchPage searchPage;
+    SignInPage signInPage;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -638,5 +639,46 @@ public class EndUserSteps {
         Assert.assertTrue(productsPage.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0, arg1));
     }
 
+//TODO:///////////////////////////////////////      SIGN IN PAGE       /////////////////////////////////////////////////
+
+    @Step
+    public void theUserIsOnTheSignInPage() {
+        signInPage.open();
+    }
+
+    @Step
+    public void clickOnTheButtonOnTheContentPart(String arg0) {
+        signInPage.clickOnTheButtonOnTheContentPart(arg0);
+    }
+
+    @Step
+    public void checkThatErrorMassageAppearsNearAndTextBoxes(String arg0, String arg1) {
+        Assert.assertTrue(signInPage.checkThatErrorMassageAppearsNearAndTextBoxes(arg0, arg1));
+    }
+
+    @Step
+    public void clickOnTheRememberMeCheckbox() {
+        signInPage.clickOnTheRememberMeCheckbox();
+    }
+
+    @Step
+    public void checkThatRememberMeCheckboxIsChecked() {
+        Assert.assertTrue(signInPage.checkThatRememberMeCheckboxIsChecked());
+    }
+
+    @Step
+    public void checkThatRememberMeCheckboxIsNotChecked() {
+        Assert.assertTrue(signInPage.checkThatRememberMeCheckboxIsNotChecked());
+    }
+
+    @Step
+    public void checkThatPageIsChangedToWelcomePage() {
+        Assert.assertTrue(signInPage.checkThatPageIsChangedToWelcomePage());
+    }
+
+    @Step
+    public void clickOnTheLinkedImage(String arg0) {
+        signInPage.clickOnTheLinkedImage(arg0);
+    }
 }
 
