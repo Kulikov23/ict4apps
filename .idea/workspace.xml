@@ -39,8 +39,8 @@
       <file leaf-file-name="PRODUCTS_PAGE.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="260">
+              <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -1344,14 +1344,7 @@
       <workItem from="1491567737567" duration="49000" />
       <workItem from="1491573594114" duration="3841000" />
       <workItem from="1491810716906" duration="3268000" />
-      <workItem from="1491819480187" duration="8403000" />
-    </task>
-    <task id="LOCAL-00035" summary=" (28/03)_2">
-      <created>1490696778709</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1490696778709</updated>
+      <workItem from="1491819480187" duration="8535000" />
     </task>
     <task id="LOCAL-00036" summary=" (28/03)_3">
       <created>1490697795452</created>
@@ -1689,7 +1682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491829616569</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary=" (10/04) sixth">
+      <created>1491831416873</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1491831416873</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1725,7 +1725,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457082000" />
+    <option name="totallyTimeSpent" value="457214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -1808,7 +1808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (31/03) seventh&#10;" />
     <MESSAGE value=" (31/03) eights&#10;" />
     <MESSAGE value=" (03/04) first&#10;" />
     <MESSAGE value=" (03/04) second&#10;" />
@@ -1833,7 +1832,8 @@
     <MESSAGE value=" (10/04) third" />
     <MESSAGE value=" (10/04) fourth" />
     <MESSAGE value=" (10/04) fifth" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (10/04) fifth" />
+    <MESSAGE value=" (10/04) sixth" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (10/04) sixth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2157,8 +2157,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="260">
+          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
           <folding />
         </state>
       </provider>
