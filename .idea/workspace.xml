@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1615ec96-fe37-4e27-92fc-c7b7065b0e43" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/Locators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/pages/ProductsPage.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/pages/ProductsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/DefinitionSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ict4apps/steps/serenity/EndUserSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,8 +39,8 @@
       <file leaf-file-name="SPECIAL_OFFERS_PAGE.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="32" column="24" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="44" selection-end-column="22" />
+            <state relative-caret-position="1313">
+              <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -256,10 +251,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1339,14 +1334,7 @@
       <workItem from="1491567737567" duration="49000" />
       <workItem from="1491573594114" duration="3841000" />
       <workItem from="1491810716906" duration="3268000" />
-      <workItem from="1491819480187" duration="5666000" />
-    </task>
-    <task id="LOCAL-00033" summary=" (28/03)">
-      <created>1490685741755</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1490685741755</updated>
+      <workItem from="1491819480187" duration="6604000" />
     </task>
     <task id="LOCAL-00034" summary=" (28/03)_1">
       <created>1490688305238</created>
@@ -1684,7 +1672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491826314483</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary=" (10/04) fourth">
+      <created>1491827566186</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1491827566186</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1720,10 +1715,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454345000" />
+    <option name="totallyTimeSpent" value="455283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1803,7 +1798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" (31/03) fifth&#10;" />
     <MESSAGE value=" (31/03) sixth&#10;" />
     <MESSAGE value=" (31/03) seventh&#10;" />
     <MESSAGE value=" (31/03) eights&#10;" />
@@ -1828,7 +1822,8 @@
     <MESSAGE value=" (10/04) first" />
     <MESSAGE value=" (10/04) second" />
     <MESSAGE value=" (10/04) third" />
-    <option name="LAST_COMMIT_MESSAGE" value=" (10/04) third" />
+    <MESSAGE value=" (10/04) fourth" />
+    <option name="LAST_COMMIT_MESSAGE" value=" (10/04) fourth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2063,14 +2058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/PRODUCTS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -2142,10 +2129,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/SPECIAL_OFFERS_PAGE.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="44" selection-end-column="22" />
+        <state relative-caret-position="1313">
+          <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding />
         </state>
       </provider>
