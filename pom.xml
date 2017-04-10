@@ -11,11 +11,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <serenity.version>1.2.2-rc.1</serenity.version>
-        <serenity.cucumber.version>1.1.16</serenity.cucumber.version>
+        <serenity.version>1.2.4</serenity.version>
+        <serenity.cucumber.version>1.1.27</serenity.cucumber.version>
     </properties>
-
     <repositories>
         <repository>
             <snapshots>
@@ -36,18 +34,7 @@
             <url>http://jcenter.bintray.com</url>
         </pluginRepository>
     </pluginRepositories>
-
     <dependencies>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.53.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>htmlunit-driver</artifactId>
-            <version>2.21</version>
-        </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
@@ -62,7 +49,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -73,7 +60,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.5.2</version>
+            <version>3.6.2</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.lambdaj</groupId>
@@ -112,7 +99,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.6.1</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -135,3 +122,6 @@
         </plugins>
     </build>
 </project>
+
+
+
