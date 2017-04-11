@@ -98,7 +98,7 @@ public class WelcomePage extends PageObject {
     public void moveAction(String arg0) {
         Actions actions = new Actions(getDriver());
         actions.moveToElement($(Locators.WELCOME_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1", arg0))).build().perform();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public boolean titleWithStr(String arg0) {
@@ -129,7 +129,7 @@ public class WelcomePage extends PageObject {
 
     public void clickScrollButton(String direction, String arg0) {
         $(Locators.WELCOME_PAGE_SCROLL_BUTTON.replace("$2", direction).replace("$1", arg0)).click();
-        waitABit(1500);
+        waitABit(500);
     }
 
 //TODO://////////////////////////////////           BLOGS LIST             /////////////////////////////////////////////
@@ -169,7 +169,7 @@ public class WelcomePage extends PageObject {
     public void moveToPicture(String arg0) {
         Actions actions = new Actions(getDriver());
         actions.moveToElement($(Locators.WELCOME_PAGE_FOOD_DELIVERY_PICTURES.replace("$1", arg0))).build().perform();
-        waitABit(1500);
+        waitABit(500);
     }
 
     public boolean checkThatTitleIsDisplayed(String arg0, String arg1) {
@@ -203,7 +203,7 @@ public class WelcomePage extends PageObject {
 
     public void clickOnTheBackToTopLink() {
         $(Locators.WELCOME_PAGE_BACK_TO_TOP).click();
-        waitABit(1000);
+        waitABit(500);
     }
 }
 

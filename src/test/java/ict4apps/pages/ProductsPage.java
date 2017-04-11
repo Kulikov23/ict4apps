@@ -14,25 +14,18 @@ import java.util.concurrent.TimeUnit;
 @DefaultUrl("http://88.198.7.89:8100/web/guest/products")
 public class ProductsPage extends PageObject {
 
-    public void back() {
-        getDriver().navigate().back();
-    }
-
 //TODO:////////////////////////////          CHECKING PRODUCT BLOCKS          //////////////////////////////////////////
 
     public void clickOnTitle_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_PRODUCT_TITLE.replace("$1", arg1)).click();
-        waitABit(500);
     }
 
     public void clickOnPicture_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_PRODUCT_PICTURE.replace("$1", arg1)).click();
-        waitABit(500);
     }
 
     public void clickOnReadMore_products(String arg1) {
         $(Locators.PRODUCTS_PAGE_READ_MORE.replace("$1", arg1)).click();
-        waitABit(500);
     }
 
     public boolean checkThatTitleIsPresented() {
@@ -83,7 +76,6 @@ public class ProductsPage extends PageObject {
         boolean url = getDriver().getCurrentUrl().contains(arg0);
         getDriver().close();
         switchWindow(0);
-        waitABit(1000);
         return url;
     }
 
@@ -150,7 +142,6 @@ public class ProductsPage extends PageObject {
 
     public void clickChangeViewButton(String arg0) {
         $(Locators.PRODUCTS_PAGE_CHANGE_VIEW_BUTTON.replace("$1", arg0)).click();
-        waitABit(2000);
     }
 
     public boolean productBlocksAreChangedView() {
