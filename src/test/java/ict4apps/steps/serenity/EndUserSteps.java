@@ -12,7 +12,7 @@ public class EndUserSteps {
     ProductsPage productsPage;
     SpecialOffersPage specialOffersPage;
     BlogsPage blogsPage;
-    ContactUs contactUs;
+    ContactUsPage contactUs;
     Breadcrumb breadcrumb;
     SearchPage searchPage;
     SignInPage signInPage;

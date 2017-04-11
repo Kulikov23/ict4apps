@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {
-        "src/test/resources/features/SIGN_IN_PAGE.feature",
+        "src/test/resources/features/CREATE_ACCOUNT_PAGE.feature",
 })
-public class DefinitionTestSuite_SIGN_IN {
-}
+public class DefinitionTestSuite_CREATE_ACCOUNT {}

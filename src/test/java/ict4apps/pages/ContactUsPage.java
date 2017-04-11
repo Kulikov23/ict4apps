@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/contact-us")
-public class ContactUs extends PageObject {
+public class ContactUsPage extends PageObject {
 
     public void clickOnTheSendButton(String arg0) {
         waitFor(ExpectedConditions.elementToBeClickable((By.xpath(Locators.CONTACT_US_PAGE_SEND_BUTTON.replace("$1", arg0)))));
