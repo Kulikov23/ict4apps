@@ -680,5 +680,25 @@ public class EndUserSteps {
     public void clickOnTheLinkedImage(String arg0) {
         signInPage.clickOnTheLinkedImage(arg0);
     }
+
+    @Step
+    public void checkThatLoginPageIsOpened(String arg0) {
+        productsPage.checkThatLoginPageIsOpened(arg0);
+    }
+
+    @Step
+    public void writeIntoTheTextBox(String arg0, String arg1) {
+        signInPage.writeIntoTheTextBox(arg0,arg1);
+    }
+
+    @Step
+    public void clearAllTestBoxes() {
+        signInPage.clearAllTestBoxes();
+    }
+
+    @Step
+    public void checkThatErrorMassageAppears(String arg0) {
+        signInPage.checkThatErrorMassageAppears(arg0);
+    }
 }
 

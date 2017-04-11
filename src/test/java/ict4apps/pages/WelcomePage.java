@@ -6,10 +6,12 @@ import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebElement;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @DefaultUrl("http://88.198.7.89:8100/")
 public class WelcomePage extends PageObject {
@@ -55,6 +57,7 @@ public class WelcomePage extends PageObject {
     }
 
     public boolean checkThatPageIsOpened(String arg0) {
+        withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.urlContains(arg0));
         boolean x = getDriver().getCurrentUrl().contains(arg0);
         getDriver().navigate().back();
         waitABit(500);

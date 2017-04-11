@@ -666,6 +666,26 @@ public class DefinitionSteps {
     public void clickOnTheLinkedImage(String arg0) throws Throwable {
         steps.clickOnTheLinkedImage(arg0);
     }
+
+    @Then("^check that \"([^\"]*)\" login page is opened$")
+    public void checkThatLoginPageIsOpened(String arg0) throws Throwable {
+        steps.checkThatLoginPageIsOpened(arg0);
+    }
+
+    @When("^write \"([^\"]*)\" into the \"([^\"]*)\" text box$")
+    public void writeIntoTheTextBox(String arg0, String arg1) throws Throwable {
+        steps.writeIntoTheTextBox(arg0,arg1);
+    }
+
+    @When("^clear all test boxes$")
+    public void clearAllTestBoxes() throws Throwable {
+        steps.clearAllTestBoxes();
+    }
+
+    @Then("^check that \"([^\"]*)\" error massage appears$")
+    public void checkThatErrorMassageAppears(String arg0) throws Throwable {
+        steps.checkThatErrorMassageAppears(arg0);
+    }
 }
 
 

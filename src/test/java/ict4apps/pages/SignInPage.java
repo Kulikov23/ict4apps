@@ -35,4 +35,16 @@ public class SignInPage extends PageObject {
     public void clickOnTheLinkedImage(String arg0) {
         $(Locators.SIGN_IN_PAGE_LINKS.replace("$1", arg0)).click();
     }
+
+    public void writeIntoTheTextBox(String arg0, String arg1) {
+        $(Locators.SIGN_IN_PAGE_LOGIN_AND_PASS_TEXT_BOX.replace("$1", arg1)).sendKeys(arg0);
+    }
+
+    public void clearAllTestBoxes() {
+        $(Locators.ALL_TEXT_BOXES).clear();
+    }
+
+    public void checkThatErrorMassageAppears(String arg0) {
+        $(Locators.SIGN_IN_PAGE_ERR_MSG.replace("$1",arg0)).isVisible();
+    }
 }
