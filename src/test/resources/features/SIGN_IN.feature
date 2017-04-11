@@ -46,4 +46,5 @@ Feature: SIGN PAGE
     Then check that " Authentication failed. Please try again." error massage appears
 
   Scenario: SIGN_IN_PAGE_07
-    When
+    When click on the "Create Account" linked image
+    Then check that "create_account" page is opened

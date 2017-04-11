@@ -45,6 +45,6 @@ public class SignInPage extends PageObject {
     }
 
     public void checkThatErrorMassageAppears(String arg0) {
-        $(Locators.SIGN_IN_PAGE_ERR_MSG.replace("$1",arg0)).isVisible();
+        $(Locators.SIGN_IN_PAGE_ERR_MSG.replace("$1", arg0)).isVisible();
     }
 }

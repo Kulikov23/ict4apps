@@ -619,17 +619,17 @@ public class DefinitionSteps {
         steps.checkThatClickOnTheFirstResultIsMovingUsToChosenBlogPage();
     }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Then("^check that picture of the \"([^\"]*)\" product block is changed and contains title,small description and \"([^\"]*)\" link$")
     public void checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(String arg0, String arg1) throws Throwable {
-     steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0,arg1);
+        steps.checkThatPictureOfTheProductBlockIsChangedAndContainsTitleSmallDescriptionAndLink(arg0, arg1);
     }
 
 //TODO:///////////////////////////////////////      SIGN IN       //////////////////////////////////////////////////////
 
     @Given("^the user is on the Sign in page$")
     public void theUserIsOnTheSignInPage() throws Throwable {
-       steps.theUserIsOnTheSignInPage();
+        steps.theUserIsOnTheSignInPage();
     }
 
     @When("^click on the \"([^\"]*)\" button on the content part$")
@@ -638,8 +638,8 @@ public class DefinitionSteps {
     }
 
     @Then("^check that \"([^\"]*)\" error massage appears near \"([^\"]*)\" text box$")
-    public void checkThatErrorMassageAppearsNearAndTextBoxes(String arg0, String arg1 ) throws Throwable {
-       steps.checkThatErrorMassageAppearsNearAndTextBoxes(arg0,arg1);
+    public void checkThatErrorMassageAppearsNearAndTextBoxes(String arg0, String arg1) throws Throwable {
+        steps.checkThatErrorMassageAppearsNearAndTextBoxes(arg0, arg1);
     }
 
     @When("^click on the Remember Me checkbox$")
@@ -674,7 +674,7 @@ public class DefinitionSteps {
 
     @When("^write \"([^\"]*)\" into the \"([^\"]*)\" text box$")
     public void writeIntoTheTextBox(String arg0, String arg1) throws Throwable {
-        steps.writeIntoTheTextBox(arg0,arg1);
+        steps.writeIntoTheTextBox(arg0, arg1);
     }
 
     @When("^clear all test boxes$")

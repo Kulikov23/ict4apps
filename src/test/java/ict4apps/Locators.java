@@ -177,7 +177,7 @@ public interface Locators {
 
     String SIGN_IN_PAGE_LOGIN_AND_PASS_TEXT_BOX = "//input[@id='_58_$1']";
 
-   String ALL_TEXT_BOXES  = "//input[@type='text']";
+    String ALL_TEXT_BOXES = "//input[@type='text']";
 
     String SIGN_IN_PAGE_ERR_MSG = "//div[contains(text(),'$1')]";
 

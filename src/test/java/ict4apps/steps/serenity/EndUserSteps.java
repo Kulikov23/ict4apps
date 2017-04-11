@@ -688,7 +688,7 @@ public class EndUserSteps {
 
     @Step
     public void writeIntoTheTextBox(String arg0, String arg1) {
-        signInPage.writeIntoTheTextBox(arg0,arg1);
+        signInPage.writeIntoTheTextBox(arg0, arg1);
     }
 
     @Step
