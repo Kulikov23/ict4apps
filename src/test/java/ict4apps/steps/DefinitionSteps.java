@@ -686,6 +686,11 @@ public class DefinitionSteps {
     public void checkThatErrorMassageAppears(String arg0) throws Throwable {
         steps.checkThatErrorMassageAppears(arg0);
     }
+
+//    @Given("^the user is on the Create account page$")
+//    public void theUserIsOnTheCreateAccountPage() throws Throwable {
+//        steps.theUserIsOnTheCreateAccountPage();
+//    }
 }
 
 

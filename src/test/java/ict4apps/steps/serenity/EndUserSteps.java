@@ -16,6 +16,7 @@ public class EndUserSteps {
     Breadcrumb breadcrumb;
     SearchPage searchPage;
     SignInPage signInPage;
+    CreateAccountPage createAccount;
 
 //TODO://///////////////////////////////         WELCOME PAGE         //////////////////////////////////////////////////
 
@@ -700,5 +701,12 @@ public class EndUserSteps {
     public void checkThatErrorMassageAppears(String arg0) {
         signInPage.checkThatErrorMassageAppears(arg0);
     }
+
+//TODO:///////////////////////////////////////      CREATE ACCOUNT PAGE       //////////////////////////////////////////
+
+//    @Step
+//    public void theUserIsOnTheCreateAccountPage() {
+//        createAccount.open();
+//    }
 }
 
