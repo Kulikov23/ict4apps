@@ -6,7 +6,7 @@ Feature: BLOGS PAGE
   Scenario: BLOGS_PAGE_01
     Then page should contain "20" blog blocks
 
-  Scenario: 02
+  Scenario: BLOGS_PAGE_02
     When click on the search button
     Then check that search page is opened
 
@@ -14,8 +14,11 @@ Feature: BLOGS PAGE
     When clicking on the "<BlogBlock>" blog block title
     Then blog pages contains following links "View Original Post", "Read More"
     When clicking on the "<BlogBlock>" blog block picture
+    Then blog pages contains following links "View Original Post", "Read More"
     When clicking on the "<BlogBlock>" blog block "More" link
+    Then blog pages contains following links "View Original Post", "Read More"
     When clicking on the "<BlogBlock>" "0 Comments" link
+    Then blog pages contains following links "View Original Post", "Read More"
     Examples:
       | BlogBlock |
       | 1         |

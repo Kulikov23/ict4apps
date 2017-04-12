@@ -4,8 +4,10 @@ import ict4apps.Locators;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 @DefaultUrl("http://88.198.7.89:8100/web/guest/blogs")
 public class BlogsPage extends PageObject {
@@ -34,12 +36,10 @@ public class BlogsPage extends PageObject {
 
     public void clickOnTheBlockTitle(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_TITLE.replace("$1", arg0)).click();
-        waitABit(750);
     }
 
     public void clickOnTheBlockPicture(String arg0) {
         $(Locators.BLOGS_PAGE_BLOG_PICTURE.replace("$1", arg0)).click();
-        waitABit(750);
     }
 
     public void clickOnTheBlockMoreLink(String arg0, String arg1) {
@@ -84,20 +84,21 @@ public class BlogsPage extends PageObject {
 
     public void clickingOnTheViewOriginalPost(String arg0) {
         title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
+        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.elementToBeClickable(By.xpath(Locators.LINKS.replace("$1", arg0))));
         $(Locators.LINKS.replace("$1", arg0)).click();
-        waitABit(750);
     }
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         switchWindow(1);
+        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
         boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
-        waitABit(750);
         return y;
     }
 
     public boolean checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog() {
+        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
         boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().navigate().back();
         return y;
