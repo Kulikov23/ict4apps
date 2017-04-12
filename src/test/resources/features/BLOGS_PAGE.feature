@@ -43,8 +43,8 @@ Feature: BLOGS PAGE
     Examples:
       | BlogBlock |
       | 1         |
-      | 2         |
-      | 3         |
+      | 10        |
+      | 17        |
 
   Scenario Outline: BLOGS_PAGE_05
     When clicking on the "<BlogBlock>" blog block title
@@ -55,8 +55,8 @@ Feature: BLOGS PAGE
     Examples:
       | BlogBlock |
       | 1         |
-      | 11        |
-      | 20        |
+      | 2         |
+      | 3         |
 
 #  Scenario: BLOGS_PAGE_06
 #    When clicking on the "RSS" link

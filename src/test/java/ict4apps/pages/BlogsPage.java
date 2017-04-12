@@ -84,13 +84,13 @@ public class BlogsPage extends PageObject {
 
     public void clickingOnTheViewOriginalPost(String arg0) {
         title = $(Locators.BLOGS_PAGE_BREADCRUMB).getText();
-        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.elementToBeClickable(By.xpath(Locators.LINKS.replace("$1", arg0))));
+        withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.elementToBeClickable(By.xpath(Locators.LINKS.replace("$1", arg0))));
         $(Locators.LINKS.replace("$1", arg0)).click();
     }
 
     public boolean checkThatClickOnTheViewOriginalPostIsOpeningCorrectPage() {
         switchWindow(1);
-        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
+        withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
         boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().close();
         switchWindow(0);
@@ -98,7 +98,7 @@ public class BlogsPage extends PageObject {
     }
 
     public boolean checkingThatClickOnTheViewOriginalPostIsOpeningNewsWebsiteWithOurChosenBlog() {
-        withTimeoutOf(5000, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
+        withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.xpath(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))));
         boolean y = ($(Locators.BLOGS_PAGE_NEWS_SITE_HEADER.replace("$1", title))).isPresent();
         getDriver().navigate().back();
         return y;
