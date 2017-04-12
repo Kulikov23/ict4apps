@@ -353,7 +353,7 @@ public class EndUserSteps {
     }
 
     @Step
-    public void checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) throws InterruptedException {
+    public void checkThatPictureIsChangedAndContainsReadMore(String arg0, String arg1) {
         Assert.assertTrue(specialOffersPage.checkThatPictureIsChangedAndContainsReadMore(arg0, arg1));
     }
 

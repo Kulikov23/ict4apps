@@ -3,6 +3,7 @@ package ict4apps.pages;
 import ict4apps.Locators;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.interactions.Actions;
@@ -98,18 +99,20 @@ public class WelcomePage extends PageObject {
     public void moveAction(String arg0) {
         Actions actions = new Actions(getDriver());
         actions.moveToElement($(Locators.WELCOME_PAGE_PRODUCT_BLOCK_PICTURE.replace("$1", arg0))).build().perform();
-        waitABit(500);
     }
 
     public boolean titleWithStr(String arg0) {
+        waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0))));
         return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).isVisible();
     }
 
     public boolean descriptionIsDisplayed(String arg0) {
+        waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.WELCOME_PAGE_PRODUCT_BLOCK_DESCRIPTION.replace("$1", arg0))));
         return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_DESCRIPTION.replace("$1", arg0)).isVisible();
     }
 
     public boolean moreIsDisplayed(String arg0, String arg1) {
+        waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2", arg0))));
         return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_MORE_LINK.replace("$1", arg1).replace("$2", arg0)).isVisible();
     }
 
