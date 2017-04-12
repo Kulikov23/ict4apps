@@ -129,7 +129,7 @@ public class ProductsPage extends PageObject {
 
     public void clickOnTheDropDownMenuItem(String arg0) {
         $(Locators.PRODUCTS_PAGE_DROPDOWN_MENU_ELEMENTS.replace("*", arg0)).click();
-        waitABit(3000);
+//        waitABit(3000);
     }
 
     public boolean pageContainsRequiredQuanityOfBlocks(String arg0) {

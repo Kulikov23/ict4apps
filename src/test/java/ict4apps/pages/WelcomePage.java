@@ -61,7 +61,6 @@ public class WelcomePage extends PageObject {
         withTimeoutOf(5, TimeUnit.SECONDS).waitFor(ExpectedConditions.urlContains(arg0));
         boolean x = getDriver().getCurrentUrl().contains(arg0);
         getDriver().navigate().back();
-        waitABit(500);
         return x;
     }
 
