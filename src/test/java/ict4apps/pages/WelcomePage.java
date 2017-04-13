@@ -53,8 +53,8 @@ public class WelcomePage extends PageObject {
 
 //TODO:////////////////////////////         NAVIGATION LINKS            ////////////////////////////////////////////////
 
-    public WebElement linkWithStr(String arg0, String arg1) {
-        return $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0).replace("$2", arg1));
+    public void linkWithStr(String arg0, String arg1) {
+        $(Locators.WELCOME_PAGE_NAVIGATION_LINKS.replace("$1", arg0).replace("$2", arg1)).click();
     }
 
     public boolean checkThatPageIsOpened(String arg0) {

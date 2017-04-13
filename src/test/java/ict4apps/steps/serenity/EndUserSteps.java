@@ -93,7 +93,7 @@ public class EndUserSteps {
 
     @Step
     public void clickLink(String arg0, String arg1) {
-        welcomePage.linkWithStr(arg0, arg1).click();
+        welcomePage.linkWithStr(arg0, arg1);
     }
 
     @Step
