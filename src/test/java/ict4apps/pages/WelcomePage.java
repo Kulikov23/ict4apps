@@ -101,7 +101,7 @@ public class WelcomePage extends PageObject {
     }
 
     public boolean titleWithStr(String arg0) {
-        waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0))));
+        withTimeoutOf(5,TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0))));
         return $(Locators.WELCOME_PAGE_PRODUCT_BLOCK_TITLE.replace("$1", arg0)).isVisible();
     }
 
